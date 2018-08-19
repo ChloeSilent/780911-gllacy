@@ -14,7 +14,7 @@
       <a class="main-header-logo">
         <img src="img/logo.svg" width="154" height="64" alt="логотип магазина Глейси по продаже мороженого собственного производства">
       </a>
-      <ul class="site-navigation">
+      <ul class="site-navigation modal">
         <li class="site-navigation-current">
           <a href="catalog.html">Каталог</a>
           <ul>
@@ -46,35 +46,18 @@
 
       </ul>
       <ul class="user-navigation">
-        <li>
-          <form action="https://echo.glassy.ru" method="post">
-            <label for="search">Поиск</label>
+        <li class="modal">
+          <form action="https://echo.htmlacademy.ru" method="post">
+            <label for="search" class="visually-hidden">Поиск</label>
             <input type="search" name="search" id="search" placeholder="Что ищем?" class="search">
-            <input type="submit" value="Найти" class="submit" />
           </form>
 
         </li>
-        <li class="login-link">
-          <b>Вход</b>
-
-          <div class="customer-login">
-            <form action="https://echo.glassy.ru" method="post">
-              <label for="email">Email</label>
-              <input type="email" name="email" required id="email" value="Электронная почта">
-              <label for="password-field">Ваш пароль</label>
-              <input type="password" name="password" id="password-field" value="Пароль">
-              <input type="submit" value="Войти">
-            </form>
-          </div>
-
-          <div class="customer-help">
-            <form action="https://echo.glassy.ru" method="post">
-              <p>Забыли пароль?</p>
-              <p>Новая регистрация</p>
-            </form>
-          </div>
+        <li class="login-link modal">
+          <a class="login-link" href="login.html">Вход</a>
         </li>
-        <li class="cart">Корзина</li>
+        <li class="cart modal">
+          <a href="#">Корзина</a></li>
       </ul>
     </nav>
 
@@ -105,12 +88,16 @@
       <div class="action-content-3">
         <img src="img/action-content-3.png" width="1079" height="854" alt="Пломбир с помадкой и клубничный щербет">
         <p>Пломбир с помадкой и клубничный щербет</p>
-        <a class="gallery-button" href="#">Кнопка</a>
+        <a class="gallery-button" href="#">Давайте оба</a>
         <!--border-radius: px;-->
       </div>
-      <a href="#" class="switcher-item-1"></a>
-      <a href="#" class="switcher-item-2"></a>
-      <a href="#" class="switcher-item-3"></a>
+      <div>
+        <ul>
+          <li><button class="switcher-item-1" type="button" aria-label="Слайд 1">Слайд 1</button></li>
+          <li><button class="switcher-item-2" type="button" aria-label="Слайд 2">Слайд 2</button></li>
+          <li><button class="switcher-item-3" type="button" aria-label="Слайд 3">Слайд 3</button></li>
+        </ul>
+      </div>
     </section>
     <section class="banner">
       <div class="banner-item offer-item-1">
@@ -118,7 +105,7 @@
         <h2 class="banner-item-header">Малинка даром!</h2>
         <!--display: none;-->
         <p>При покупке 2 кг любого фруктового мороженого, добавим в ваш заказ банку малинового варенья бесплатно.</p>
-        <a class="banner-button-1" href="">Хочу варенье!</a>
+        <a class="banner-button-1" href="#">Хочу варенье!</a>
         <!--border-radius: px;-->
       </div>
       <div class="banner-item offer-item-2">
@@ -126,7 +113,7 @@
         <h2 class="banner-item-header">Шоколадки даром!</h2>
         <!--display: none;-->
         <p>При покупке 2 кг пломбира, добавим в ваш заказ упаковку вкуснейшей шоколадной присыпки совершенно бесплатно</p>
-        <a class="banner-button-2" href="">Хочу шоколадки!</a>
+        <a class="banner-button-2" href="#">Хочу шоколадки!</a>
         <!--border-radius: px;-->
       </div>
     </section>
@@ -158,7 +145,7 @@
           </h3>
           <p class="catalog-item-image">
             <a href="catalog-item.html">
-              <img src="img/ice-cream-2.jpg" width="267" height="267"  alt="Сливочно-кофейное с кусочками шоколада">
+              <img src="img/ice-cream-2.jpg" width="267" height="267" alt="Сливочно-кофейное с кусочками шоколада">
             </a>
           </p>
           <p class="catalog-item-price">
@@ -174,7 +161,7 @@
           </h3>
           <p class="catalog-item-image">
             <a href="catalog-item.html">
-              <img src="img/ice-cream-3.jpg" width="267" height="267"  alt="Сливочно-клубничное с присыпкой из белого шоколада">
+              <img src="img/ice-cream-3.jpg" width="267" height="267" alt="Сливочно-клубничное с присыпкой из белого шоколада">
             </a>
           </p>
           <p class="catalog-item-price">
@@ -231,9 +218,10 @@
       <p>Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не
         спамить и не слать всякой ненужной ерунды. Честно =)
       </p>
-      <form action="#" method="post">
-        <input type="text" name="mail" id="login-field">
-        <input type="submit" value="Отправить">
+      <form action="https://echo.htmlacademy.ru" method="post">
+        <label for="newsletter-email" class="visually-hidden">Введите вашу электронную почту</label>
+        <input type="email" name="newsletter-email" id="newsletter-email" placeholder="Электронная почта" required>
+        <button class="button" type="submit" aria-label="Отправить">Отправить</button>
       </form>
     </section>
 
@@ -243,16 +231,16 @@
     <div class="footer-social">
       <ul>
         <li>
-          <a class="social-button" href="#">Twitter</a>
+          <a class="social-button" href="#">Следите за нами в Twitter</a>
         </li>
         <li>
-          <a class="social-button" href="#">Instagram</a>
+          <a class="social-button" href="#">Следите за нами в Instagram</a>
         </li>
         <li>
-          <a class="social-button" href="#">facebook</a>
+          <a class="social-button" href="#">Следите за нами в Facebook</a>
         </li>
         <li>
-          <a class="social-button" href="#">Vkontakte</a>
+          <a class="social-button" href="#">Следите за нами в Vkontakte</a>
         </li>
       </ul>
     </div>
@@ -276,7 +264,7 @@
       </ul>
     </nav>
     <p class="footer-copyright">
-        <img src="img/logo-htmlacademy-small.svg" width="108" height="39" alt="логотип HTML Academy">
+      <img src="img/logo-htmlacademy-small.svg" width="108" height="39" alt="логотип HTML Academy">
       <span>Сделано в
         <a class="button" href="https://htmlacademy.ru">HTML Academy</a> © 2017
       </span>
@@ -298,21 +286,45 @@
     <p class="small-text">(с 10 до 20 ежедневно)</p>
 
     <section class="modal modal-feedback">
-        <h2 class="visually-hidden">Форма обратной связи</h2>
-      <button type="button">Форма обратной связи</button>
-      <!--!я запуталась, не знаю, в какие теги ставить эту модалку-->
-      <form action="https://echo.glassy.ru" method="post">
-        <label for="callback-name"></label>
-        <input type="text" name="callback-name" required id="callback-name" value="Как вас зовут?">
-        <label for="callback-mail"></label>
-        <input type="email" name="callback-mail" id="callback-mail" value="Ваша почта для ответа">
-        <textarea name="comment" id="comment-field" rows="10">Напишите что-нибудь...</textarea>
-        <input type="submit" value="Отправить">
+      <h2 class="visually-hidden">Форма обратной связи</h2>
+      <p>Мы обязательно вам ответим!</p>
+      <form class="feedback-form" action="https://echo.htmlacademy.ru" method="post">
+
+        <label for="callback-name" class="visually-hidden">Введите ваше имя</label>
+        <input type="text" name="callback-name" id="callback-name" placeholder="Как вас зовут?" required>
+
+        <label for="callback-mail" class="visually-hidden">Введите вашу электронную почту</label>
+        <input type="email" name="callback-mail" id="callback-mail" placeholder="Ваша почта для ответа" required>
+
+        <label for="comment-field" class="visually-hidden">Напишите нам что-нибудь</label>
+        <textarea name="comment" id="comment-field" rows="10" placeholder="Напишите что-нибудь..." required> </textarea>
+
+        <button class="button" type="submit" value="Отправить">Отправить</button>
+
+          <button class="modal-close" type="button">Закрыть</button>
       </form>
-      <button>Закрыть</button>
     </section>
 
   </section>
+
+  <section class="modal modal-login">
+    <h2>Войти на сайт</h2>
+    <form class="login-form" action="https://echo.htmlacademy.ru" method="post">
+
+      <label for="email" class="visually-hidden">Введите вашу электронную почту</label>
+      <input type="email" name="email" id="email" placeholder="Электронная почта" required>
+
+      <label for="password-field" class="visually-hidden">Введите ваш пароль</label>
+      <input type="password" name="password" id="password-field" placeholder="Пароль" required>
+
+      <button class="button" type="submit">Войти</button>
+
+      <a class="restore" href="#">Забыли пароль</a>
+      <a class="registration" href="#">Новая регистрация</a>
+
+    </form>
+  </section>
+
 </body>
 
 </html>

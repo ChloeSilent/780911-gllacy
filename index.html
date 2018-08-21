@@ -46,18 +46,37 @@
 
       </ul>
       <ul class="user-navigation">
-        <li class="modal">
+
+        <li class="search tooltip">
           <form action="https://echo.htmlacademy.ru" method="post">
             <label for="search" class="visually-hidden">Поиск</label>
             <input type="search" name="search" id="search" placeholder="Что ищем?" class="search">
           </form>
+        </li>
 
-        </li>
-        <li class="login-link modal">
+        <li class="login-link tooltip">
           <a class="login-link" href="login.html">Вход</a>
+          <form class="login-form" action="https://echo.htmlacademy.ru" method="post">
+            <fieldset class="tooltip tooltip-login">
+              <legend>Войти на сайт</legend>
+              <label for="email" class="visually-hidden">Введите вашу электронную почту</label>
+              <input type="email" name="email" id="email" placeholder="Электронная почта" required>
+
+              <label for="password-field" class="visually-hidden">Введите ваш пароль</label>
+              <input type="password" name="password" id="password-field" placeholder="Пароль" required>
+
+              <button class="button" type="submit">Войти</button>
+
+              <a class="restore" href="#">Забыли пароль</a>
+              <a class="registration" href="#">Новая регистрация</a>
+            </fieldset>
+          </form>
         </li>
-        <li class="cart modal">
-          <a href="#">Корзина</a></li>
+
+        <li class="cart tooltip">
+          <a href="#">Корзина</a>
+        </li>
+
       </ul>
     </nav>
 
@@ -91,13 +110,18 @@
         <a class="gallery-button" href="#">Давайте оба</a>
         <!--border-radius: px;-->
       </div>
-      <div>
         <ul>
-          <li><button class="switcher-item-1" type="button" aria-label="Слайд 1">Слайд 1</button></li>
-          <li><button class="switcher-item-2" type="button" aria-label="Слайд 2">Слайд 2</button></li>
-          <li><button class="switcher-item-3" type="button" aria-label="Слайд 3">Слайд 3</button></li>
+          <li>
+            <button class="switcher-item-1" type="button" aria-label="Слайд 1">Слайд 1</button>
+          </li>
+          <li>
+            <button class="switcher-item-2" type="button" aria-label="Слайд 2">Слайд 2</button>
+          </li>
+          <li>
+            <button class="switcher-item-3" type="button" aria-label="Слайд 3">Слайд 3</button>
+          </li>
         </ul>
-      </div>
+
     </section>
     <section class="banner">
       <div class="banner-item offer-item-1">
@@ -224,6 +248,22 @@
         <button class="button" type="submit" aria-label="Отправить">Отправить</button>
       </form>
     </section>
+    <section class="adress">
+      <h3 class="visually-hidden">Контактная информация</h3>
+
+      <img src="img/map.jpg" width="1200" height="430" alt="карта местонахождения магазина">
+      <p class="small-text">Адрес главного офиса
+        <br> и офлайн-магазина:</p>
+      <p class="bold-text">ул. Больша Конюшенная
+        <br>19/8, Санкт-Петербург</p>
+      <p class="small-text">Для заказов по телефону:</p>
+      <p class="bold-text">8 812 450-25-25</p>
+      <p class="small-text">(с 10 до 20 ежедневно)</p>
+
+      <div class="feedback-link modal">
+        <a class="feedback-link" href="#">Вход</a>
+      </div>
+    </section>
 
   </main>
   <footer class="main-footer">
@@ -270,60 +310,25 @@
       </span>
     </p>
   </footer>
-  <!--<p>Репозиторий создан для обучения на интенсивном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/htmlcss">Профессиональный HTML и CSS, уровень 1</a>».</p>-->
-  <section class="adress">
-    <h3 class="visually-hidden">Контактная информация</h3>
-    <div class="map">
-      <!--clear: both;-->
-      <img src="img/map.jpg" width="1200" height="430" alt="карта местонахождения магазина">
-    </div>
-    <p class="small-text">Адрес главного офиса
-      <br> и офлайн-магазина:</p>
-    <p class="bold-text">ул. Больша Конюшенная
-      <br>19/8, Санкт-Петербург</p>
-    <p class="small-text">Для заказов по телефону:</p>
-    <p class="bold-text">8 812 450-25-25</p>
-    <p class="small-text">(с 10 до 20 ежедневно)</p>
 
-    <section class="modal modal-feedback">
-      <h2 class="visually-hidden">Форма обратной связи</h2>
+  <form class="modal-form" action="https://echo.htmlacademy.ru" method="post">
+    <fieldset class="modal modal-feedback">
+      <legend class="visually-hidden">Форма обратной связи</legend>
       <p>Мы обязательно вам ответим!</p>
-      <form class="feedback-form" action="https://echo.htmlacademy.ru" method="post">
+      <label for="callback-name" class="visually-hidden">Введите ваше имя</label>
+      <input type="text" name="callback-name" id="callback-name" placeholder="Как вас зовут?" required>
 
-        <label for="callback-name" class="visually-hidden">Введите ваше имя</label>
-        <input type="text" name="callback-name" id="callback-name" placeholder="Как вас зовут?" required>
+      <label for="callback-mail" class="visually-hidden">Введите вашу электронную почту</label>
+      <input type="email" name="callback-mail" id="callback-mail" placeholder="Ваша почта для ответа" required>
 
-        <label for="callback-mail" class="visually-hidden">Введите вашу электронную почту</label>
-        <input type="email" name="callback-mail" id="callback-mail" placeholder="Ваша почта для ответа" required>
+      <label for="comment-field" class="visually-hidden">Напишите нам что-нибудь</label>
+      <textarea name="comment" id="comment-field" rows="10" placeholder="Напишите что-нибудь..." required> </textarea>
 
-        <label for="comment-field" class="visually-hidden">Напишите нам что-нибудь</label>
-        <textarea name="comment" id="comment-field" rows="10" placeholder="Напишите что-нибудь..." required> </textarea>
+      <button class="button" type="submit" value="Отправить">Отправить</button>
 
-        <button class="button" type="submit" value="Отправить">Отправить</button>
-
-          <button class="modal-close" type="button">Закрыть</button>
-      </form>
-    </section>
-
-  </section>
-
-  <section class="modal modal-login">
-    <h2>Войти на сайт</h2>
-    <form class="login-form" action="https://echo.htmlacademy.ru" method="post">
-
-      <label for="email" class="visually-hidden">Введите вашу электронную почту</label>
-      <input type="email" name="email" id="email" placeholder="Электронная почта" required>
-
-      <label for="password-field" class="visually-hidden">Введите ваш пароль</label>
-      <input type="password" name="password" id="password-field" placeholder="Пароль" required>
-
-      <button class="button" type="submit">Войти</button>
-
-      <a class="restore" href="#">Забыли пароль</a>
-      <a class="registration" href="#">Новая регистрация</a>
-
-    </form>
-  </section>
+      <button class="modal-close" type="button">Закрыть</button>
+    </fieldset>
+  </form>
 
 </body>
 

@@ -10,67 +10,78 @@
 </head>
 
 <body>
-  <header>
-    <nav class="main-header">
-      <a class="main-header-logo">
-        <img src="img/logo.svg" width="154" height="64" alt="логотип магазина Глейси по продаже мороженого собственного производства">
-      </a>
-      <ul class="site-navigation">
-        <li class="site-navigation-current">
-          <a href="catalog.html">Каталог</a>
-          <ul class="sub-menu">
-            <li>
-              <a href="catalog.html">Новинки</a>
-            </li>
-            <li>
-              <a href="catalog.html">Сливочное</a>
-            </li>
-            <li>
-              <a href="catalog.html">Щербеты</a>
-            </li>
-            <li>
-              <a href="catalog.html">Фруктовый лед</a>
-            </li>
-            <li>
-              <a href="catalog.html">Мелорин</a>
-            </li>
-          </ul>
+  <header class="main-header">
+    <nav class="main-navigation">
+      <div class="left-wrapper">
+        <a class="main-header-logo">
+          <img src="img/logo.svg" width="154" height="64" alt="логотип магазина Глейси по продаже мороженого собственного производства">
+        </a>
 
-        </li>
-        <li>
-          <a href="shippingpayment.html">Доставка и оплата</a>
-        </li>
-        <li>
-          <a href="aboutus.html">О компании</a>
-        </li>
+        <ul class="site-navigation">
+          <li class="site-navigation-current">
+            <a href="catalog.html">Каталог</a>
+            <ul class="sub-menu">
+              <li>
+                <a href="catalog.html">Новинки</a>
+              </li>
+              <li>
+                <a href="catalog.html">Сливочное</a>
+              </li>
+              <li>
+                <a href="catalog.html">Щербеты</a>
+              </li>
+              <li>
+                <a href="catalog.html">Фруктовый лед</a>
+              </li>
+              <li>
+                <a href="catalog.html">Мелорин</a>
+              </li>
+            </ul>
 
-      </ul>
+          </li>
+          <li>
+            <a href="shippingpayment.html">Доставка и оплата</a>
+          </li>
+          <li>
+            <a href="aboutus.html">О компании</a>
+          </li>
+
+        </ul>
+      </div>
       <ul class="user-navigation">
 
-        <li class="search tooltip">
-          <form action="https://echo.htmlacademy.ru" method="post">
-            <label for="search" class="visually-hidden">Поиск</label>
-            <input type="search" name="search" id="search" placeholder="Что ищем?" class="search">
-          </form>
+        <li class="search">
+          <div class="tooltip-search-button">Поиск
+            <div class="tooltip-search-field">
+              <form class="search-window" action="https://echo.htmlacademy.ru" method="post">
+                <label for="search" class="visually-hidden">
+                  <input type="search" name="search" id="search" placeholder="Что ищем?" class="search">
+                </label>
+              </form>
+            </div>
+          </div>
         </li>
 
-        <li class="login-link tooltip">
-          <a href="login.html">Вход</a>
-          <form class="login-form" action="https://echo.htmlacademy.ru" method="post">
-            <fieldset class="tooltip tooltip-login">
-              <legend>Войти на сайт</legend>
-              <label for="email" class="visually-hidden">Введите вашу электронную почту</label>
-              <input type="email" name="email" id="email" placeholder="Электронная почта" required>
+        <li class="login-link">
+          <div class="tooltip-login-button">Вход
+            <div class="tooltip-login-field">
+              <form class="login-form" action="https://echo.htmlacademy.ru" method="post">
+                <fieldset class="tooltip tooltip-login">
+                  <legend>Войти на сайт</legend>
+                  <label for="email" class="visually-hidden">Введите вашу электронную почту</label>
+                  <input type="email" name="email" id="email" placeholder="Электронная почта" required>
 
-              <label for="password-field" class="visually-hidden">Введите ваш пароль</label>
-              <input type="password" name="password" id="password-field" placeholder="Пароль" required>
+                  <label for="password-field" class="visually-hidden">Введите ваш пароль</label>
+                  <input type="password" name="password" id="password-field" placeholder="Пароль" required>
 
-              <button class="small-button" type="submit">Войти</button>
+                  <button class="small-button" type="submit">Войти</button>
 
-              <a class="restore" href="#">Забыли пароль</a>
-              <a class="registration" href="#">Новая регистрация</a>
-            </fieldset>
-          </form>
+                  <a class="restore" href="#">Забыли пароль</a>
+                  <a class="registration" href="#">Новая регистрация</a>
+                </fieldset>
+              </form>
+            </div>
+          </div>
         </li>
 
         <li class="cart tooltip">
@@ -79,6 +90,7 @@
         </li>
 
       </ul>
+
     </nav>
 
     <div class="store-info">
@@ -114,8 +126,8 @@
       <ul class="slide-radio">
         <li class="slide-radio">
           <button class="switcher" type="button" aria-label="Слайд 1">Слайд 1</button>
-        </li class="slide-radio">
-        <li>
+        </li>
+        <li class="slide-radio">
           <button class="switcher" type="button" aria-label="Слайд 2">Слайд 2</button>
         </li>
         <li class="slide-radio">
@@ -221,42 +233,44 @@
           в пути и позволяет сохранить превосходный вкус</li>
       </ul>
     </section>
+    <div class="wrapper-news">
+      <article class="news">
+        <h2 class="visually-hidden">Новости</h2>
+        <p>Новое в нашем блоге</p>
+        <a class="news-link" href="news.html">
+          <p>10 способов сервировки фруктовых щербетов к столу</p>
+        </a>
+      </article>
 
-    <article class="news">
-      <h2 class="visually-hidden">Новости</h2>
-      <p>Новое в нашем блоге</p>
-      <a class="news-link" href="news.html">
-        <p>10 способов сервировки фруктовых щербетов к столу</p>
-      </a>
-    </article>
-
-    <section class="newsletter">
-      <h2 class="visually-hidden">Новостная рассылка</h2>
-      <p>Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не
-        спамить и не слать всякой ненужной ерунды. Честно =)
-      </p>
-      <form action="https://echo.htmlacademy.ru" method="post">
-        <label for="newsletter-email" class="visually-hidden">Введите вашу электронную почту</label>
-        <input type="email" name="newsletter-email" id="newsletter-email" placeholder="Электронная почта" required>
-        <button class="small-button" type="submit" aria-label="Отправить">Отправить</button>
-      </form>
-    </section>
+      <section class="newsletter">
+        <h2 class="visually-hidden">Новостная рассылка</h2>
+        <p>Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем
+          не спамить и не слать всякой ненужной ерунды. Честно =)
+        </p>
+        <form action="https://echo.htmlacademy.ru" method="post">
+          <label for="newsletter-email" class="visually-hidden">Введите вашу электронную почту</label>
+          <input type="email" name="newsletter-email" id="newsletter-email" placeholder="Электронная почта" required>
+          <button class="small-button" type="submit" aria-label="Отправить">Отправить</button>
+        </form>
+      </section>
+    </div>
     <section class="adress">
       <h3 class="visually-hidden">Контактная информация</h3>
 
       <img src="img/map.jpg" width="1200" height="430" alt="карта местонахождения магазина">
-      <div class="adress-part" <p class="small-text">Адрес главного офиса
-        <br> и офлайн-магазина:</p>
+      <div class="adress-part">
+        <p class="small-text">Адрес главного офиса
+          <br> и офлайн-магазина:</p>
         <p class="bold-text">ул. Больша Конюшенная
           <br>19/8, Санкт-Петербург</p>
         <p class="small-text">Для заказов по телефону:</p>
         <p class="bold-text">8 812 450-25-25</p>
         <p class="small-text">(с 10 до 20 ежедневно)</p>
-
         <div class="feedback-link modal">
           <a class="small-button" href="#">Форма обратной связи</a>
         </div>
       </div>
+
     </section>
 
   </main>

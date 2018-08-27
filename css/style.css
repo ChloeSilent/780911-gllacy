@@ -43,8 +43,6 @@ body {
   text-decoration: none;
 }
 
-
-
 .site-navigation > li:hover .sub-menu,
 .site-navigation > li:focus .sub-menu  {
   display: block;
@@ -52,13 +50,49 @@ body {
   background-color:  rgb(248, 247, 244);
 }
 
-/*поиск*/
+/*поиск  */
+.tooltip-search-button {
+  display: inline-block;
+  position: relative;
+}
 
+.tooltip-search-button .tooltip-search-field {
+  visibility: hidden;
+  position: absolute;
+  /*min-width: 341px;*/
+  /*min-height: 84px;*/
+  background-color: rgb(248, 247, 244);
+  top: 125%;
+  right: 100%;
+}
 
-/*вход и корзина*/
+.tooltip-search-button:hover .tooltip-search-field {
+  visibility: visible;
+  opacity: 1;
+}
 
-.login-link a,
-.cart p {
+/*вход*/
+.tooltip-login-button {
+  display: inline-block;
+  position: relative;
+}
+
+.tooltip-login-button .tooltip-login-field {
+  visibility: hidden;
+  position: absolute;
+ /* min-width: 277px;*/
+  /*min-height: 214px;*/
+  background-color: rgb(248, 247, 244);
+  top: 125%;
+  right: 100%;
+}
+
+.tooltip-login-button:hover .tooltip-login-field {
+  visibility: visible;
+  opacity: 1;
+}
+
+.login-link a{
   font-family: 'Roboto', Arial, sans-serif;
   font-size: 14px;
   line-height: 16px;
@@ -72,6 +106,26 @@ body {
   color: #000000;
   background-color: rgb(248, 247, 244);
 }
+/* корзина*/
+
+.cart p {
+  font-family: 'Roboto', Arial, sans-serif;
+  font-size: 14px;
+  line-height: 16px;
+  color: #ffffff;
+  font-weight: 500;
+  text-decoration: none;
+}
+
+.cart a{
+  font-family: 'Roboto', Arial, sans-serif;
+  font-size: 14px;
+  line-height: 16px;
+  color: #ffffff;
+  font-weight: 500;
+  text-decoration: none;
+}
+
 
 #email::-webkit-input-placeholder, /*не сработали*/
 #password-field::-webkit-input-placeholder {
@@ -230,7 +284,7 @@ body {
   background-color: #eddfc2;
   background-image: url("../img/layer-waffle.jpg");
   background-position: top left;
-  background-repeat: no-repeat;
+  background-repeat: repeat;
 }
 
 .about-us-container h2  {
@@ -379,7 +433,7 @@ body {
 
 
 .site-navigation-current,
-.tooltip {
+.tooltip-login {
   background-color: rgb(248, 247, 244);
   border: none;
 }
@@ -545,3 +599,159 @@ body {
 }
 
 
+/* сеточные стили*/ /* от крупных блоков к мелким*/
+.main-header{
+min-height:120px;
+margin-bottom: 5px;
+display:flex;
+flex-direction: column;
+justify-content: flex-start;
+align-content: flex-start;
+flex-wrap:wrap;
+width: 100%;
+}
+.main-navigation{
+  display:flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.store-info{
+  align-self: flex-end;
+}
+
+.left-wrapper{
+ display: flex;
+ justify-content: space-between;
+}
+
+.main-header-logo {
+  width: 154px;
+  height: 64px;
+}
+.site-navigation {
+  margin: 0;
+  padding: 0;
+  display:flex;
+  justify-content: space-around;
+  list-style: none;
+  align-self:flex-end;
+}
+
+.user-navigation {
+  margin: 0;
+  padding: 0;
+  align-self:flex-end;
+  list-style: none;
+  display:flex;
+  justify-content: space-around;
+}
+
+/*основной контент*/
+
+.container{
+  margin: 0 auto;
+  padding: 0 10px;
+}
+
+.banner{
+  margin:0;
+  margin-bottom:30px;
+  padding:0;
+  display: flex;
+  width:100%;
+  justify-content: space-around;
+}
+
+.banner-item{
+  width: 560px;
+  height: 229px;
+}
+
+.catalog-list-hit{
+  margin:0;
+  padding:0;
+  display: flex;
+  width:100%;
+  justify-content: space-around;
+}
+
+.about-us-container{
+  width: 1150px;
+  height: 306px;
+  margin-bottom:40px;
+  padding: 20px 30px;
+}
+
+.about-us{
+  display:flex;
+  flex-wrap: wrap;
+
+
+}
+
+.about-us li {
+  width:550px;
+  height:110px;
+}
+
+
+.wrapper-news
+{ margin:0;
+  padding:0;
+  display: flex;
+  width:100%;
+  justify-content: space-around;
+}
+
+.newsletter{
+  width: 560px;
+  height: 229px;
+}
+
+.news{
+  width: 560px;
+  height: 229px;
+}
+
+.adress{
+  width: auto;
+  height: 430px;
+  position: relative;
+}
+.adress-part{
+  width: 302px;
+  height: 305px;
+  position: absolute;
+  top: 64px;
+  right:27px;
+}
+
+/*футер */
+
+.main-footer{
+
+  margin:0px;
+  padding-top:30px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer-social{
+  display: flex;
+  justify-content: space-around;
+}
+
+.info-to-custumers{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+
+  width: 370px;
+}
+
+.footer-copyright{
+  display: flex;
+  flex-direction: column;
+}

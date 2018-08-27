@@ -10,79 +10,89 @@
 </head>
 
 <body>
-  <header>
-    <nav class="main-header">
-      <a class="main-header-logo">
-        <img src="img/logo.svg" width="154" height="64" alt="логотип магазина Глейси по продаже мороженого собственного производства">
-      </a>
-      <ul class="site-navigation">
-        <li class="site-navigation-current">
-          <a>Каталог</a>
-        </li>
-        <li>
-          <a href="shippingpayment.html">Доставка и оплата</a>
-        </li>
-        <li>
-          <a href="aboutus.html">О компании</a>
-        </li>
+  <header class="main-header">
+    <nav class="main-navigation">
+      <div class="left-wrapper">
+        <a class="main-header-logo">
+          <img src="img/logo.svg" width="154" height="64" alt="логотип магазина Глейси по продаже мороженого собственного производства">
+        </a>
+        <ul class="site-navigation">
+          <li class="site-navigation-current">
+            <a>Каталог</a>
+          </li>
+          <li>
+            <a href="shippingpayment.html">Доставка и оплата</a>
+          </li>
+          <li>
+            <a href="aboutus.html">О компании</a>
+          </li>
 
-      </ul>
+        </ul>
+      </div>
       <ul class="user-navigation">
 
-        <li class="search tooltip">
-          <form action="https://echo.htmlacademy.ru" method="post">
-            <label for="search" class="visually-hidden">Поиск</label>
-            <input type="search" name="search" id="search" placeholder="Что ищем?" class="search">
-          </form>
+        <li class="search">
+          <div class="tooltip-search-button">Поиск
+            <div class="tooltip-search-field">
+              <form class="search-window" action="https://echo.htmlacademy.ru" method="post">
+                <label for="search" class="visually-hidden">
+                  <input type="search" name="search" id="search" placeholder="Что ищем?" class="search">
+                </label>
+              </form>
+            </div>
+          </div>
         </li>
 
+        <li class="login-link">
+          <div class="tooltip-login-button">Вход
+            <div class="tooltip-login-field">
+              <form class="login-form" action="https://echo.htmlacademy.ru" method="post">
+                <fieldset class="tooltip tooltip-login">
+                  <legend>Войти на сайт</legend>
+                  <label for="email" class="visually-hidden">Введите вашу электронную почту</label>
+                  <input type="email" name="email" id="email" placeholder="Электронная почта" required>
 
-        <li class="login-link tooltip">
-          <a href="login.html">Вход</a>
-          <form class="login-form" action="https://echo.htmlacademy.ru" method="post">
-            <fieldset class="tooltip tooltip-login">
-              <legend>Войти на сайт</legend>
-              <label for="email" class="visually-hidden">Введите вашу электронную почту</label>
-              <input type="email" name="email" id="email" placeholder="Электронная почта" required>
+                  <label for="password-field" class="visually-hidden">Введите ваш пароль</label>
+                  <input type="password" name="password" id="password-field" placeholder="Пароль" required>
 
-              <label for="password-field" class="visually-hidden">Введите ваш пароль</label>
-              <input type="password" name="password" id="password-field" placeholder="Пароль" required>
+                  <button class="small-button" type="submit">Войти</button>
 
-              <button class="button" type="submit">Войти</button>
-
-              <a class="restore" href="#">Забыли пароль</a>
-              <a class="registration" href="#">Новая регистрация</a>
-            </fieldset>
-          </form>
+                  <a class="restore" href="#">Забыли пароль</a>
+                  <a class="registration" href="#">Новая регистрация</a>
+                </fieldset>
+              </form>
+            </div>
+          </div>
         </li>
 
         <li class="cart tooltip">
-          <a href="#">Корзина</a>
-          <section class="tooltip tooltip-cart">
-            <h2 class="visually-hidden">Корзина</h2>
-            <ul>
-              <li>
-                <button class="delete-item" type="button">Удалить наименование</button>
-                <img src="img/ice-cream-1.jpg" width="33" height="33" alt="Сливочное с апельсиновым джемом и цитрусовой стружкой">
-                <span class="catalog-item-title">Пломбир с апельсиновым джемом</span>
-                <span>1,5 кг х</span>
-                <span class="cart-price">200 руб.</span>
-                <span>300 руб.</span>
-              </li>
+          <div class="tooltip-cart-button">2 товара
+            <section class="tooltip-cart-field">
+              <h2 class="visually-hidden">Корзина</h2>
+              <ul>
+                <li>
+                  <button class="delete-item" type="button">Удалить наименование</button>
+                  <img src="img/ice-cream-1.jpg" width="33" height="33" alt="Сливочное с апельсиновым джемом и цитрусовой стружкой">
+                  <span class="catalog-item-title">Пломбир с апельсиновым джемом</span>
+                  <span>1,5 кг х</span>
+                  <span class="cart-price">200 руб.</span>
+                  <span>300 руб.</span>
+                </li>
 
-              <li>
-                <button class="delete-item" type="button">Удалить наименование</button>
-                <img src="img/ice-cream-3.jpg" width="33" height="33" alt="Клубничный пломбир с присыпкой из белого шоколада">
-                <span class="catalog-item-title">Сливочно-клубничное с присыпкой из белого шоколада</span>
-                <span>1,5 кг х</span>
-                <span class="cart-price">300 руб.</span>
-                <span>450 руб.</span>
-              </li>
+                <li>
+                  <button class="delete-item" type="button">Удалить наименование</button>
+                  <img src="img/ice-cream-3.jpg" width="33" height="33" alt="Клубничный пломбир с присыпкой из белого шоколада">
+                  <span class="catalog-item-title">Сливочно-клубничное с присыпкой из белого шоколада</span>
+                  <span>1,5 кг х</span>
+                  <span class="cart-price">300 руб.</span>
+                  <span>450 руб.</span>
+                </li>
 
-            </ul>
-            <p>Итого: 750 руб.</p>
-            <button class="small-button" type="submit">Оформить заказ</button>
-          </section>
+              </ul>
+              <p>Итого: 750 руб.</p>
+              <button class="small-button" type="submit">Оформить заказ</button>
+            </section>
+          </div>
         </li>
       </ul>
     </nav>
@@ -98,7 +108,6 @@
 
   <main class="main-content">
 
-    <h1 class="page-title">Сливочное мороженое</h1>
     <ul class="breadcrumbs">
       <li>
         <a href="index.html">Главная</a>
@@ -109,62 +118,65 @@
       <li class="breadcrumbs-current">Сливочное</li>
     </ul>
 
-    <form action="https://echo.htmlacademy.ru" method="post" oninput="priceoutput.value=pricecount.value">
+    <h1 class="page-title">Сливочное мороженое</h1>
 
-      <fieldset class="filters">
-        <legend>Сортировка</legend>
-        <label>
-          <select name="sort-option" id="sort-view">
-            <option value="popular">по популярности</option>
-            <option value="from-cheap">сначала недорогие</option>
-            <option value="from-expensive">сначала дорогие</option>
-            <option value="fett">по жирности</option>
-          </select>
-        </label>
-      </fieldset>
+      <form action="https://echo.htmlacademy.ru" method="post" oninput="priceoutput.value=pricecount.value">
+        <div class="wrap-filters">
+        <fieldset class="filters">
+          <legend>Сортировка</legend>
+          <label>
+            <select name="sort-option" id="sort-view">
+              <option value="popular">по популярности</option>
+              <option value="from-cheap">сначала недорогие</option>
+              <option value="from-expensive">сначала дорогие</option>
+              <option value="fett">по жирности</option>
+            </select>
+          </label>
+        </fieldset>
 
-      <fieldset class="price-sort">
-        <legend class="visually-hidden">Выбрать цену в диапазоне</legend>
-        <label for="price-range" class="visually-hidden">
-          <input type="range" id="price-range" name="price-range" min="100" max="800" step="50">
-          <output name="priceoutput">
-          </output>
-        </label>
-      </fieldset>
+        <fieldset class="price-sort">
+          <legend class="visually-hidden">Выбрать цену в диапазоне</legend>
+          <label for="price-range" class="visually-hidden">
+            <input type="range" id="price-range" name="price-range" min="100" max="800" step="50">
+            <output name="priceoutput">
+            </output>
+          </label>
+        </fieldset>
 
-      <fieldset class="sorting">
-        <legend>Жирность</legend>
-        <label for="fat-contain-0">0%
-          <input type="radio" name="fat-choice" id="fat-contain-0" value="0%">
-        </label>
-        <label for="fat-contain-less10">до 10%
-          <input type="radio" name="fat-choice" id="fat-contain-less10" value="до 10%">
-        </label>
-        <label for="fat-contain-less30">до 30%
-          <input type="radio" name="fat-choice" id="fat-contain-less30" value="до 30%">
-        </label>
-        <label for="fat-contain-more30">выше 30%
-          <input type="radio" name="fat-choice" id="fat-contain-more30" value="выше 30%">
-        </label>
-      </fieldset>
+        <fieldset class="sorting">
+          <legend>Жирность</legend>
+          <label for="fat-contain-0">0%
+            <input type="radio" name="fat-choice" id="fat-contain-0" value="0%">
+          </label>
+          <label for="fat-contain-less10">до 10%
+            <input type="radio" name="fat-choice" id="fat-contain-less10" value="до 10%">
+          </label>
+          <label for="fat-contain-less30">до 30%
+            <input type="radio" name="fat-choice" id="fat-contain-less30" value="до 30%">
+          </label>
+          <label for="fat-contain-more30">выше 30%
+            <input type="radio" name="fat-choice" id="fat-contain-more30" value="выше 30%">
+          </label>
+        </fieldset>
 
-      <fieldset class="sorting">
-        <legend>Наполнители</legend>
-        <input type="checkbox" name="chocolate" id="chocolate-filler" checked>
-        <label for="chocolate-filler">шоколадные</label>
-        <input type="checkbox" name="sugar" id="sugar-filler" checked>
-        <label for="sugar-filler">сахарные присыпки</label>
-        <input type="checkbox" name="fruit" id="fruit-filler">
-        <label for="fruit-filler">фрукты</label>
-        <input type="checkbox" name="syrup" id="syrup-filler">
-        <label for="syrup-filler">сиропы</label>
-        <input type="checkbox" name="jam" id="jam-filler">
-        <label for="jam-filler">джемы</label>
-      </fieldset>
+        <fieldset class="sorting">
+          <legend>Наполнители</legend>
+          <input type="checkbox" name="chocolate" id="chocolate-filler" checked>
+          <label for="chocolate-filler">шоколадные</label>
+          <input type="checkbox" name="sugar" id="sugar-filler" checked>
+          <label for="sugar-filler">сахарные присыпки</label>
+          <input type="checkbox" name="fruit" id="fruit-filler">
+          <label for="fruit-filler">фрукты</label>
+          <input type="checkbox" name="syrup" id="syrup-filler">
+          <label for="syrup-filler">сиропы</label>
+          <input type="checkbox" name="jam" id="jam-filler">
+          <label for="jam-filler">джемы</label>
+        </fieldset>
 
-      <button class="button-sort" type="submit">Применить</button>
+        <button class="button-sort" type="submit">Применить</button>
+      </div>
+      </form>
 
-    </form>
     <section class="catalog">
       <h2 class="visually-hidden">Сливочное мороженое</h2>
 
@@ -278,10 +290,9 @@
         </li>
 
       </ul>
-
+<div class="wrapper-pagination">
       <ul class="pagination-list">
         <li class="pagination-item pagination-item-back">
-          <!--мастерская декоративные эл-ты-->
           <a href="#">Назад</a>
         </li>
         <li class="pagination-item pagination-item-current">
@@ -303,6 +314,7 @@
           <a href="#">Вперед</a>
         </li>
       </ul>
+    </div>
     </section>
   </main>
   <footer class="main-footer">

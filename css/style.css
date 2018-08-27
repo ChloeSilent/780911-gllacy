@@ -107,8 +107,8 @@ body {
   background-color: rgb(248, 247, 244);
 }
 /* корзина*/
-
-.cart p {
+.cart p,
+.cart a {
   font-family: 'Roboto', Arial, sans-serif;
   font-size: 14px;
   line-height: 16px;
@@ -117,14 +117,6 @@ body {
   text-decoration: none;
 }
 
-.cart a{
-  font-family: 'Roboto', Arial, sans-serif;
-  font-size: 14px;
-  line-height: 16px;
-  color: #ffffff;
-  font-weight: 500;
-  text-decoration: none;
-}
 
 
 #email::-webkit-input-placeholder, /*не сработали*/
@@ -449,10 +441,17 @@ body {
   background-color: #f9f6f3;
   border: 2px solid #000000;
 }
+/*каталог */
+
+.site-navigation-current{
+  background-color: rgb(208, 112, 88);
+}
+
 
 /* корзина в каталоге*/
 
-.tooltip-cart{
+
+.tooltip-cart-field{
   font-family: 'Roboto', Arial, sans-serif;
   font-size: 13px;
   line-height: 16px;
@@ -460,13 +459,38 @@ body {
   color: rgb(50, 50, 50);
 }
 
-.tooltip-cart p{
+.tooltip-cart-field ul{
+  list-style: none;
+}
+.tooltip-cart-field p{
   font-family: 'Roboto', Arial, sans-serif;
   font-size: 15px;
   line-height: 18px;
   font-weight: 800;
   color: rgb(50, 50, 50);
 }
+
+  .tooltip-cart-button {
+    display: inline-block;
+    position: relative;
+  }
+
+  .tooltip-cart-button .tooltip-cart-field {
+    visibility: hidden;
+    position: absolute;
+    width: 540px;
+    height: 242px;
+    background-color: rgb(248, 247, 244);
+    top: 125%;
+    right: 30px;
+  }
+
+  .tooltip-cart-button:hover .tooltip-cart-field {
+    visibility: visible;
+    opacity: 1;
+  }
+
+/*хлебные крошки*/
 
 .breadcrumbs {
   font-family: 'Roboto', Arial, sans-serif;
@@ -599,7 +623,8 @@ body {
 }
 
 
-/* сеточные стили*/ /* от крупных блоков к мелким*/
+/* сеточные стили от крупных блоков к мелким*/
+/*хедер */
 .main-header{
 min-height:120px;
 margin-bottom: 5px;
@@ -707,12 +732,14 @@ width: 100%;
 
 .newsletter{
   width: 560px;
-  height: 229px;
+  height: 220px;
+  padding:30px;
 }
 
 .news{
   width: 560px;
-  height: 229px;
+  height: 220px;
+  padding:20px;
 }
 
 .adress{
@@ -721,8 +748,10 @@ width: 100%;
   position: relative;
 }
 .adress-part{
+
   width: 302px;
   height: 305px;
+  padding:20px;
   position: absolute;
   top: 64px;
   right:27px;
@@ -743,15 +772,77 @@ width: 100%;
   justify-content: space-around;
 }
 
-.info-to-custumers{
+.navigation-to-custumers{/*не работает, не знаю почему*/
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
 
   width: 370px;
+  height: 60px;
+}
+
+.info-to-custumers-item{
+  width: 150px;
 }
 
 .footer-copyright{
   display: flex;
   flex-direction: column;
+}
+
+
+/* каталог сеточные стили */
+
+.main-content{
+  display: flex;
+  flex-direction: column;
+  margin:0;
+  padding:0;
+  width:100%;
+}
+
+.breadcrumbs{
+display: flex;
+margin-left: 5px ; /*почему-то маргин по факту 50пкс. Не знаю почему*/
+margin-bottom: 15px;
+}
+
+
+.wrap-filters{
+  display: flex;
+
+  width:905px;
+  flex-wrap: wrap;
+
+}
+
+.catalog-list{
+  margin 0;
+  width: 100%;
+  display: flex;
+  flex-wrap: no-wrap;
+}
+
+.catalog-item{
+width: 290px;
+height: 350px;
+position: relative
+}
+
+.catalog-item-price{
+ position: absolute;
+ left:0px;
+ bottom:135px;
+}
+
+.wrapper-pagination{
+  width: 100%;
+  display:row;
+  justify-content:flex-end;
+}
+
+.pagination-list{ /*не перестраивается вправо, не знаю почему*/
+display: flex;
+width:220px;
+height:50px;
 }

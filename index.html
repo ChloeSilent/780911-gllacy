@@ -4,24 +4,24 @@
 <head>
   <meta charset="utf-8">
   <title>Магазин Глейси</title>
-
+  <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&amp;subset=cyrillic" rel="stylesheet">
+  <link href="css/normalize.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
 </head>
 
 <body>
   <header>
-    <!--background-color:#849D8F-->
     <nav class="main-header">
       <a class="main-header-logo">
         <img src="img/logo.svg" width="154" height="64" alt="логотип магазина Глейси по продаже мороженого собственного производства">
       </a>
-      <ul class="site-navigation modal">
+      <ul class="site-navigation">
         <li class="site-navigation-current">
           <a href="catalog.html">Каталог</a>
-          <ul>
+          <ul class="sub-menu">
             <li>
               <a href="catalog.html">Новинки</a>
             </li>
-            <!--мастерская создаем меню-->
             <li>
               <a href="catalog.html">Сливочное</a>
             </li>
@@ -55,7 +55,7 @@
         </li>
 
         <li class="login-link tooltip">
-          <a class="login-link" href="login.html">Вход</a>
+          <a href="login.html">Вход</a>
           <form class="login-form" action="https://echo.htmlacademy.ru" method="post">
             <fieldset class="tooltip tooltip-login">
               <legend>Войти на сайт</legend>
@@ -65,7 +65,7 @@
               <label for="password-field" class="visually-hidden">Введите ваш пароль</label>
               <input type="password" name="password" id="password-field" placeholder="Пароль" required>
 
-              <button class="button" type="submit">Войти</button>
+              <button class="small-button" type="submit">Войти</button>
 
               <a class="restore" href="#">Забыли пароль</a>
               <a class="registration" href="#">Новая регистрация</a>
@@ -75,6 +75,7 @@
 
         <li class="cart tooltip">
           <a href="#">Корзина</a>
+          <p>Пусто</p>
         </li>
 
       </ul>
@@ -97,54 +98,49 @@
       <div class="action-content-1">
         <img src="img/action-content-1.png" width="1045" height="881" alt="Крем-брюле и пломбир с малиновым джемом">
         <p>Крем-брюле и пломбир с малиновым джемом</p>
-        <a class="gallery-button" href="#">Давайте оба</a>
+        <a class="gallery-button" href="#">Давайте оба!</a>
       </div>
       <div class="action-content-2">
         <img src="img/action-content-2.png" width="1065" height="859" alt="Шоколадный пломбир и лимонный сорбет">
         <p>Шоколадный пломбир и лимонный сорбет</p>
-        <a class="gallery-button" href="#">Давайте оба</a>
+        <a class="gallery-button" href="#">Давайте оба!</a>
       </div>
       <div class="action-content-3">
         <img src="img/action-content-3.png" width="1079" height="854" alt="Пломбир с помадкой и клубничный щербет">
         <p>Пломбир с помадкой и клубничный щербет</p>
-        <a class="gallery-button" href="#">Давайте оба</a>
+        <a class="gallery-button" href="#">Давайте оба!</a>
         <!--border-radius: px;-->
       </div>
-        <ul>
-          <li>
-            <button class="switcher-item-1" type="button" aria-label="Слайд 1">Слайд 1</button>
-          </li>
-          <li>
-            <button class="switcher-item-2" type="button" aria-label="Слайд 2">Слайд 2</button>
-          </li>
-          <li>
-            <button class="switcher-item-3" type="button" aria-label="Слайд 3">Слайд 3</button>
-          </li>
-        </ul>
+      <ul class="slide-radio">
+        <li class="slide-radio">
+          <button class="switcher" type="button" aria-label="Слайд 1">Слайд 1</button>
+        </li class="slide-radio">
+        <li>
+          <button class="switcher" type="button" aria-label="Слайд 2">Слайд 2</button>
+        </li>
+        <li class="slide-radio">
+          <button class="switcher" type="button" aria-label="Слайд 3">Слайд 3</button>
+        </li>
+      </ul>
 
     </section>
     <section class="banner">
       <div class="banner-item offer-item-1">
-        <!--float: right; border-radius: px;-->
         <h2 class="banner-item-header">Малинка даром!</h2>
-        <!--display: none;-->
         <p>При покупке 2 кг любого фруктового мороженого, добавим в ваш заказ банку малинового варенья бесплатно.</p>
-        <a class="banner-button-1" href="#">Хочу варенье!</a>
-        <!--border-radius: px;-->
+        <a class="small-button" href="#">Хочу варенье!</a>
       </div>
+
       <div class="banner-item offer-item-2">
-        <!--float: left;border-radius: px;-->
         <h2 class="banner-item-header">Шоколадки даром!</h2>
-        <!--display: none;-->
         <p>При покупке 2 кг пломбира, добавим в ваш заказ упаковку вкуснейшей шоколадной присыпки совершенно бесплатно</p>
-        <a class="banner-button-2" href="#">Хочу шоколадки!</a>
-        <!--border-radius: px;-->
+        <a class="small-button" href="#">Хочу шоколадки!</a>
       </div>
     </section>
     <section class="hit-list">
       <h2 class="visually-hidden">Хиты продаж</h2>
       <!--clear: both;-->
-      <ul>
+      <ul class="catalog-list-hit">
         <li class="catalog-item catalog-item-hit">
           <h3>
             <a href="catalog-item.html">
@@ -228,40 +224,38 @@
 
     <article class="news">
       <h2 class="visually-hidden">Новости</h2>
-      <!--float: left;border-radius: px;-->
       <p>Новое в нашем блоге</p>
       <a class="news-link" href="news.html">
         <p>10 способов сервировки фруктовых щербетов к столу</p>
-
       </a>
     </article>
 
     <section class="newsletter">
       <h2 class="visually-hidden">Новостная рассылка</h2>
-      <!--float: right; border-radius: px;-->
       <p>Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не
         спамить и не слать всякой ненужной ерунды. Честно =)
       </p>
       <form action="https://echo.htmlacademy.ru" method="post">
         <label for="newsletter-email" class="visually-hidden">Введите вашу электронную почту</label>
         <input type="email" name="newsletter-email" id="newsletter-email" placeholder="Электронная почта" required>
-        <button class="button" type="submit" aria-label="Отправить">Отправить</button>
+        <button class="small-button" type="submit" aria-label="Отправить">Отправить</button>
       </form>
     </section>
     <section class="adress">
       <h3 class="visually-hidden">Контактная информация</h3>
 
       <img src="img/map.jpg" width="1200" height="430" alt="карта местонахождения магазина">
-      <p class="small-text">Адрес главного офиса
+      <div class="adress-part" <p class="small-text">Адрес главного офиса
         <br> и офлайн-магазина:</p>
-      <p class="bold-text">ул. Больша Конюшенная
-        <br>19/8, Санкт-Петербург</p>
-      <p class="small-text">Для заказов по телефону:</p>
-      <p class="bold-text">8 812 450-25-25</p>
-      <p class="small-text">(с 10 до 20 ежедневно)</p>
+        <p class="bold-text">ул. Больша Конюшенная
+          <br>19/8, Санкт-Петербург</p>
+        <p class="small-text">Для заказов по телефону:</p>
+        <p class="bold-text">8 812 450-25-25</p>
+        <p class="small-text">(с 10 до 20 ежедневно)</p>
 
-      <div class="feedback-link modal">
-        <a class="feedback-link" href="#">Вход</a>
+        <div class="feedback-link modal">
+          <a class="small-button" href="#">Форма обратной связи</a>
+        </div>
       </div>
     </section>
 
@@ -288,9 +282,7 @@
     <nav class="navigation-to-custumers">
       <ul>
         <li>
-
           <a class="info-to-custumers-item" href="aboutus.html">Для поставщиков</a>
-
         </li>
         <li>
           <a class="info-to-custumers-item" href="aboutus.html">О производстве</a>
@@ -310,26 +302,27 @@
       </span>
     </p>
   </footer>
+  <div class="modal">
+    <p>Мы обязательно вам ответим!</p>
+    <form class="modal-form" action="https://echo.htmlacademy.ru" method="post">
+      <fieldset class="modal modal-feedback">
+        <legend class="visually-hidden">Форма обратной связи</legend>
 
-  <form class="modal-form" action="https://echo.htmlacademy.ru" method="post">
-    <fieldset class="modal modal-feedback">
-      <legend class="visually-hidden">Форма обратной связи</legend>
-      <p>Мы обязательно вам ответим!</p>
-      <label for="callback-name" class="visually-hidden">Введите ваше имя</label>
-      <input type="text" name="callback-name" id="callback-name" placeholder="Как вас зовут?" required>
+        <label for="callback-name" class="visually-hidden">Введите ваше имя</label>
+        <input type="text" name="callback-name" id="callback-name" placeholder="Как вас зовут?" required>
 
-      <label for="callback-mail" class="visually-hidden">Введите вашу электронную почту</label>
-      <input type="email" name="callback-mail" id="callback-mail" placeholder="Ваша почта для ответа" required>
+        <label for="callback-mail" class="visually-hidden">Введите вашу электронную почту</label>
+        <input type="email" name="callback-mail" id="callback-mail" placeholder="Ваша почта для ответа" required>
 
-      <label for="comment-field" class="visually-hidden">Напишите нам что-нибудь</label>
-      <textarea name="comment" id="comment-field" rows="10" placeholder="Напишите что-нибудь..." required> </textarea>
+        <label for="comment-field" class="visually-hidden">Напишите нам что-нибудь</label>
+        <textarea name="comment" id="comment-field" rows="10" placeholder="Напишите что-нибудь..." required> </textarea>
 
-      <button class="button" type="submit" value="Отправить">Отправить</button>
+        <button class="small-button" type="submit" value="Отправить">Отправить</button>
 
-      <button class="modal-close" type="button">Закрыть</button>
-    </fieldset>
-  </form>
-
+        <button class="modal-close" type="button">Закрыть</button>
+      </fieldset>
+    </form>
+  </div>
 </body>
 
 </html>

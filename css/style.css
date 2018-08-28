@@ -817,17 +817,23 @@ margin-bottom: 15px;
 }
 
 .catalog-list{
-  margin 0;
-  width: 100%;
+  margin: 0;
+  width: 1200px;
   display: flex;
-  flex-wrap: no-wrap;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
 
 .catalog-item{
 width: 290px;
 height: 350px;
-position: relative
+position: relative;
+margin-bottom: 20px;
+
 }
+/*.catalog-item:nth-child(4n) {
+  margin-right: 0;
+}*/
 
 .catalog-item-price{
  position: absolute;
@@ -837,11 +843,11 @@ position: relative
 
 .wrapper-pagination{
   width: 100%;
-  display:row;
+  display:flex;
   justify-content:flex-end;
 }
 
-.pagination-list{ /*не перестраивается вправо, не знаю почему*/
+.pagination-list{
 display: flex;
 width:220px;
 height:50px;

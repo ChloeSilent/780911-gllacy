@@ -49,86 +49,87 @@
           </ul>
         </div>
         <div class="right-wrapper">
-        <ul class="user-navigation">
+          <ul class="user-navigation">
 
-          <li class="search">
-            <div class="tooltip-search-button">Поиск
+            <li class="search">
+              <div class="tooltip-search-button">Поиск
 
-              <div class="tooltip-search-field">
-                <form class="search-window" action="https://echo.htmlacademy.ru" method="post">
-                  <label for="search" class="visually-hidden">
-                    <input type="search" name="search" id="search" placeholder="Что ищем?" class="search">
-                  </label>
-                </form>
+                <div class="tooltip-search-field">
+                  <form class="search-window" action="https://echo.htmlacademy.ru" method="post">
+                    <label for="search" class="visually-hidden">
+                      <input type="search" name="search" id="search" placeholder="Что ищем?" class="search">
+                    </label>
+                  </form>
+                </div>
               </div>
-            </div>
-          </li>
+            </li>
 
-          <li class="login-link">
-            <div class="tooltip-login-button">Вход
+            <li class="login-link">
+              <div class="tooltip-login-button">
+                <div class="login-icon">Вход</div>
+                <div class="tooltip-login-field">
+                  <form class="login-form" action="https://echo.htmlacademy.ru" method="post">
+                    <fieldset class="tooltip tooltip-login">
+                      <legend>Войти на сайт</legend>
+                      <label for="email" class="visually-hidden">Введите вашу электронную почту</label>
+                      <input type="email" name="email" id="email" placeholder="Электронная почта" required>
 
-              <div class="tooltip-login-field">
-                <form class="login-form" action="https://echo.htmlacademy.ru" method="post">
-                  <fieldset class="tooltip tooltip-login">
-                    <legend>Войти на сайт</legend>
-                    <label for="email" class="visually-hidden">Введите вашу электронную почту</label>
-                    <input type="email" name="email" id="email" placeholder="Электронная почта" required>
+                      <label for="password-field" class="visually-hidden">Введите ваш пароль</label>
+                      <input type="password" name="password" id="password-field" placeholder="Пароль" required>
 
-                    <label for="password-field" class="visually-hidden">Введите ваш пароль</label>
-                    <input type="password" name="password" id="password-field" placeholder="Пароль" required>
+                      <button class="small-button" type="submit">Войти</button>
 
-                    <button class="small-button" type="submit">Войти</button>
-
-                    <a class="restore" href="#">Забыли пароль</a>
-                    <a class="registration" href="#">Новая регистрация</a>
-                  </fieldset>
-                </form>
+                      <a class="restore" href="#">Забыли пароль</a>
+                      <a class="registration" href="#">Новая регистрация</a>
+                    </fieldset>
+                  </form>
+                </div>
               </div>
-            </div>
-          </li>
+            </li>
 
-          <li class="cart tooltip">
-            <div class="tooltip-cart-button">2 товара
-              <section class="tooltip-cart-field">
-                <h2 class="visually-hidden">Корзина</h2>
+            <li class="cart tooltip">
+              <div class="tooltip-cart-button">
+                  <p class="full-cart">2 товара</p>
+                <section class="tooltip-cart-field">
+                  <h2 class="visually-hidden">Корзина</h2>
 
-                <ul>
-                  <li>
-                    <button class="delete-item" type="button">Удалить наименование</button>
-                    <img src="img/ice-cream-1.jpg" width="33" height="33" alt="Сливочное с апельсиновым джемом и цитрусовой стружкой">
-                    <span class="catalog-item-title">Пломбир с апельсиновым джемом</span>
-                    <span>1,5 кг х</span>
-                    <span class="cart-price">200 руб.</span>
-                    <span>300 руб.</span>
-                  </li>
+                  <ul>
+                    <li>
+                      <button class="delete-item" type="button">Удалить наименование</button>
+                      <img src="img/ice-cream-1.jpg" width="33" height="33" alt="Сливочное с апельсиновым джемом и цитрусовой стружкой">
+                      <span class="catalog-item-title">Пломбир с апельсиновым джемом</span>
+                      <span>1,5 кг х</span>
+                      <span class="cart-price">200 руб.</span>
+                      <span>300 руб.</span>
+                    </li>
 
-                  <li>
-                    <button class="delete-item" type="button">Удалить наименование</button>
-                    <img src="img/ice-cream-3.jpg" width="33" height="33" alt="Клубничный пломбир с присыпкой из белого шоколада">
-                    <span class="catalog-item-title">Сливочно-клубничное с присыпкой из белого шоколада</span>
-                    <span>1,5 кг х</span>
-                    <span class="cart-price">300 руб.</span>
-                    <span>450 руб.</span>
-                  </li>
+                    <li>
+                      <button class="delete-item" type="button">Удалить наименование</button>
+                      <img src="img/ice-cream-3.jpg" width="33" height="33" alt="Клубничный пломбир с присыпкой из белого шоколада">
+                      <span class="catalog-item-title">Сливочно-клубничное с присыпкой из белого шоколада</span>
+                      <span>1,5 кг х</span>
+                      <span class="cart-price">300 руб.</span>
+                      <span>450 руб.</span>
+                    </li>
 
-                </ul>
-                <p>Итого: 750 руб.</p>
-                <button class="small-button" type="submit">Оформить заказ</button>
-              </section>
-            </div>
-          </li>
-        </ul>
-        <div class="store-info">
-          <h2 class="visually-hidden">Как с нами связаться:</h2>
-          <p class="openhours">с 10 до 20 ежедневно</p>
-          <p class="telefon">8 812 450 25 25</p>
+                  </ul>
+                  <p>Итого: 750 руб.</p>
+                  <button class="small-button" type="submit">Оформить заказ</button>
+                </section>
+              </div>
+            </li>
+          </ul>
+          <div class="store-info">
+            <h2 class="visually-hidden">Как с нами связаться:</h2>
+            <p class="openhours">с 10 до 20 ежедневно</p>
+            <p class="telefon">8 812 450 25 25</p>
+          </div>
         </div>
       </div>
-    </div>
     </header>
 
     <main class="main-content">
-      <div class="container">
+      <div class="container-catalog ">
         <ul class="breadcrumbs">
           <li>
             <a href="index.html"><span class="underline">Главная</span></a>
@@ -167,34 +168,37 @@
 
             <fieldset class="sorting">
               <legend>Жирность:</legend>
-              <label for="fat-contain-0">0%
+              <div class="wrapper-sorting">
+
                 <input type="radio" name="fat-choice" id="fat-contain-0" value="0%">
-              </label>
-              <label for="fat-contain-less10">до 10%
+                <label for="fat-contain-0">0%</label>
+
                 <input type="radio" name="fat-choice" id="fat-contain-less10" value="до 10%">
-              </label>
-              <label for="fat-contain-less30">до 30%
+                <label for="fat-contain-less10">до 10%</label>
+
                 <input type="radio" name="fat-choice" id="fat-contain-less30" value="до 30%">
-              </label>
-              <label for="fat-contain-more30">выше 30%
+                <label for="fat-contain-less30">до 30%</label>
+
                 <input type="radio" name="fat-choice" id="fat-contain-more30" value="выше 30%">
-              </label>
+                <label for="fat-contain-more30">выше 30%</label>
+              </div>
             </fieldset>
 
             <fieldset class="sorting">
               <legend>Наполнители</legend>
-              <input type="checkbox" name="chocolate" id="chocolate-filler" checked>
-              <label for="chocolate-filler">шоколадные</label>
-              <input type="checkbox" name="sugar" id="sugar-filler" checked>
-              <label for="sugar-filler">сахарные присыпки</label>
-              <input type="checkbox" name="fruit" id="fruit-filler">
-              <label for="fruit-filler">фрукты</label>
-              <input type="checkbox" name="syrup" id="syrup-filler">
-              <label for="syrup-filler">сиропы</label>
-              <input type="checkbox" name="jam" id="jam-filler">
-              <label for="jam-filler">джемы</label>
+              <div class="wrapper-sorting">
+                <input type="checkbox" name="chocolate" id="chocolate-filler" checked>
+                <label for="chocolate-filler">шоколадные</label>
+                <input type="checkbox" name="sugar" id="sugar-filler" checked>
+                <label for="sugar-filler">сахарные присыпки</label>
+                <input type="checkbox" name="fruit" id="fruit-filler">
+                <label for="fruit-filler">фрукты</label>
+                <input type="checkbox" name="syrup" id="syrup-filler">
+                <label for="syrup-filler">сиропы</label>
+                <input type="checkbox" name="jam" id="jam-filler">
+                <label for="jam-filler">джемы</label>
             </fieldset>
-
+            </div>
             <button class="button-sort" type="submit">Применить</button>
           </div>
         </form>

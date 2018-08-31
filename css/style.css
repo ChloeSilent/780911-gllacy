@@ -201,10 +201,48 @@ body {
 }
 
 /*вход*/
+.login-icon{
+  font-family: 'Roboto', Arial, sans-serif;
+  font-size: 14px;
+  line-height: 16px;
+  color: rgb(255, 255, 255);
+  font-weight: 500;
+
+
+}
+
+.login-icon:hover{
+  background-color: rgb(248, 247, 244);
+  color: rgb(50, 50, 50);
+  font-family: 'Roboto', Arial, sans-serif;
+  font-size: 14px;
+  line-height: 16px;
+
+}
 .tooltip-login-button {
   display: inline-block;
   position: relative;
+
+  background-color:rgba(255, 255, 255, 0.2);
+
 }
+
+.login-icon::before {
+  content: "";
+
+  position: absolute;
+
+  width: 21px;
+  height: 19px;
+
+  right:5px;
+  background-image: url("../img/login.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+
+
+}
+
 
 .tooltip-login-field{
  padding:20px;
@@ -268,6 +306,47 @@ body {
   color: #ffffff;
   font-weight: 500;
   text-decoration: none;
+}
+
+li.cart{
+  position: relative;
+  background-color: rgba(255, 255, 255, 0.2);
+}
+li.cart:hover{
+  background-color: rgb(248, 247, 244);
+  color: rgb(50, 50, 50);
+}
+
+.cart p::before{
+  content: "";
+
+  position: absolute;
+
+  width: 21px;
+  height: 19px;
+
+  right:5px;
+  background-image: url("../img/cart.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+
+
+}
+
+ .cart p.full-cart::before{
+  content: "";
+
+  position: absolute;
+
+  width: 21px;
+  height: 19px;
+
+  right:5px;
+  background-image: url("../img/cart.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  background-color: #e84d37;
+
 }
 
 /*часы работы магазина и телефон*/
@@ -351,7 +430,7 @@ body {
   font-weight: bold;
   font-size: 32px;
   line-height: 44px;
-
+  text-decoration: none;
   color: rgb(254, 254, 254);
   text-align: center;
   vertical-align: middle;
@@ -363,10 +442,12 @@ body {
 .gallery-button:hover,
 .gallery-button:focus {
   box-shadow: 0px 2px 2px 0px rgba(172, 16, 0, 0.004);
+
 }
 
 .gallery-button:active {
   box-shadow: inset 0px 2px 2px 0px rgba(148, 39, 24, 0.004);
+
 }
 
 .slide-radio {
@@ -459,6 +540,18 @@ body {
 .catalog-list-hit,.about-us {
   list-style: none;
 }
+
+li.hit{
+ position: relative;
+}
+
+li.hit:before{
+content: url("../img/hit.svg");
+  float: left;
+  position: absolute;
+  left:-10px;
+  background-color: #ffffff;
+}
 /*вафля блок */
 .about-us-container{
   font-family: 'Roboto', Arial, sans-serif;
@@ -531,14 +624,25 @@ body {
   margin-right: 25px;
   border-radius: 15px;
 }
-
-.news a {
-  font-family: "Roboto Regular", Arial, sans-serif;
-  font-size: 24px;
-  line-height: 30px;
+.news p:nth-child(2) {
+  font-family: 'Roboto', Arial, sans-serif;
+  font-size: 16px;
+  line-height: 22px;
   font-weight: bold;
   color: #323232;
+
 }
+a.news-link {
+  font-family: 'Roboto', Arial, sans-serif;
+  font-size: 24px;
+  line-height: 30px;
+  font-weight: 500;
+  color: #323232;
+  /*text-decoration:none;
+  border-bottom:1px solid rgba(255,255,255, 0.2);*/
+}
+
+
 /*новостная рассылка*/
 
 .newsletter {
@@ -553,13 +657,12 @@ body {
   border-image-repeat: repeat repeat;
   border: 10px solid rgba(0, 0, 0, 0.4);*/
   border-radius: 15px;
-}
 
-.newsletter{
   width: 560px;
   height: 220px;
   padding:20px;
 }
+
 
 /*адрес магазина*/
 
@@ -838,7 +941,11 @@ body {
   visibility: visible;
   opacity: 1;
 }
+/*основной контент каталога*/
+.container-catalog{
+ padding: 0 0;
 
+}
 /*хлебные крошки*/
 
 .breadcrumbs {
@@ -872,7 +979,14 @@ body {
 .breadcrumbs li:nth-child(3) a:before{
   content: ">>";
 }
+.page-title{
+  font-family: 'Roboto', Arial, sans-serif;
+  font-size: 35px;
+  line-height: 41px;
+  font-weight: bold;
+  color: rgb(255, 255, 255);
 
+}
 /*фильтры Сортировка*/
 .filters,
 .price-sort,
@@ -887,6 +1001,11 @@ body {
   font-weight: 500;
   color: rgb(255, 255, 255);
 }
+.wrapper-sorting{
+  background-color: rgba(255, 255, 255, 0.2);
+  padding: 5px 15px;
+  border-radius: 20px;
+}
 
 .button-sort{
   font-family: 'Roboto', Arial, sans-serif;
@@ -899,6 +1018,8 @@ body {
 
   border: 2px solid  rgb(255, 255, 255);
   background-color: rgba(255, 255, 255, 0.188);
+  border-radius: 20px;
+  padding: 5px 30px;
 }
 
 .button-sort:hover{
@@ -915,6 +1036,8 @@ body {
 
 .catalog-list {
   list-style: none;
+  margin:0 0;
+  padding:0 0;
 }
 
 .catalog-item {

@@ -1220,7 +1220,7 @@ button.small-button.newsletter-button{
   background-color: #fdfefe;
   width: 302px;
   height: 305px;
-  padding:20px;
+  padding:0px;
   position: absolute;
   top: 64px;
   right:27px;
@@ -1233,12 +1233,32 @@ button.small-button.newsletter-button{
   font-size: 14px;
   line-height: 20px;
   font-weight: 400;
+  /* background-color: royalblue; */
 }
 
 .bold-text{
   font-size: 18px;
   line-height: 24px;
   font-weight: bold;
+  /* background-color: royalblue; */
+}
+.adress-part p:first-child{
+  margin: 30px 20px 5px 25px;
+}
+
+.adress-part p:nth-child(2){
+  margin: 5px 20px 10px 25px;
+}
+
+.adress-part p:nth-child(3){
+  margin: 10px 20px 10px 25px;
+}
+.adress-part p:nth-child(4){
+  margin: 10px 20px 10px 25px;
+}
+
+.adress-part p:nth-child(5){
+  margin: 10px 20px 25px 25px;
 }
 
 .feedback-link a{

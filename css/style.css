@@ -76,7 +76,7 @@ input[type="radio"].visually-hidden {
   display:flex;
   flex-wrap:wrap;
   justify-content:space-between;
-  background-color: #d84732;
+  /* background-color: #d84732; */
 }
 
 
@@ -1184,7 +1184,7 @@ a.news-link {
   padding: 0 2.2%;
   display: flex;
   justify-content: stretch;
-  background-color: palevioletred;
+  /* background-color: palevioletred; */
 }
 
 
@@ -1192,7 +1192,7 @@ a.news-link {
 .footer-social ul{
  list-style:none;
  display: flex;
- background-color: royalblue;
+ /* background-color: royalblue; */
 }
 
 .social-button{
@@ -1439,14 +1439,9 @@ a.news-link {
 } */
 
 .site-wrapper-catalog{
-
   margin: 0 auto;
-
-
   background-color: #849d8f;
-  align-items: center;
-
-
+  /* align-items: center; */
 }
 
 .container-catalog{

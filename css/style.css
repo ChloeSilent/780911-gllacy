@@ -41,10 +41,10 @@ input[type="radio"].visually-hidden {
   /* min-width: 900px;
   max-width: 1200px; */
   margin: 0 auto;
-  display: flex;
-  flex-direction: column;
+  /* display: flex;
+  flex-direction: column; */
   background-color: #849d8f;
-  align-items: stretch;
+  /* align-items: stretch; */
 
   background-image: url("../img/action-content-1.png");
   background-repeat: no-repeat;
@@ -72,14 +72,12 @@ input[type="radio"].visually-hidden {
 .main-header{
   min-width: 900px;
   max-width: 1200px;
-  margin:0 auto;
-  /* padding: 0 20px 0 27px; */
-  padding: 0 2.2%;
+
   display:flex;
   flex-wrap:wrap;
   justify-content:space-between;
+  background-color: #d84732;
 }
-
 
 
 .left-wrapper{
@@ -372,8 +370,8 @@ background-image: url("../img/magnifier-hover.svg");
 
 
  .tooltip-login-field {
-  display: none;
-
+  /* display: none; */
+  display: block;
   position: absolute;
  /* min-width: 277px;*/
   /*min-height: 214px;*/
@@ -382,14 +380,19 @@ background-image: url("../img/magnifier-hover.svg");
   right: 100%;
   padding:20px;
   width:277px;
+  box-sizing: border-box;
   border-radius:5px;
   /* background-color: palevioletred; */
 }
 
+fieldset.tooltip{
+  border: none;
+}
 
 .tooltip-login-button:hover .tooltip-login-field,
 .tooltip-login-button:active .tooltip-login-field {
   display: block;
+
 }
 
 .tooltip-login-button:hover{
@@ -1438,8 +1441,8 @@ a.news-link {
 .site-wrapper-catalog{
 
   margin: 0 auto;
-  display: flex;
-  flex-direction: column;
+
+
   background-color: #849d8f;
   align-items: center;
 

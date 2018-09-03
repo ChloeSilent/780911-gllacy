@@ -9,120 +9,124 @@
   <link href="css/style.css" rel="stylesheet">
 </head>
 
-<body>
-  <div class="wrapper">
+<body class="body-catalog">
+  <div class="site-wrapper-catalog">
     <header class="main-header">
-      <div class="container container-header">
 
-        <div class="left-wrapper">
-          <a class="main-header-logo">
-            <img src="img/logo.svg" width="154" height="64" alt="логотип магазина Глейси по продаже мороженого собственного производства">
-          </a>
-          <ul class="site-navigation">
-            <li class="site-navigation-current">
-              <a><span class="underline">Каталог</span></a>
-              <ul class="sub-menu">
-                <li>
-                  <a href="catalog.html">Новинки</a>
-                </li>
-                <li>
-                  <a href="catalog.html" class="current">Сливочное</a>
-                </li>
-                <li>
-                  <a href="catalog.html">Щербеты</a>
-                </li>
-                <li>
-                  <a href="catalog.html">Фруктовый лед</a>
-                </li>
-                <li>
-                  <a href="catalog.html">Мелорин</a>
-                </li>
-              </ul>
-            </li>
-            <li>
-              <a href="shippingpayment.html"><span class="underline">Доставка и оплата</span></a>
-            </li>
-            <li>
-              <a href="aboutus.html"><span class="underline">О компании</span></a>
-            </li>
 
-          </ul>
-        </div>
-        <div class="right-wrapper">
-          <ul class="user-navigation">
+      <div class="left-wrapper">
+        <a class="main-header-logo">
+          <img src="img/logo.svg" width="154" height="64" alt="логотип магазина Глейси по продаже мороженого собственного производства">
+        </a>
 
-            <li class="search">
-              <div class="tooltip-search-button">Поиск
+        <ul class="site-navigation">
+          <li>
+            <a href="catalog.html"><span class="underline">Каталог</span></a>
+            <ul class="sub-menu">
+              <li>
+                <a href="catalog.html"><span>Новинки</span></a>
+              </li>
+              <li>
+                <a href="catalog.html">Сливочное</a>
+              </li>
+              <li>
+                <a href="catalog.html">Щербеты</a>
+              </li>
+              <li>
+                <a href="catalog.html">Фруктовый лед</a>
+              </li>
+              <li>
+                <a href="catalog.html">Мелорин</a>
+              </li>
+            </ul>
 
-                <div class="tooltip-search-field">
-                  <form class="search-window" action="https://echo.htmlacademy.ru" method="post">
-                    <label for="search" class="visually-hidden">
-                      <input type="search" name="search" id="search" placeholder="Что ищем?" class="search">
-                    </label>
-                  </form>
-                </div>
+          </li>
+          <li>
+            <a href="shippingpayment.html"><span class="underline">Доставка и оплата</span></a>
+          </li>
+          <li>
+            <a href="aboutus.html"><span class="underline">О компании</span></a>
+          </li>
+
+        </ul>
+      </div>
+      <div class="right-wrapper">
+        <ul class="user-navigation">
+
+          <li class="search">
+            <div class="tooltip-search-button">
+              <div class="tooltip-search-field">
+                <form class="search-window" action="https://echo.htmlacademy.ru" method="post">
+                  <label for="search" class="visually-hidden"> Поиск</label>
+                  <input type="search" name="search" id="search" placeholder="Что ищем?" class="search">
+                </form>
               </div>
-            </li>
+            </div>
+          </li>
 
-            <li class="login-link">
-              <div class="tooltip-login-button">
-                <div class="login-icon">Вход</div>
-                <div class="tooltip-login-field">
-                  <form class="login-form" action="https://echo.htmlacademy.ru" method="post">
-                    <fieldset class="tooltip tooltip-login">
-                      <legend>Войти на сайт</legend>
-                      <label for="email" class="visually-hidden">Введите вашу электронную почту</label>
-                      <input type="email" name="email" id="email" placeholder="Электронная почта" required>
-                      <label for="password-field" class="visually-hidden">Введите ваш пароль</label>
-                      <input type="password" name="password" id="password-field" placeholder="Пароль" required>
-                      <button class="small-button" type="submit">Войти</button>
+          <li class="login-link">
+            <div class="tooltip-login-button">
+              Вход
+              <div class="tooltip-login-field">
+                <form class="login-form" action="https://echo.htmlacademy.ru" method="post">
+                  <fieldset class="tooltip tooltip-login">
+                    <legend class="visually-hidden">Войти на сайт</legend>
+                    <label for="email" class="visually-hidden">Введите вашу электронную почту</label>
+                    <input type="email" name="email" id="email" placeholder="Электронная почта" required>
+
+                    <label for="password-field" class="visually-hidden">Введите ваш пароль</label>
+                    <input type="password" name="password" id="password-field" placeholder="Пароль" required>
+
+                    <button class="small-button" type="submit">Войти</button>
+                    <div class="wrapper-link">
                       <a class="restore" href="#">Забыли пароль</a>
                       <a class="registration" href="#">Новая регистрация</a>
-                    </fieldset>
-                  </form>
-                </div>
+                    </div>
+                  </fieldset>
+                </form>
               </div>
-            </li>
+            </div>
+          </li>
 
-            <li class="cart tooltip">
-              <div class="tooltip-cart-button">
-                  <p class="full-cart">2 товара</p>
-                <section class="tooltip-cart-field">
-                  <h2 class="visually-hidden">Корзина</h2>
+          <li class="cart tooltip">
 
-                  <ul>
-                    <li>
-                      <button class="delete-item" type="button">Удалить наименование</button>
-                      <img src="img/ice-cream-1.jpg" width="33" height="33" alt="Сливочное с апельсиновым джемом и цитрусовой стружкой">
-                      <span class="catalog-item-title">Пломбир с апельсиновым джемом</span>
-                      <span>1,5 кг х</span>
-                      <span class="cart-price">200 руб.</span>
-                      <span>300 руб.</span>
-                    </li>
+            <div class="tooltip-cart-button full">2 товара
+              <section class="tooltip-cart-field">
+                <h2 class="visually-hidden">Корзина</h2>
 
-                    <li>
-                      <button class="delete-item" type="button">Удалить наименование</button>
-                      <img src="img/ice-cream-3.jpg" width="33" height="33" alt="Клубничный пломбир с присыпкой из белого шоколада">
-                      <span class="catalog-item-title">Сливочно-клубничное с присыпкой из белого шоколада</span>
-                      <span>1,5 кг х</span>
-                      <span class="cart-price">300 руб.</span>
-                      <span>450 руб.</span>
-                    </li>
+                <ul>
+                  <li>
+                    <button class="delete-item" type="button">Удалить наименование</button>
+                    <img src="img/ice-cream-1.jpg" width="33" height="33" alt="Сливочное с апельсиновым джемом и цитрусовой стружкой">
+                    <span class="catalog-item-title">Пломбир с апельсиновым джемом</span>
+                    <span>1,5 кг х</span>
+                    <span class="cart-price">200 руб.</span>
+                    <span>300 руб.</span>
+                  </li>
 
-                  </ul>
-                  <p>Итого: 750 руб.</p>
-                  <button class="small-button" type="submit">Оформить заказ</button>
-                </section>
-              </div>
-            </li>
-          </ul>
-          <div class="store-info">
-            <h2 class="visually-hidden">Как с нами связаться:</h2>
-            <p class="openhours">с 10 до 20 ежедневно</p>
-            <p class="telefon">8 812 450 25 25</p>
-          </div>
+                  <li>
+                    <button class="delete-item" type="button">Удалить наименование</button>
+                    <img src="img/ice-cream-3.jpg" width="33" height="33" alt="Клубничный пломбир с присыпкой из белого шоколада">
+                    <span class="catalog-item-title">Сливочно-клубничное с присыпкой из белого шоколада</span>
+                    <span>1,5 кг х</span>
+                    <span class="cart-price">300 руб.</span>
+                    <span>450 руб.</span>
+                  </li>
+
+                </ul>
+                <p>Итого: 750 руб.</p>
+                <button class="small-button" type="submit">Оформить заказ</button>
+              </section>
+            </div>
+          </li>
+        </ul>
+        <div class="store-info">
+          <h2 class="visually-hidden">Как с нами связаться:</h2>
+          <p class="openhours">с 10 до 20 ежедневно</p>
+          <p class="telefon">8 812 450 25 25</p>
         </div>
       </div>
+
     </header>
 
     <main class="main-content">
@@ -379,7 +383,8 @@
         <p class="footer-copyright">
           <img src="img/logo-htmlacademy.svg" width="108" height="39" alt="логотип HTML Academy">
           <span>Сделано в
-            <a class="html-academy-button" href="https://htmlacademy.ru"><span class="underline">HTML Academy</span></a> © 2017
+            <a class="html-academy-button" href="https://htmlacademy.ru"><span class="underline">HTML Academy</span></a>
+            © 2017
           </span>
         </p>
       </div>

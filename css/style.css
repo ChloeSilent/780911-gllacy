@@ -1,3 +1,6 @@
+html { box-sizing: border-box; }
+*, *::before, *::after { box-sizing: inherit; }
+
 body {
   margin: 0;
   padding: 0;
@@ -370,24 +373,31 @@ background-image: url("../img/magnifier-hover.svg");
 
 
  .tooltip-login-field {
-  /* display: none; */
-  display: block;
+  display: none;
+
   position: absolute;
  /* min-width: 277px;*/
   /*min-height: 214px;*/
   background-color: rgb(248, 247, 244);
   top: 125%;
   right: 100%;
-  padding:20px;
-  width:277px;
-  box-sizing: border-box;
+  padding:0;
+  margin:0;
   border-radius:5px;
   /* background-color: palevioletred; */
 }
 
 fieldset.tooltip{
   border: none;
+  margin:0;
+  padding:20px;
+  width:280px;
+  /* background-color: #8996a6; */
+  width:280px;
+  box-sizing: border-box;
+
 }
+
 
 .tooltip-login-button:hover .tooltip-login-field,
 .tooltip-login-button:active .tooltip-login-field {
@@ -432,6 +442,8 @@ fieldset .login-form{
   line-height: 24px;
   color: rgb(153, 153, 153);
   font-weight: 400;
+  margin-bottom: 20px;
+  padding: 15px;
 }
 
 
@@ -443,8 +455,30 @@ fieldset .login-form{
   background-color: ffffff;
   border: 1px solid rgb(211, 211, 210);
 } */
+.button-links{
+  display: flex;
+  flex-wrap: nowrap;
+}
+
+.wrapper-link{
+  display: flex;
+  flex-direction: column;
+  /* background-color: #8c0920; */
+  flex-wrap: nowrap;
+
+}
+
+button.small-button.enter{
+  padding-left:25px;
+  padding-right:25px;
+  border-radius: 15px;
+
+  margin-right: 20px;
+}
 
 .wrapper-link a{
+  /* display: inline-block; */
+  /* white-space: nowrap; */
   font-family: 'Roboto', Arial, sans-serif;
   font-size: 13px;
   line-height: 24px;
@@ -452,6 +486,8 @@ fieldset .login-form{
   font-weight: 400;
   text-decoration: none;
   border-bottom:1px solid rgba(50, 50, 50, 0.302);
+
+
 }
 
 /* .wrapper-link a:hover,
@@ -1068,10 +1104,11 @@ li.hit{
   background-repeat: no-repeat;
   background-size:cover;
 
-  width: 560px;
-  height: 220px;
+  width: 48.8%;
+  min-height: 220px;
+  border-radius: 15px;
   padding:0px;
-  margin-right: 25px;
+
   border-radius: 15px;
 }
 
@@ -1094,46 +1131,73 @@ li.hit{
 
 }
 a.news-link {
-  display:block;
+  /* display:block; */
   font-family: 'Roboto', Arial, sans-serif;
   font-size: 24px;
   line-height: 30px;
   font-weight: 500;
   color: #323232;
 
-  width: 320px;
+  /* width: 320px; */
   padding: 5px 5px 10px 20px;
-  margin:0;
+  /* margin:0; */
   text-decoration:none;
-  border-bottom:1px solid rgba(255,255,255, 0.2); /*не включается плдчеркивание. Не знаю почему*/
+  background-color:rgba(255, 255, 255, 0.8) ;
+  border-bottom:1px solid rgba(255,255,255, 0.2);
 }
 
 /*новостная рассылка*/
 
 .newsletter {
+  width: 48.8%;
+  min-height: 220px;
+  border-radius: 30px;
+  padding:5px;
+  box-sizing: border-box;
+
+  background-image: url("../img/newsletter-stripped-background.svg");
+  /* background-clip:border-box;
+  background-size: cover;
+  border-image-slice:5; */
+  /* border-image-repeat: repeat repeat; */
+}
+
+.white-wrapper{
+  background-color: #f8f7f4;
+  border-radius: 30px;
+
   font-family: 'Roboto', Arial, sans-serif;
   font-weight: 400;
   font-size: 16px;
   line-height: 22px;
-  color: #323232;
-
-
-  border: 5px solid rgba(0, 0, 0, 0.4);
-  background-color: #f8f7f4;
-  border-image-source: url("../img/newsletter-stripped-background.svg");
-  background-clip:border-box;
-  background-size: cover;
-  border-image-slice:5;
-  /* border-image-repeat: repeat repeat; */
-  border-radius: 30px;
-
-  width: 560px;
-  height: 220px;
-  padding:20px;
+  padding: 20px;
+  color: rgb(90, 90, 90);
+}
+.newslwtter-form{
+  display: flex;
+}
+button.small-button.newsletter-button{
+  padding:15px;
+}
+.newslwtter-form input{
+  font-family: 'Roboto', Arial, sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  color: rgb(153, 153, 153);
+  font-weight: 400;
+  margin-bottom: 16px;
+  margin-right:10px;
+  padding: 10px 15px;
   box-sizing: border-box;
+  flex-grow:1;
+  border: 1px solid rgb(211, 211, 210);
+  border-radius: 5px;
 }
 
-
+.newsletter p{
+  margin:0;
+  padding:20px;
+}
 /*адрес магазина*/
 
 .adress{
@@ -1209,10 +1273,19 @@ a.news-link {
   /*background-color:#e6ebe9;*/
 }
 
+.social-button:hover,
+.social-button:activ{
+  border: 3px solid rgba(255, 255, 255, 0.702);
+}
+
+
+
 .Twitter{
   background-image: url("../img/twitter.svg");
   background-size:cover;
-  background-origin: border-box;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-origin: padding-box;
 
 }
 

@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8">
   <title>Магазин Глейси</title>
-  за <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&amp;subset=cyrillic" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&amp;subset=cyrillic" rel="stylesheet">
   <link href="css/normalize.css" rel="stylesheet">
   <link href="css/style.css" rel="stylesheet">
 </head>
@@ -27,7 +27,7 @@
             <a href="catalog.html"><span class="underline">Каталог</span></a>
             <ul class="sub-menu">
               <li>
-                <a href="catalog.html"><span >Новинки</span></a>
+                <a href="catalog.html"><span>Новинки</span></a>
               </li>
               <li>
                 <a href="catalog.html">Сливочное</a>
@@ -75,17 +75,21 @@
               <div class="tooltip-login-field">
                 <form class="login-form" action="https://echo.htmlacademy.ru" method="post">
                   <fieldset class="tooltip tooltip-login">
+
                     <legend class="visually-hidden">Войти на сайт</legend>
+
                     <label for="email" class="visually-hidden">Введите вашу электронную почту</label>
                     <input type="email" name="email" id="email" placeholder="Электронная почта" required>
 
                     <label for="password-field" class="visually-hidden">Введите ваш пароль</label>
                     <input type="password" name="password" id="password-field" placeholder="Пароль" required>
+                    <div class="button-links">
+                      <button class="small-button enter" type="submit">Войти</button>
+                      <div class="wrapper-link">
 
-                    <button class="small-button" type="submit">Войти</button>
-                    <div class="wrapper-link">
-                      <a class="restore" href="#">Забыли пароль</a>
-                      <a class="registration" href="#">Новая регистрация</a>
+                        <a class="restore" href="#">Забыли пароль</a>
+                        <a class="registration" href="#">Новая регистрация</a>
+                      </div>
                     </div>
                   </fieldset>
                 </form>
@@ -96,9 +100,9 @@
           <li class="cart tooltip">
 
             <div class="tooltip-cart-button">Пусто
-                <section class="tooltip-cart-field">
-                    <h2 class="visually-hidden">Корзина</h2>
-                </section>
+              <section class="tooltip-cart-field">
+                <h2 class="visually-hidden">Корзина</h2>
+              </section>
             </div>
           </li>
 
@@ -225,15 +229,17 @@
           </article>
 
           <section class="newsletter">
+            <div class="white-wrapper">
             <h2 class="visually-hidden">Новостная рассылка</h2>
             <p>Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит.
               Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)
             </p>
-            <form action="https://echo.htmlacademy.ru" method="post">
+            <form action="https://echo.htmlacademy.ru" method="post" class="newslwtter-form">
               <label for="newsletter-email" class="visually-hidden">Введите вашу электронную почту</label>
               <input type="email" name="newsletter-email" id="newsletter-email" placeholder="Электронная почта" required>
-              <button class="small-button" type="submit" aria-label="Отправить">Отправить</button>
+              <button class="small-button newsletter-button" type="submit" aria-label="Отправить">Отправить</button>
             </form>
+          </div>
           </section>
         </div>
 
@@ -258,46 +264,46 @@
     <footer class="main-footer container">
 
 
-        <div class="footer-social">
-          <ul>
-            <li>
-              <a class="social-button Twitter" href="#">Twitter</a>
-            </li>
-            <li>
-              <a class=" social-button Instagram" href="#">Instagram</a>
-            </li>
-            <li>
-              <a class="social-button Facebook" href="#">Facebook</a>
-            </li>
-            <li>
-              <a class="social-button Vkontakte" href="#">Vkontakte</a>
-            </li>
-          </ul>
-        </div>
+      <div class="footer-social">
+        <ul>
+          <li>
+            <a class="social-button Twitter" href="#">Twitter</a>
+          </li>
+          <li>
+            <a class=" social-button Instagram" href="#">Instagram</a>
+          </li>
+          <li>
+            <a class="social-button Facebook" href="#">Facebook</a>
+          </li>
+          <li>
+            <a class="social-button Vkontakte" href="#">Vkontakte</a>
+          </li>
+        </ul>
+      </div>
 
-        <nav class="navigation-to-custumers">
-          <ul>
-            <li>
-              <a class="info-to-custumers-item like" href="aboutus.html"><span class="underline">Для поставщиков</span></a>
-            </li>
-            <li>
-              <a class="info-to-custumers-item" href="aboutus.html"><span class="underline">Наши документы</span></a>
-            </li>
-            <li>
-              <a class="info-to-custumers-item" href="aboutus.html"><span class="underline">О производстве</span></a>
-            </li>
-            <li>
-              <a class="info-to-custumers-item" href="aboutus.html"><span class="underline">Экологические стандарты</span></a>
-            </li>
-          </ul>
-        </nav>
-        <p class="footer-copyright">
-          <img src="img/logo-htmlacademy.svg" width="108" height="39" alt="логотип HTML Academy">
-          <span>Сделано в
-            <a class="html-academy-button" href="https://htmlacademy.ru/intensive/htmlcss"><span class="underline">HTML Academy</span></a>
-            © 2017
-          </span>
-        </p>
+      <nav class="navigation-to-custumers">
+        <ul>
+          <li>
+            <a class="info-to-custumers-item like" href="aboutus.html"><span class="underline">Для поставщиков</span></a>
+          </li>
+          <li>
+            <a class="info-to-custumers-item" href="aboutus.html"><span class="underline">Наши документы</span></a>
+          </li>
+          <li>
+            <a class="info-to-custumers-item" href="aboutus.html"><span class="underline">О производстве</span></a>
+          </li>
+          <li>
+            <a class="info-to-custumers-item" href="aboutus.html"><span class="underline">Экологические стандарты</span></a>
+          </li>
+        </ul>
+      </nav>
+      <p class="footer-copyright">
+        <img src="img/logo-htmlacademy.svg" width="108" height="39" alt="логотип HTML Academy">
+        <span>Сделано в
+          <a class="html-academy-button" href="https://htmlacademy.ru/intensive/htmlcss"><span class="underline">HTML Academy</span></a>
+          © 2017
+        </span>
+      </p>
 
     </footer>
     <div class="modal">
@@ -322,7 +328,7 @@
       </form>
     </div>
   </div>
-<!-- </div> -->
+  <!-- </div> -->
 </body>
 
 </html>

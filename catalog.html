@@ -16,12 +16,12 @@
 
       <div class="left-wrapper">
         <a href="index.html" class="main-header-logo">
-          <img src="img/logo.svg"  width="154" height="64" alt="логотип магазина Глейси по продаже мороженого собственного производства">
+          <img src="img/logo.svg" width="154" height="64" alt="логотип магазина Глейси по продаже мороженого собственного производства">
         </a>
 
         <ul class="site-navigation">
           <li>
-            <a href="catalog.html"><span class="underline">Каталог</span></a>
+            <a class="current-page" href="catalog.html"><span>Каталог</span></a>
             <ul class="sub-menu">
               <li>
                 <a href="catalog.html"><span>Новинки</span></a>
@@ -65,22 +65,27 @@
           </li>
 
           <li class="login-link">
+
             <div class="tooltip-login-button">
               Вход
               <div class="tooltip-login-field">
                 <form class="login-form" action="https://echo.htmlacademy.ru" method="post">
                   <fieldset class="tooltip tooltip-login">
+
                     <legend class="visually-hidden">Войти на сайт</legend>
+
                     <label for="email" class="visually-hidden">Введите вашу электронную почту</label>
                     <input type="email" name="email" id="email" placeholder="Электронная почта" required>
 
                     <label for="password-field" class="visually-hidden">Введите ваш пароль</label>
                     <input type="password" name="password" id="password-field" placeholder="Пароль" required>
+                    <div class="button-links">
+                      <button class="small-button enter" type="submit">Войти</button>
+                      <div class="wrapper-link">
 
-                    <button class="small-button" type="submit">Войти</button>
-                    <div class="wrapper-link">
-                      <a class="restore" href="#">Забыли пароль</a>
-                      <a class="registration" href="#">Новая регистрация</a>
+                        <a class="restore" href="#">Забыли пароль</a>
+                        <a class="registration" href="#">Новая регистрация</a>
+                      </div>
                     </div>
                   </fieldset>
                 </form>
@@ -90,7 +95,7 @@
 
           <li class="cart tooltip">
 
-            <div class="tooltip-cart-button full">2 товара
+            <div class="tooltip-cart-button">2 товара
               <section class="tooltip-cart-field">
                 <h2 class="visually-hidden">Корзина</h2>
 
@@ -144,66 +149,67 @@
         </ul>
 
         <h1 class="page-title">Сливочное мороженое</h1>
+        <section class="sorting-wrapper">
+          <h2 class="visually-hidden">Фильтр товаров</h2>
+          <form action="https://echo.htmlacademy.ru" method="post" oninput="priceoutput.value=pricecount.value">
+            <div class="wrap-filters">
+              <fieldset class="filters">
+                <label>Сортировка:</label>
+                <select name="sort-option" id="sort-view">
+                  <option value="popular">по популярности</option>
+                  <option value="from-cheap">сначала недорогие</option>
+                  <option value="from-expensive">сначала дорогие</option>
+                  <option value="fett">по жирности</option>
+                </select>
 
-        <form action="https://echo.htmlacademy.ru" method="post" oninput="priceoutput.value=pricecount.value">
-          <div class="wrap-filters">
-            <fieldset class="filters">
-              <label>Сортировка:</label>
-              <select name="sort-option" id="sort-view">
-                <option value="popular">по популярности</option>
-                <option value="from-cheap">сначала недорогие</option>
-                <option value="from-expensive">сначала дорогие</option>
-                <option value="fett">по жирности</option>
-              </select>
+              </fieldset>
 
-            </fieldset>
+              <fieldset class="price-sort">
 
-            <fieldset class="price-sort">
+                <label for="price-range" class="visually-hidden"> Цена:</label>
+                <input type="range" id="price-range" name="price-range" min="100" max="800" step="50">
+                <output name="priceoutput">
+                </output>
 
-              <label for="price-range" class="visually-hidden"> Цена:</label>
-              <input type="range" id="price-range" name="price-range" min="100" max="800" step="50">
-              <output name="priceoutput">
-              </output>
+              </fieldset>
 
-            </fieldset>
+              <fieldset class="sorting">
+                <legend>Жирность:</legend>
+                <div class="wrapper-sorting">
 
-            <fieldset class="sorting">
-              <legend>Жирность:</legend>
-              <div class="wrapper-sorting">
+                  <input type="radio" name="fat-choice" id="fat-contain-0" value="0%">
+                  <label for="fat-contain-0">0%</label>
 
-                <input type="radio" name="fat-choice" id="fat-contain-0" value="0%">
-                <label for="fat-contain-0">0%</label>
+                  <input type="radio" name="fat-choice" id="fat-contain-less10" value="до 10%">
+                  <label for="fat-contain-less10">до 10%</label>
 
-                <input type="radio" name="fat-choice" id="fat-contain-less10" value="до 10%">
-                <label for="fat-contain-less10">до 10%</label>
+                  <input type="radio" name="fat-choice" id="fat-contain-less30" value="до 30%">
+                  <label for="fat-contain-less30">до 30%</label>
 
-                <input type="radio" name="fat-choice" id="fat-contain-less30" value="до 30%">
-                <label for="fat-contain-less30">до 30%</label>
+                  <input type="radio" name="fat-choice" id="fat-contain-more30" value="выше 30%">
+                  <label for="fat-contain-more30">выше 30%</label>
+                </div>
+              </fieldset>
 
-                <input type="radio" name="fat-choice" id="fat-contain-more30" value="выше 30%">
-                <label for="fat-contain-more30">выше 30%</label>
+              <fieldset class="sorting">
+                <legend>Наполнители</legend>
+                <div class="wrapper-sorting">
+                  <input type="checkbox" name="chocolate" id="chocolate-filler" checked>
+                  <label for="chocolate-filler">шоколадные</label>
+                  <input type="checkbox" name="sugar" id="sugar-filler" checked>
+                  <label for="sugar-filler">сахарные присыпки</label>
+                  <input type="checkbox" name="fruit" id="fruit-filler">
+                  <label for="fruit-filler">фрукты</label>
+                  <input type="checkbox" name="syrup" id="syrup-filler">
+                  <label for="syrup-filler">сиропы</label>
+                  <input type="checkbox" name="jam" id="jam-filler">
+                  <label for="jam-filler">джемы</label>
+              </fieldset>
               </div>
-            </fieldset>
+              <button class="button-sort" type="submit">Применить</button>
 
-            <fieldset class="sorting">
-              <legend>Наполнители</legend>
-              <div class="wrapper-sorting">
-                <input type="checkbox" name="chocolate" id="chocolate-filler" checked>
-                <label for="chocolate-filler">шоколадные</label>
-                <input type="checkbox" name="sugar" id="sugar-filler" checked>
-                <label for="sugar-filler">сахарные присыпки</label>
-                <input type="checkbox" name="fruit" id="fruit-filler">
-                <label for="fruit-filler">фрукты</label>
-                <input type="checkbox" name="syrup" id="syrup-filler">
-                <label for="syrup-filler">сиропы</label>
-                <input type="checkbox" name="jam" id="jam-filler">
-                <label for="jam-filler">джемы</label>
-            </fieldset>
-            </div>
-            <button class="button-sort" type="submit">Применить</button>
-
-        </form>
-
+          </form>
+        </section>
         <section class="catalog">
 
           <ul class="catalog-list">
@@ -317,79 +323,88 @@
             </li>
 
           </ul>
-          <div class="wrapper-pagination">
-            <ul class="pagination-list">
-              <li class="pagination-item pagination-item-back">
-                <a href="#">Назад</a>
-              </li>
-              <li class="pagination-item pagination-item-current">
-                <a href="#">1</a>
-              </li>
-              <li class="pagination-item">
-                <a href="#">2</a>
-              </li>
-              <li class="pagination-item">
-                <a href="#">3</a>
-              </li>
-              <li class="pagination-item">
-                <a href="#">4</a>
-              </li>
-              <li class="pagination-item">
-                <a href="#">5</a>
-              </li>
-              <li class="pagination-item pagination-item-next">
-                <a href="#">Вперед</a>
-              </li>
-            </ul>
-          </div>
-        </section>
-      </div>
-    </main>
-    <footer class="main-footer main-header container caontainer-main">
-      <div class="container container-footer">
-        <div class="footer-social">
-          <ul>
-            <li>
-              <a class="social-button Twitter" href="#">Следите за нами в Twitter</a>
-            </li>
-            <li>
-              <a class="social-button Instagram" href="#">Следите за нами в Instagram</a>
-            </li>
-            <li>
-              <a class="social-button Facebook" href="#">Следите за нами в Facebook</a>
-            </li>
-            <li>
-              <a class="social-button Vkontakte" href="#">Следите за нами в Vkontakte</a>
-            </li>
-          </ul>
-        </div>
 
-        <nav class="navigation-to-custumers">
-          <ul>
-            <li>
-              <a class="info-to-custumers-item like" href="aboutus.html"><span class="underline">Для поставщиков</span></a>
+          <ul class="pagination-list">
+            <li class="pagination-item pagination-item-back">
+              <a href="#"><span class="visually-hidden">Назад</span>
+                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="9px" height="14px">
+                  <image opacity="0.8" x="0px" y="0px" width="9px" height="14px" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAkAAAAOCAQAAABXnf4jAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAAmJLR0QA/4ePzL8AAAAHdElNRQfiCQQOGQ36BR2gAAAAYElEQVQY013PoQoCURQE0MNldbEZBAWTxf//H8Mm81NQTPpMl33cmXbSjG7o3A/dZM3sausbBV6eUeDmFxWICkQFws4G7wTCw6I7OidNaLg44Z5UMNcPuB5K/IwfG/baH+UBJ7ZcGhGfAAAAAElFTkSuQmCC"
+                  />
+                </svg></a>
             </li>
-            <li>
-              <a class="info-to-custumers-item" href="aboutus.html"><span class="underline">Наши документы</span></a>
+            <li class="pagination-item pagination-item-current">
+              <a href="#">1</a>
             </li>
-            <li>
-              <a class="info-to-custumers-item" href="aboutus.html"><span class="underline">О производстве</span></a>
+            <li class="pagination-item">
+              <a href="#">2</a>
             </li>
-            <li>
-              <a class="info-to-custumers-item" href="aboutus.html"><span class="underline">Экологические стандарты</span></a>
+            <li class="pagination-item">
+              <a href="#">3</a>
+            </li>
+            <li class="pagination-item">
+              <a href="#">4</a>
+            </li>
+            <li class="pagination-item">
+              <a href="#">5</a>
+            </li>
+            <li class="pagination-item pagination-item-next">
+              <a href="#"><span class="visually-hidden">Вперед</span>
+                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="9px" height="14px">
+                  <image x="0px" y="0px" width="9px" height="14px" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAkAAAAOCAQAAABXnf4jAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAAmJLR0QA/4ePzL8AAAAHdElNRQfiCQQOGC82fm0FAAAAYklEQVQY02XNqxGAMBBF0QsCh8cyQzO0gEXQDm3QBwVQAvSAwF1EJpNksuvO2w/i5iipcVHvHLH3LBErDEmB8UKG6VPAx7El1ssFDExxpnFXP+e4mEGgAqQCwbUEwc4jB/kBedmWZeGUfVUAAAAASUVORK5CYII="
+                  />
+                </svg></a>
             </li>
           </ul>
-        </nav>
-        <p class="footer-copyright">
-          <img src="img/logo-htmlacademy.svg" width="108" height="39" alt="логотип HTML Academy">
-          <span>Сделано в
-            <a class="html-academy-button" href="https://htmlacademy.ru"><span class="underline">HTML Academy</span></a>
-            © 2017
-          </span>
-        </p>
+
+        </section>
+        </div>
+    </main>
+    <footer class="main-footer container">
+
+
+      <div class="footer-social">
+        <ul>
+          <li>
+            <a class="social-button Twitter" href="#">Twitter</a>
+          </li>
+          <li>
+            <a class=" social-button Instagram" href="#">Instagram</a>
+          </li>
+          <li>
+            <a class="social-button Facebook" href="#">Facebook</a>
+          </li>
+          <li>
+            <a class="social-button Vkontakte" href="#">Vkontakte</a>
+          </li>
+        </ul>
       </div>
+
+      <nav class="navigation-to-custumers">
+        <ul>
+          <li>
+            <a class="info-to-custumers-item like" href="aboutus.html"><span class="underline">Для поставщиков</span></a>
+          </li>
+          <li>
+            <a class="info-to-custumers-item" href="aboutus.html"><span class="underline">Наши документы</span></a>
+          </li>
+          <li>
+            <a class="info-to-custumers-item" href="aboutus.html"><span class="underline">О производстве</span></a>
+          </li>
+          <li>
+            <a class="info-to-custumers-item" href="aboutus.html"><span class="underline">Экологические стандарты</span></a>
+          </li>
+        </ul>
+      </nav>
+      <p class="footer-copyright">
+        <img src="img/logo-htmlacademy.svg" width="108" height="39" alt="логотип HTML Academy">
+        <span>Сделано в
+          <a class="html-academy-button" href="https://htmlacademy.ru/intensive/htmlcss"><span class="underline">HTML Academy</span></a>
+          © 2017
+        </span>
+      </p>
+
     </footer>
-  </div>
+    </div>
 
 </body>
 

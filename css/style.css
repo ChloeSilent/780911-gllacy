@@ -62,7 +62,7 @@ input[type="radio"].visually-hidden {
 }
 
 .container{
-  padding: 0 2.2%;
+  padding: 0 27px;
   margin:0 auto;
   min-width: 900px;
   max-width: 1200px;
@@ -902,8 +902,8 @@ color: #ffffff;
 /* каталог в индексе */
 .catalog-list-hit {
   list-style: none;
-  margin-left:-60px;
-  margin-right:-27px;
+  margin:-0;
+  padding: 0;
 
   display: flex;
 
@@ -935,10 +935,10 @@ li.hit{
 .catalog-list {
   list-style: none;
 
-  padding:0 0;
+  padding: 0;
 
   margin: 0;
-  width: 1200px;
+
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -966,6 +966,7 @@ li.hit{
 
 .catalog-item-title{
   font-weight: 500;
+  text-align:  center;
 }
 
 .catalog-item-price {
@@ -1109,7 +1110,7 @@ li.hit{
   margin-bottom:40px;
 
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
 
 }
 /* Новое в нашем блоге */
@@ -1233,6 +1234,7 @@ button.small-button.newsletter-button{
   width: 100%;
   height: 430px;
   position: relative;
+  background-image: url(../img/map.jpg);
 }
 
 .adress-part {
@@ -1299,7 +1301,7 @@ a.small-button.adress-button{
   max-width: 1200px;
 
   margin:0 auto;
-  padding: 0 2.2%;
+  padding: 0 27px;
   display: flex;
   justify-content: space-between;
   /* background-color: palevioletred; */

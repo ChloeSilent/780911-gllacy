@@ -363,6 +363,18 @@ background-image: url("../img/magnifier-hover.svg");
   border-radius: 5px;
 }
 
+.tooltip-search-field input:hover{
+  border: 2px solid rgb(199, 198, 197);
+  border-radius: 5px;
+  color: rgb(50, 50, 50);
+}
+.tooltip-search-field input:focus{
+  border: 2px solid rgb(143, 189, 236);
+  border-radius: 5px;
+  color: rgb(50, 50, 50);
+  font-weight: bold;
+}
+
 
 /*вход*/
 .tooltip-login-button{
@@ -482,15 +494,18 @@ fieldset .login-form{
 }
 
 
-/* .login-form input[type="text"],
-.login-form input[type="password"] {
-  font: inherit;
-  color: rgb(153, 153, 153);
+.login-form input:hover{
+  border: 2px solid rgb(199, 198, 197);
+  border-radius: 5px;
+  color: rgb(50, 50, 50);
+}
 
-  background-color: ffffff;
-  border: 1px solid rgb(211, 211, 210);
-} */
-
+.login-form input:focus{
+  border: 2px solid rgb(143, 189, 236);
+  border-radius: 5px;
+  color: rgb(50, 50, 50);
+  font-weight: bold;
+}
 
 
 .button-links{
@@ -1376,6 +1391,17 @@ button.small-button.newsletter-button{
   border-radius: 5px;
 }
 
+.newslwtter-form input:hover{
+  border: 2px solid rgb(199, 198, 197);
+  border-radius: 5px;
+  color: rgb(50, 50, 50);
+}
+.newslwtter-form input:focus{
+  border: 2px solid rgb(143, 189, 236);
+  border-radius: 5px;
+  color: rgb(50, 50, 50);
+  font-weight: bold;
+}
 .newsletter p{
   margin:0;
   padding:20px;
@@ -1503,19 +1529,25 @@ a.small-button.adress-button{
 .instagram{
   background-image: url("../img/instagram.svg");
   background-size:cover;
-  background-origin: border-box;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-origin: padding-box;
 }
 
 .facebook{
   background-image: url("../img/fb.svg");
   background-size:cover;
-  background-origin: border-box;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-origin: padding-box;
 }
 
 .vkontakte{
   background-image: url("../img/vk.svg");
   background-size:cover;
-  background-origin: border-box;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-origin: padding-box;
 }
 
 /*блок в футере посередине*/
@@ -1647,7 +1679,7 @@ a.small-button.adress-button{
   font-weight: 500;
   color: rgb(50, 50, 50);
   padding: 25px;
-  /* display: none; */
+  display: none;
 
   background-color: rgb(248, 247, 244);
 
@@ -1657,7 +1689,7 @@ a.small-button.adress-button{
   top: 337px;
   /* transform: translate(-50%, -50%); */
   /* outline: 3px solid red; */
-
+  /* z-index: 24; */
   width: 478px;
   /* padding: 50px 27px; */
   /* margin-left: -230px; */
@@ -1699,7 +1731,9 @@ a.small-button.adress-button{
   font-size: 14px;
   line-height: 24.3px;
   font-weight: 400;
-  color: rgb(153, 153, 153);
+  /* color: rgb(153, 153, 153); */
+  color: rgb(50, 50, 50);
+
   border: 1px solid rgb(211, 211, 210);
   border-radius: 5px;
   width: 267px;
@@ -1708,6 +1742,7 @@ a.small-button.adress-button{
 }
 
 .modal-form textarea {
+  resize: none;
 
   font-family: 'Roboto', Arial, sans-serif;
   font-size: 14px;
@@ -1726,11 +1761,42 @@ button.small-button.modal-form-button{
   bottom:25px;
   right:25px;
 }
+
+
 .modal-form input:hover{
-  outline: 2px solid rgb(199, 198, 197);
+  border: 2px solid rgb(199, 198, 197);
+  border-radius: 5px;
+  color: rgb(50, 50, 50);
 }
 .modal-form input:focus{
-  outline: 2px solid rgb(46, 136, 228);
+  border: 2px solid rgb(143, 189, 236);
+  border-radius: 5px;
+  color: rgb(50, 50, 50);
+  font-weight: bold;
+}
+
+.modal-form textarea:hover{
+  border: 2px solid rgb(199, 198, 197);
+  border-radius: 5px;
+  color: rgb(50, 50, 50);
+}
+.modal-form textarea:focus{
+  border: 2px solid rgb(143, 189, 236);
+  border-radius: 5px;
+  color: rgb(50, 50, 50);
+  font-weight: bold;
+}
+
+.modal-overlay{
+  display: none;
+  position: fixed;
+  top:0;
+  left:0;
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  opacity: 0.302;
+  /* z-index: 22; */
 }
 /* .modal-feedback input,
 .newsletter input,

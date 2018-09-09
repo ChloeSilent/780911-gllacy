@@ -337,35 +337,38 @@ a.new-in-catalog::after {
   display: none;
   background-color:  rgb(248, 247, 244);
 } */
+                                                      /*************здесь*/
 
-.tooltip-search-button:hover .tooltip-search-field,
-.tooltip-search-button:focus .tooltip-search-field  {
+.tooltip-container{
+ display:none;
+}
+
+.tooltip-button:hover .tooltip-container {
   display: block;
-
-  background-color:  rgb(248, 247, 244);
+  position:absolute;
+  /* background-color:  rgb(248, 247, 244); */
+  box-shadow: 0px 20px 20px 0px rgba(0, 0, 0, 0.5);
+  z-index: 1;
+  border-radius:5px;
 
 }
+
 .tooltip-search-button:hover,
 .tooltip-search-button:focus  {
 background-image: url("../img/magnifier-hover.svg");
 }
 
 .tooltip-search-field {
-  position:absolute;
+
   color: rgb(50, 50, 50);
-  display:none;
+
   text-decoration: none;
   margin: 0;
   padding: 20px 15px;
   width: 341px;
-  box-sizing: border-box;
-  right:1px;
-  bottom: -70px;
 
-  border-radius: 5px;
   background-color: rgb(248, 247, 244);
-  box-shadow: 0px 20px 20px 0px rgba(0, 0, 0, 0.5);
-  z-index: 1;
+
 }
 
 .tooltip-search-field input {
@@ -441,29 +444,16 @@ background-image: url("../img/magnifier-hover.svg");
   background-image: url("../img/login.svg");
   background-repeat: no-repeat;
   background-position: 0 0;
-  /* background-color:  rgba(255, 255, 255, 0.5); */
-  /* opacity: 0.3; */
+
 }
 
 
 
  .tooltip-login-field {
-  display: none;
 
-  position: absolute;
- /* min-width: 277px;*/
-  /*min-height: 214px;*/
   background-color: rgb(248, 247, 244);
-  /* top: 125%; */
-  /* right: 100%; */
-  right:1px;
-   top: 100%;
   padding:0;
   margin:0;
-  border-radius:5px;
-  /* background-color: palevioletred; */
-  box-shadow: 0px 20px 20px 0px rgba(0, 0, 0, 0.5);
-  z-index: 1;
 }
 
 fieldset.tooltip{
@@ -478,11 +468,7 @@ fieldset.tooltip{
 }
 
 
-.tooltip-login-button:hover .tooltip-login-field,
-.tooltip-login-button:active .tooltip-login-field {
-  display: block;
 
-}
 
 .tooltip-login-button:hover{
   color: rgb(50, 50, 50);
@@ -544,11 +530,9 @@ fieldset .login-form{
   0px -2px 0px rgb(143, 189, 236),
   2px 0px 0px rgb(143, 189, 236),
  -2px 0px 0px rgb(143, 189, 236);
-
   border-radius: 5px;
   color: rgb(50, 50, 50);
   font-weight: bold;
-
 
 }
 
@@ -565,26 +549,20 @@ button.small-button.enter{
   border-radius: 25px;
   margin:0;
   margin-right: 20px;
-
 }
 
 .wrapper-link{
-  /* white-space: nowrap; */
- /* background-color: yellowgreen; */
  padding: 0px;
-
 }
 .wrapper-link a{
-  /* display: inline-block; */
-  /* white-space: nowrap; */
+
   font-family: 'Roboto', Arial, sans-serif;
   font-size: 13px;
   line-height: 24px;
   color: rgb(50, 50, 50);
   font-weight: 400;
   text-decoration: none;
-   border-bottom:1px solid rgba(50, 50, 50, 0.302);
-
+  border-bottom:1px solid rgba(50, 50, 50, 0.302);
 
 }
 
@@ -594,21 +572,6 @@ button.small-button.enter{
   border-bottom:1px solid rgb(232,77,55);
 }
 
-/* .wrapper-link a:hover,
-.wrapper-link a:active{
-  color: rgb(232, 77, 55);
-  border-bottom:1px solid rgba(232, 77, 55, 0.302);
-} */
-/* .wrapper-link{
-  margin:0;
-  padding: 10px;
-} */
-
-/* .tooltip-login-button:hover,
-.tooltip-login-button:focus{
-  color: #000000;
-  background-color: rgb(248, 247, 244);
-} */
 
 
 /* корзина*/
@@ -639,11 +602,8 @@ button.small-button.enter{
 
 .tooltip-cart-button::before{
   content: "";
-
   position: absolute;
-
   right:61px;
-
   width: 21px;
   height: 20px;
   bottom: 6px;
@@ -658,49 +618,39 @@ button.small-button.enter{
 .tooltip-cart-button:hover::before,
 .tooltip-cart-button:focus::before{
   content: "";
-
   position: absolute;
   right:61px;
   width: 21px;
   height: 20px;
   bottom: 6px;
-
   background-image: url("../img/cart-hover.svg");
   background-repeat: no-repeat;
   background-position: 0 0;
-
 }
 
 /*корзина с товарами*/
 
 .tooltip-cart-button.cart-full::before{
   content: "";
-
   position: absolute;
-
   right:81px;
   bottom: 6px;
   width: 21px;
   height: 20px;
-
   background-image: url("../img/cart.svg");
   background-repeat: no-repeat;
   background-position: 0 0;
-  /* background-color:  rgba(255, 255, 255, 0.2); */
 
-  /* opacity: 0.3; */
 }
 
 .tooltip-cart-button.cart-full:hover::before,
 .tooltip-cart-button.cart-full:focus::before{
   content: "";
-
   position: absolute;
   right:81px;
   width: 21px;
   height: 20px;
   bottom: 6px;
-
   background-image: url("../img/cart-full-hover.svg");
   background-repeat: no-repeat;
   background-position: 0 0;
@@ -713,21 +663,9 @@ button.small-button.enter{
   line-height: 16px;
   font-weight: 400;
   color: rgb(50, 50, 50);
-
-  display: none;
-  /* display: block; */
-  position: absolute;
- /* min-width: 277px;*/
-  /*min-height: 214px;*/
   background-color: rgb(248, 247, 244);
-  top: 125%;
-  right: 100%;
   padding: 15px  15px 20px 15px;
   width:540px;
-  border-radius:5px;
-  box-shadow: 0px 20px 20px 0px rgba(0, 0, 0, 0.5);
-  /* background-color: palevioletred; */
-  z-index: 1;
 }
 
 .tooltip-cart-button:hover .tooltip-cart-field,
@@ -1882,6 +1820,19 @@ a.small-button.adress-button{
 }
 
 /* оформление обратная связь и форм*/
+
+.modal-overlay{
+  display: none;
+  position: fixed;
+  top:0;
+  left:0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0, 0.3);
+
+  z-index: 26;
+}
+
 .form-modal{
   display: flex;
   flex-direction: column;
@@ -2057,17 +2008,7 @@ font-weight: 400;
 }
 
 
-.modal-overlay{
-  /* display: none; */
-  position: fixed;
-  top:0;
-  left:0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0,0,0, 0.3);
 
-  z-index: 26;
-}
 /* .modal-feedback input,
 .newsletter input,
 .tooltip-login input {

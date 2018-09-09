@@ -1895,7 +1895,7 @@ a.small-button.adress-button{
   color: rgb(50, 50, 50);
 
   padding-top:16px;
-  padding-bottom:16px;
+  padding-bottom:27px;
   padding-left:25px;
   padding-right: 25px;
 
@@ -1975,7 +1975,8 @@ a.small-button.adress-button{
 }
 
 button.small-button.modal-form-button{
- align-self:
+ align-self: flex-end;
+ padding: 10px 23px 10px 23px;
 }
 
 
@@ -2028,7 +2029,7 @@ button.small-button.modal-form-button{
   left:0;
   width: 100%;
   height: 100%;
-  background-color: rgba(0,0,0 0.3);
+  background-color: rgba(0,0,0, 0.3);
 
    z-index: 26;
 }
@@ -2361,7 +2362,6 @@ a.current-page {
 .fat-sorting input:checked + label::before {
 
   background-image: url("../img/radio-on.svg");
-
 }
 
 /*наполнители*/

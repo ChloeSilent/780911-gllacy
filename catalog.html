@@ -69,28 +69,28 @@
             <div class="tooltip-button tooltip-login-button">
               Вход
               <div class="tooltip-container">
-              <div class="tooltip-inner tooltip-login-field">
-                <form class="login-form" action="https://echo.htmlacademy.ru" method="post">
-                  <fieldset class="tooltip tooltip-login">
+                <div class="tooltip-inner tooltip-login-field">
+                  <form class="login-form" action="https://echo.htmlacademy.ru" method="post">
+                    <fieldset class="tooltip tooltip-login">
 
-                    <legend class="visually-hidden">Войти на сайт</legend>
+                      <legend class="visually-hidden">Войти на сайт</legend>
 
-                    <label for="email" class="visually-hidden">Введите вашу электронную почту</label>
-                    <input type="email" name="email" id="email" placeholder="Электронная почта" required>
+                      <label for="email" class="visually-hidden">Введите вашу электронную почту</label>
+                      <input type="email" name="email" id="email" placeholder="Электронная почта" required>
 
-                    <label for="password-field" class="visually-hidden">Введите ваш пароль</label>
-                    <input type="password" name="password" id="password-field" placeholder="Пароль" required>
-                    <div class="button-links">
-                      <button class="small-button enter" type="submit">Войти</button>
-                      <div class="wrapper-link">
+                      <label for="password-field" class="visually-hidden">Введите ваш пароль</label>
+                      <input type="password" name="password" id="password-field" placeholder="Пароль" required>
+                      <div class="button-links">
+                        <button class="small-button enter" type="submit">Войти</button>
+                        <div class="wrapper-link">
 
-                        <a class="restore" href="#">Забыли пароль</a>
-                        <a class="registration" href="#">Новая регистрация</a>
+                          <a class="restore" href="#">Забыли пароль</a>
+                          <a class="registration" href="#">Новая регистрация</a>
+                        </div>
                       </div>
-                    </div>
-                  </fieldset>
-                </form>
-              </div>
+                    </fieldset>
+                  </form>
+                </div>
               </div>
             </div>
           </li>
@@ -98,37 +98,37 @@
           <li class="cart tooltip">
 
             <div class="tooltip-button tooltip-cart-button cart-full">2 товара
-                <div class="tooltip-container">
-              <section class="tooltip-inner tooltip-cart-field">
-                <h2 class="visually-hidden">Корзина</h2>
-                <div class="table-button-wrapper">
-                  <table>
-                    <tr>
-                      <td><button class="delete-item" type="button">Удалить наименование</button></td>
-                      <td class="table-image"><img src="img/ice-cream-1.png" width="33" height="33" alt="Сливочное с апельсиновым джемом и цитрусовой стружкой"></td>
-                      <td class="table-title">Пломбир с апельсиновым джемом</td>
-                      <td class="table-weight">1,5 кг х</td>
-                      <td class="table-price">200 руб.</td>
-                      <td class="table-cost">300 руб.</td>
-                    </tr>
-                    <tr>
-                      <td><button class="delete-item" type="button">Удалить наименование</button></td>
-                      <td class="table-image"><img src="img/ice-cream-3.png" width="33" height="33" alt="Клубничный пломбир с присыпкой из белого шоколада"></td>
-                      <td class="table-title">Сливочно-клубничное с присыпкой из белого шоколада</td>
-                      <td class="table-weight">1,5 кг х</td>
-                      <td class="table-price">300 руб.</td>
-                      <td class="table-cost">450 руб.</td>
-                    </tr>
-                    <tr>
-                      <td colspan="5" class="final final-cost">Итого:</td>
-                      <td class="final-cost"> 750 руб.</td>
-                    </tr>
-                  </table>
-                  <button class="small-button button-in-cart" type="submit">Оформить заказ</button>
-                </div>
-              </section>
+              <div class="tooltip-container">
+                <section class="tooltip-inner tooltip-cart-field">
+                  <h2 class="visually-hidden">Корзина</h2>
+                  <div class="table-button-wrapper">
+                    <table>
+                      <tr>
+                        <td><button class="delete-item" type="button">Удалить наименование</button></td>
+                        <td class="table-image"><img src="img/ice-cream-1.png" width="33" height="33" alt="Сливочное с апельсиновым джемом и цитрусовой стружкой"></td>
+                        <td class="table-title">Пломбир с апельсиновым джемом</td>
+                        <td class="table-weight">1,5 кг х</td>
+                        <td class="table-price">200 руб.</td>
+                        <td class="table-cost">300 руб.</td>
+                      </tr>
+                      <tr>
+                        <td><button class="delete-item" type="button">Удалить наименование</button></td>
+                        <td class="table-image"><img src="img/ice-cream-3.png" width="33" height="33" alt="Клубничный пломбир с присыпкой из белого шоколада"></td>
+                        <td class="table-title">Сливочно-клубничное с присыпкой из белого шоколада</td>
+                        <td class="table-weight">1,5 кг х</td>
+                        <td class="table-price">300 руб.</td>
+                        <td class="table-cost">450 руб.</td>
+                      </tr>
+                      <tr>
+                        <td colspan="5" class="final final-cost">Итого:</td>
+                        <td class="final-cost"> 750 руб.</td>
+                      </tr>
+                    </table>
+                    <button class="small-button button-in-cart" type="submit">Оформить заказ</button>
+                  </div>
+                </section>
+              </div>
             </div>
-          </div>
           </li>
         </ul>
         <div class="store-info">
@@ -160,13 +160,15 @@
           <form action="https://echo.htmlacademy.ru" method="post" oninput="priceoutput.value=pricecount.value">
 
             <fieldset class="filters">
-              <label>Сортировка:</label>
-              <select name="sort-option" id="sort-view">
-                <option value="popular">по популярности</option>
-                <option value="from-cheap">сначала недорогие</option>
-                <option value="from-expensive">сначала дорогие</option>
-                <option value="fett">по жирности</option>
-              </select>
+              <label class="custom-select">
+                Сортировка: </br>
+                <select name="sort-option" id="sort-view">
+                  <option value="popular">по популярности</option>
+                  <option value="from-cheap">сначала недорогие</option>
+                  <option value="from-expensive">сначала дорогие</option>
+                  <option value="fett">по жирности</option>
+                </select>
+              </label>
             </fieldset>
             <div class="price-sort">
               <h3 class="visually-hidden"> Цена:</h3>
@@ -186,7 +188,7 @@
 
             <fieldset class="sorting">
               <legend>Жирность:</legend>
-              <div class="wrapper-sorting fat-sorting">
+              <div class="wrapper-sorting fatness">
 
                 <input type="radio" name="fat-choice" id="fat-contain-0" value="0%">
                 <label for="fat-contain-0">0%</label>
@@ -204,7 +206,7 @@
 
             <fieldset class="sorting">
               <legend>Наполнители</legend>
-              <div class="wrapper-sorting filler-sorting">
+              <div class="wrapper-sorting filler">
                 <input type="checkbox" name="chocolate" id="chocolate-filler" checked>
                 <label for="chocolate-filler">шоколадные</label>
                 <input type="checkbox" name="sugar" id="sugar-filler" checked>

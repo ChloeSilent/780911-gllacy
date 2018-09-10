@@ -142,9 +142,7 @@ input[type="radio"].visually-hidden {
   display:block;
   color:#ffffff;
   padding: 7px 14px;
-
   vertical-align: middle;
-
   text-decoration: none;
   border-radius: 15px;
 }
@@ -172,15 +170,6 @@ input[type="radio"].visually-hidden {
 }
 
 
-
-.site-navigation,
-.site-navigation .sub-menu {
-  list-style: none;
-  font-size: 16px;
-  line-height: 18px;
-  font-family: 'Roboto', Arial, sans-serif;
-  font-weight: bold;
-}
 /* это же меню в интерактиве*/
 a.site-item:hover{
   color: rgb(51, 51, 51);
@@ -197,44 +186,44 @@ a.site-item:active{
 /*меню-выпадашка*/
 .site-navigation .sub-menu {
   position:absolute;
-  color: rgb(50, 50, 50);
-  background-color: rgb(248, 247, 244);
   display:none;
-  text-decoration: none;
-  margin: 0;
-  padding: 0;
   width: 143px;
-  left:1px;
+  left:-6px;
   top: 38px;
+  margin: 0;
   box-sizing: border-box;
-
-  font-size: 14px;
   border-radius: 5px;
   white-space:nowrap;
-
   overflow: hidden;
   z-index:1;
   box-shadow: 0px 20px 20px 0px rgba(0, 0, 0, 0.5);
   transition: all 0.15s ease-in-out;
+  background-color: rgb(248, 247, 244);
+  padding: 0;
+  transition: all 0.15s ease-in-out;
+  color: rgb(50, 50, 50);
+  text-decoration: none;
+  list-style: none;
 }
 
 .sub-menu a {
   color: rgb(50, 50, 50);
   text-decoration: none;
-  font-weight: 400;
   display: block;
   border-radius: 0;
-   /* background-color: #8c0920; */
-  padding-top:6px;
-  padding-bottom:6px;
-  margin-bottom: 5px;
+  margin-bottom: 4px;
+  padding: 6px 15px 5px 20px;
+  font-size: 14px;
+  line-height: 16px;
+  font-family: 'Roboto', Arial, sans-serif;
+  font-weight: 400;
 }
 
 
 a.new-in-catalog {
-  padding-top:11px;
+  padding-top:10px;
   padding-bottom:6px;
-  margin-bottom: 6px;
+  margin-bottom: 9px;
   font-weight: bold;
 }
 
@@ -244,12 +233,12 @@ a.new-in-catalog::after {
  display:block;
  width:127px;
  height:1px;
- border:0.5px solid rgb(209,208,206);
+ border-bottom:1px solid rgb(209,208,206);
  left:8px;
- top:40px;
- transition: all 0.15s ease-in-out;
- /* margin-left: -5px;
- margin-top:10px; */
+ top:38px;
+}
+.sub-menu li:last-child a{
+  padding-bottom: 10px;
 }
 
 .site-navigation > li:hover .sub-menu,
@@ -307,28 +296,25 @@ a.new-in-catalog::after {
   top:100% ;
   z-index: 1;
   padding-top: 3px;
- }
+}
 
 
+.tooltip-button:hover .tooltip-container {
+  display: block;
+}
 
- .tooltip-button:hover .tooltip-container {
-   display: block;
- }
-   .tooltip-inner{
-
-   /* background-color:  rgb(248, 247, 244); */
-   box-shadow: 0px 20px 20px 0px rgba(0, 0, 0, 0.5);
-
-   border-radius:5px;
-
- }
+.tooltip-inner{
+  box-shadow: 0px 20px 20px 0px rgba(0, 0, 0, 0.5);
+  border-radius:5px;
+}
 
 /*поиск  */
 .tooltip-search-button {
   position: relative;
-  margin-right: 10px;
   width: 32px;
   height: 32px;
+  margin-right: 10px;
+
   padding:0;
 
   border-radius: 50%;
@@ -336,7 +322,9 @@ a.new-in-catalog::after {
 
 }
 
-
+.login-link .tooltip-button.tooltip-login-button .tooltip-container{
+  display: block;
+}
 .tooltip-search-button::before{
   position: absolute;
   content: "";
@@ -427,31 +415,22 @@ background-image: url("../img/magnifier-hover.svg");
   background-image: url("../img/login.svg");
   background-repeat: no-repeat;
   background-position: 0 0;
-
 }
 
-
-
- .tooltip-login-field {
+.tooltip-login-field {
 
   background-color: rgb(248, 247, 244);
   padding:0;
   margin:0;
 }
 
-fieldset.tooltip{
+fieldset.tooltip-login{
   border: none;
   margin:0;
-  padding:20px;
-  width: 277px;
-  /* background-color: #8996a6; */
-  width:280px;
+  padding:21px 21px 20px 20px;
+  width:277px;
   box-sizing: border-box;
-
 }
-
-
-
 
 .tooltip-login-button:hover{
   color: rgb(50, 50, 50);
@@ -473,7 +452,6 @@ fieldset.tooltip{
 }
 
 fieldset .login-form{
-
   display: flex;
   flex-direction: row;
   border:none;
@@ -482,16 +460,31 @@ fieldset .login-form{
 .login-form input{
   box-sizing: border-box;
   width: 240px;
+  margin-bottom: 20px;
   border: 1px solid rgb(211, 211, 210);
   border-radius: 5px;
-
+  padding: 11px 15px 15px 13px;
   font-family: 'Roboto', Arial, sans-serif;
   font-size: 13px;
   line-height: 24px;
   color: rgb(153, 153, 153);
   font-weight: 400;
-  margin-bottom: 20px;
-  padding: 15px;
+}
+
+.login-form  input::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+font-weight: 400;
+}
+.login-form  input::-moz-placeholder { /* Firefox 19+ */
+font-weight: 400;
+}
+.login-form  input:-ms-input-placeholder { /* IE 10+ */
+font-weight: 400;
+}
+.login-form  input:-moz-placeholder { /* Firefox 18- */
+font-weight: 400;
+}
+.login-form  input::placeholder{
+font-weight: 400;
 }
 
 
@@ -522,14 +515,20 @@ fieldset .login-form{
 }
 
 button.small-button.enter{
-  padding: 10px 25px;
-  border-radius: 25px;
   margin:0;
   margin-right: 20px;
+  margin-bottom: 5px;
+  border-top-left-radius: 30px 40px;
+  border-bottom-left-radius: 30px 40px;
+  border-top-right-radius: 30px 40px;
+  border-bottom-right-radius: 30px 40px;
+  padding: 10px 25px;
 }
 
 .wrapper-link{
- padding: 0px;
+ padding: 0px 0px 0px 0px;
+ margin:0 0 0 0;
+
 }
 .wrapper-link a{
 
@@ -1790,46 +1789,37 @@ a.small-button.adress-button{
 }
 
 .modal-feedback {
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 478px;
+  padding-top:16px;
+  padding-bottom:27px;
+  padding-left:25px;
+  padding-right: 25px;
+  border-radius: 10px;
+  background-color: rgb(248, 247, 244);
   font-family: 'Roboto', Arial, sans-serif;
   font-size: 24px;
   line-height: 28px;
   font-weight: 500;
   color: rgb(50, 50, 50);
 
-  padding-top:16px;
-  padding-bottom:27px;
-  padding-left:25px;
-  padding-right: 25px;
-
-  background-color: rgb(248, 247, 244);
-
-  border-radius: 10px;
-  position: fixed;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
-
-
-  width: 478px;
-
 }
 
 .modal-close {
-
+  position: absolute;
+  top: 15px;
+  right: 15px;
   width: 18px;
   height: 17px;
-
+  border: 0;
   font-size: 0;
   background-image: url("../img/close-icon.svg");
   background-color: rgb(248, 247, 244);
   background-repeat: no-repeat;
-
-  border: 0;
-
   cursor: pointer;
-  position: absolute;
-  top: 15px;
-  right: 15px;
 }
 
 .modal-feedback p{
@@ -1839,9 +1829,7 @@ a.small-button.adress-button{
 .modal-form fieldset{
   margin:0;
   border:none;
-  /* background-color: aqua; */
   padding:0;
-  /* position: relative; */
 }
 .modal-form input[type="email"],
 .modal-form input[type="text"] {
@@ -1915,25 +1903,7 @@ button.small-button.modal-form-button{
   font-weight: bold;
   outline: none;
 }
-/*
-.modal-form input::-webkit-input-placeholder,
-.modal-form textarea::-webkit-input-placeholder { /* Chrome/Opera/Safari */
-  /* font-weight: 400;
-}
-.modal-form input::-moz-placeholder,
-.modal-form textarea::-moz-placeholder
-{ /* Firefox 19+ */
-  /* { Firefox 19+ */
-  /* font-weight: 400;
-}
-.modal-form input:-ms-input-placeholder,
-.modal-form textarea:-ms-input-placeholder  { /* IE 10+ */
-  /* font-weight: 400;
-}
-.modal-form input::placeholder,
-.modal-form textarea::placeholder {
-  font-weight: 400;
-} */
+
 
 
 
@@ -1945,15 +1915,15 @@ font-weight: 400;
 .modal-form textarea::-moz-placeholder { /* Firefox 19+ */
 font-weight: 400;
 }
-.modal-form input:-ms-input-placeholder
+.modal-form input:-ms-input-placeholder,
 .modal-form textarea:-ms-input-placeholder { /* IE 10+ */
 font-weight: 400;
 }
-.modal-form input:-moz-placeholder
+.modal-form input:-moz-placeholder,
 .modal-form textarea:-moz-placeholder { /* Firefox 18- */
 font-weight: 400;
 }
-.modal-form input::placeholder
+.modal-form input::placeholder,
 .modal-form textarea::placeholder {
 font-weight: 400;
 }
@@ -2115,12 +2085,20 @@ a.current-page {
 .price-sort,
 .sorting{
   border: none;
+  margin:0;
+  /* background-color: #e1613e; */
 }
 .filters{
   display: flex;
   flex-direction: column;
   margin:0;
   /* background-color: #e1613e; */
+}
+fieldset.filters,
+fieldset.price-sort,
+fieldset.sorting
+ {
+  padding: 5px 0 5px 0;
 }
 
 .filters legend {
@@ -2141,10 +2119,12 @@ a.current-page {
   background-color: rgba(255, 255, 255, 0.2);
   border-radius: 20px;
   padding: 5px 0px 5px 15px;
+  margin:0;
 }
 
 .filters select option{
   color: rgb(50, 50, 50);
+  margin:0;
 }
 
 

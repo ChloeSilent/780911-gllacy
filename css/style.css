@@ -1470,10 +1470,10 @@ button.small-button.newsletter-button{
 
 .adress{
   width: 1200px;
-  height: 430px;
+  height: 429px;
   position: relative;
   background-image: url("../img/map.jpg");
-  margin-left:-53px;
+  margin-left:-52px;
   /* margin-right:-1153px; */
 }
 
@@ -1554,9 +1554,9 @@ a.small-button.adress-button{
  list-style:none;
  display: flex;
  margin:0;
- margin-top: 35px;
- margin-left:27px;
- /* margin-right: */
+ margin-top: 36px;
+ margin-left:28px;
+ margin-bottom:30px;
  padding: 0;
  /* background-color: royalblue; */
 }
@@ -1620,31 +1620,24 @@ a.small-button.adress-button{
 /*блок в футере посередине*/
 
 .navigation-to-custumers {
-
-  list-style:none;
   max-width:33%;
   min-height:50px;
-
-
-  /* /* align-self: center; */
   display: flex;
   flex-direction: row;
-
   justify-content: space-between;
   margin:0;
-  margin-top: 32px;
+  margin-top: 34px;
   padding: 0;
-  /* background-color: aqua; */
-  margin-left:-12px;
+  padding-left:26px;
+  list-style:none;
 }
 
 .left-column{
   margin:0;
   padding: 0;
-  /* padding-left: 20px; */
-  /* background-color: lightgreen; */
+
   margin-right:30px;
-  /* padding-bottom: 7px; */
+
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -1652,7 +1645,7 @@ a.small-button.adress-button{
 .right-column{
   margin:0;
   padding: 0px;
-  /* background-color: pink; */
+
 
 }
 .info-to-custumers-item{
@@ -1680,8 +1673,8 @@ a.small-button.adress-button{
   content: url("../img/heart-symbolle.svg");
   float: left;
   position: relative;
-  left:-6px;
-  top: 2px;
+  left:-7px;
+  top: 3px;
 }
 
 /*Сделано в HTML Academy © 2017*/
@@ -1712,8 +1705,7 @@ a.small-button.adress-button{
 
 .footer-copyright img{
   margin-bottom: 5px;
-
-  /* margin-left:18px; */
+  /* margin-left:4px; */
 }
 /* .made-in{
    padding-left:18px;} */

@@ -653,7 +653,7 @@ button.small-button.enter{
   font-weight: 400;
   color: rgb(50, 50, 50);
   background-color: rgb(248, 247, 244);
-  padding: 22px 0px 20px 12px;
+  padding: 20px 15px;
   width:540px;
 }
 
@@ -670,18 +670,28 @@ button.small-button.enter{
   flex-direction: column;
   align-items: flex-end;
 }
+
+
+
 .table-button-wrapper table{
-  width:100%;
-
-  margin-bottom: 80px;
+  border-bottom: 1px solid rgb(202, 202, 199);
+  border-collapse:collapse;
+  align-self: flex-start;
 }
-.table-row-1{
-  /* padding-bottom: 20px; */
+td{
+  padding-bottom: 15px;
 }
-.table-delete{
-  /* border: 1px solid black;
-  border-collapse: collapse; */
 
+
+.table-delete-1{
+  vertical-align:top;
+  padding-top:7px;
+  padding-right:4px;
+}
+.table-delete-2{
+  vertical-align:top;
+  padding-top: 9px;
+  padding-right: 8px;
 }
 .delete-item{
   width:11px;
@@ -692,51 +702,67 @@ button.small-button.enter{
   background-color: transparent;
   font-size: 0;
 
+  display: inline-block;
+  vertical-align: middle;
 }
 
-.table-image{
-
-
-
+.table-image-1{
+  display: inline-block;
+  vertical-align: middle;
 }
-
-.table-title{
+.table-image-2{
+  display: inline-block;
+  vertical-align: middle;
+}
+.table-title-1{
   box-sizing: border-box;
-  width: 230px;
-
-
+  width: 228px;
+  padding: 10px 0 0 11px;
+  vertical-align:top;
 }
-
-.table-weight{
-
-  /* border: 1px solid black;
-  border-collapse: collapse; */
+.table-title-2{
+  box-sizing: border-box;
+  width: 225px;
+  padding: 10px 0 0 11px;
+  vertical-align:top;
 }
-
-.table-price{
+.table-weight-1{
+  text-align:right;
+  padding: 0 0 17px 30px;
+}
+.table-weight-2{
+  text-align:right;
+  padding: 0 0 17px 30px;
+}
+.table-price-1{
+  padding: 0 9px 17px 3px;
   color: rgb(178, 178, 177);
-
-
 }
-
-.table-cost{
-
-
+.table-price-2{
+  color: rgb(178, 178, 177);
+  padding: 0 9px 17px 3px;
+}
+.table-cost-1{
+  text-align: right;
+  padding: 0px 0px 16px 0px;
+  vertical-align: middle;
+}
+.table-cost-2{
+  text-align:right;
+  padding: 0px 0px 17px 0px;
+vertical-align: middle;
 }
 .final{
-  text-align: right;
-
-}
-
-.final-cost{
-
   font-family: 'Roboto', Arial, sans-serif;
   font-size: 15px;
   line-height: 18px;
   font-weight: bold;
   color: rgb(50, 50, 50);
-
+  display: flex;
+  flex-wrap: nowrap;
 }
+
+
 
 .button-in-cart{
 

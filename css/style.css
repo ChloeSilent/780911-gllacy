@@ -228,7 +228,7 @@ a.new-in-catalog {
 }
 
 a.new-in-catalog::after {
-  position: absolute;
+ position: absolute;
  content: "";
  display:block;
  width:127px;
@@ -678,9 +678,11 @@ background-color:  rgb(248, 247, 244);
 
 
 .table-button-wrapper table{
-  border-bottom: 1px solid rgb(202, 202, 199);
+  /* border-bottom: 1px solid rgb(202, 202, 199); */
   border-collapse:collapse;
   align-self: flex-start;
+  margin-bottom: 14px;
+  position: relative;
 }
 td{
   padding-bottom: 15px;
@@ -739,22 +741,45 @@ td{
   padding: 0 0 17px 30px;
 }
 .table-price-1{
-  padding: 0 9px 17px 3px;
+  padding: 0 28px 17px 3px;
   color: rgb(178, 178, 177);
 }
 .table-price-2{
   color: rgb(178, 178, 177);
-  padding: 0 9px 17px 3px;
+  padding: 0 28px 17px 3px;
 }
 .table-cost-1{
   text-align: right;
-  padding: 0px 0px 16px 0px;
+  padding: 0px 19px 16px 0px;
   vertical-align: middle;
 }
 .table-cost-2{
   text-align:right;
-  padding: 0px 0px 17px 0px;
+  padding: 0px 19px 17px 0px;
 vertical-align: middle;
+}
+
+.table-delete-2,
+.table-image-2
+.table-weight-2{
+  padding-bottom: 16px;
+}
+
+.table-title-2
+.table-price-2,
+.table-cost-2{
+  padding-bottom: 17px;
+}
+
+table::after{
+  position: absolute;
+  content: "";
+  display:block;
+  width:510px;
+  height:1px;
+  border-bottom:1px solid rgb(202,202,199);
+  left:1px;
+  bottom:-7px;
 }
 .final{
   font-family: 'Roboto', Arial, sans-serif;
@@ -764,11 +789,16 @@ vertical-align: middle;
   color: rgb(50, 50, 50);
   display: flex;
   flex-wrap: nowrap;
+  margin-bottom: 14px;
+  margin-top: 6px;
+}
+
+.final-cost{
+  margin-left: 3px;
 }
 
 
-
-.button-in-cart{
+.small-button.button-in-cart{
   padding: 10px 15px 10px 15px;
 }
 
@@ -1155,32 +1185,28 @@ li.hit{
 /* блок каталог + пагинатор(они вместе там лежат*/
 .catalog{
   margin:0;
-  padding: 0;
+  padding: 0 0px 0 7px;
   display: flex;
   flex-direction: column;
   border-bottom: 1px solid rgba(255, 255, 255, 0.3);
 }
 /* каталог в каталоге */
 .catalog-list {
-  list-style: none;
-
-  padding: 0;
-
-  margin: 0;
-  margin-left:-20px;
-  margin-right:-11px;
   display: flex;
   flex-wrap: wrap;
   justify-content: flex-start;
+  list-style: none;
+  margin: 0;
+  margin-left:-20px;
+  margin-right:-11px;
+  margin-bottom: 42px;
+  padding: 0;
 }
  /* универсальные правила для обеих страниц */
 .catalog-item{
   width: 25%;
-  /* margin-right: 8px; */
-  /* background-color: royalblue; */
-
   position: relative;
-  margin-bottom: 20px;
+  margin-bottom: 23px;
   display: flex;
   flex-direction: column;
 }
@@ -1201,8 +1227,8 @@ li.hit{
   box-sizing: border-box;
   display: block;
   margin-top: 13px;
-  padding-left: 15px;
-  padding-right: 16px;
+  padding-left: 20px;
+  padding-right: 20px;
   font-weight: 500;
   text-align: center;
 }
@@ -1210,7 +1236,7 @@ li.hit{
 .catalog-item-price {
   position: absolute;
   left:12px;
-  bottom:83px;
+  bottom:82px;
   font-family: 'Roboto', Arial, sans-serif;
   font-weight: bold;
   font-size: 45px;
@@ -1221,7 +1247,7 @@ li.hit{
 .catalog-item-price svg{
   display: inline-block;
   position: relative;
-  bottom:2px;
+  bottom:1px;
   vertical-align: middle;
   left: -7px;
 }
@@ -1305,7 +1331,7 @@ li.hit{
   line-height: 30px;
   font-weight: 500;
   margin:0;
-  margin-top:6px;
+  margin-top:3px;
   margin-bottom: 20px;
 }
 .about-us{
@@ -2129,7 +2155,7 @@ a.current-page {
   max-width: 860px;
   min-height: 150px;
   margin:0;
-  margin-bottom: 34px;
+  margin-bottom: 23px;
   padding: 0;
 }
 
@@ -2168,8 +2194,8 @@ label.custom-select {
 
 .custom-select select {
   display: inline-block;
-  border: 1px solid rgba(169, 186, 176);
-  background-color: rgb(169, 186, 176);
+  border: 1px solid rgba(255, 255, 255, 0.000001);
+  background-color: rgba(255, 255, 255, 0.2);
   border-radius: 20px;
   padding: 5px 15px 5px 15px;
   -webkit-appearance:none; /* remove the strong OSX influence from Webkit */
@@ -2218,7 +2244,7 @@ label.custom-select {
   font-size: 16px;
   font-weight: 500;
   color: rgb(255, 255, 255);
-  background-color: rgb(169, 186, 176);
+  background-color: rgba(255, 255, 255, 0.2);
   border-radius: 20px;
   padding: 7px 28px 7px 10px;
   /* margin:0; */
@@ -2377,11 +2403,11 @@ fieldset.sorting-fat
   padding-right: 20px;
 }
 
-.fatness :first-child{
-  padding-right: 8px;
+.fatness label:first-of-type{
+  padding: 8px 20px 6px 30px;
 }
 .fatness :last-child{
-  padding-right: 0px;
+  padding: 6px 0px 6px 28px;
 }
 .fatness label::before{
   content: "";
@@ -2443,17 +2469,17 @@ fieldset.sorting-fill
 .filler label:first-of-type{/*шоколад*/
   padding: 6px 19px 6px 32px;
 }
-.filler :nth-of-type(2){ /*сахар*/
+.filler label:nth-of-type(2){ /*сахар*/
   padding: 6px 19px 6px 34px;
 }
-.filler :nth-of-type(3){/*фрукты*/
-  padding: 6px 19px 21px 34px;
+.filler label:nth-of-type(3){/*фрукты*/
+  padding: 6px 22px 6px 34px;
 }
-.filler :nth-of-type(4){/*сироп*/
+.filler label:nth-of-type(4){/*сироп*/
   padding: 6px 19px 6px 34px;
 }
-.filler :last-child{/*джем*/
-  padding: 6px 3px 6px 34px;
+.filler label:last-child{/*джем*/
+  padding: 6px 2px 6px 34px;
 }
 
 .filler label::before{
@@ -2486,7 +2512,7 @@ fieldset.sorting-fill
   background-color: rgb(170, 188, 178);
   border-radius: 20px;
   padding: 6px 27px 7px 27px;
-  margin-top: 38px;
+  margin-top: 37px;
   text-align: center;
   vertical-align: middle;
   font-family: 'Roboto', Arial, sans-serif;
@@ -2500,46 +2526,60 @@ fieldset.sorting-fill
 
 .pagination-list {
   list-style: none;
-
   padding: 0px;
   margin:0;
-  margin-bottom: 32px;
-
+  margin-bottom: 27px;
+  margin-right: -3px;
   display: flex;
   flex-wrap: wrap;
   align-self: flex-end;
-  /* background-color: turquoise; */
+
 }
 
 .pagination-item  {
-  margin-right:5px;
-  margin:0;
-  margin-right: 3px;
+  margin:0 3px 0 0;
   padding:0;
-  /* background-color:red; */
-
   border-radius:24px;
 }
 
-.pagination-item:last-child {
+.pagination-item:last-child a{
   margin-right: 0;
 }
 
 .pagination-item a {
   display: block;
-  padding: 5px 10px;
-
+  padding: 4px 9px 4px 9px;
   font-family: 'Roboto', Arial, sans-serif;
   font-size: 16px;
   line-height: 18px;
   font-weight: 500;
   color: rgb(255, 255, 255);
-
   text-decoration: none;
   cursor: pointer;
 }
 
-
+.pagination-item-back a svg{
+  margin: -1px 4px 0 0;
+}
+.pagination-item:nth-child(2) a{
+  margin: -1px -2px 0 0
+}
+.pagination-item:nth-child(3) a{
+  margin: -1px -1px 0 0;
+}
+.pagination-item:nth-child(4) a{
+  margin: -1px -1px 0 0;
+}
+.pagination-item:nth-child(5) a{
+  margin: -1px 0px 0 0;
+}
+.pagination-item:nth-child(6) a{
+  margin: -1px 2px 0 0;
+}
+.pagination-item-next a svg{
+  margin: 0 -8px 0 0;
+}
+/*не раскодировать, тк они прописаны в html файле*/
 /* .pagination-item-back a {
   display: block;
   background-image: url("../img/icon-right-small.svg");
@@ -2547,11 +2587,12 @@ fieldset.sorting-fill
   background-position: center bottom;
   background-repeat:no-repeat;
   padding: 5px 15px;
-} */
+}
 
-/* .pagination-item-next a {
+ .pagination-item-next a {
   background-image: url("../img/icon-right-small.svg");
   background-position: 6px 8px;
+  background-position: center bottom;
   background-repeat:no-repeat;
 } */
 .pagination-item:hover{

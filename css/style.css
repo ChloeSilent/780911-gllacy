@@ -618,6 +618,10 @@ button.small-button.enter{
 }
 
 /*корзина с товарами*/
+.tooltip-cart-button.cart-full{
+  color: rgb(50, 50, 50);
+background-color:  rgb(248, 247, 244);
+}
 
 .tooltip-cart-button.cart-full::before{
   content: "";
@@ -626,13 +630,13 @@ button.small-button.enter{
   bottom: 6px;
   width: 21px;
   height: 20px;
-  background-image: url("../img/cart.svg");
+  background-image: url("../img/cart-full-hover.svg");
+
   background-repeat: no-repeat;
   background-position: 0 0;
-
 }
 
-.tooltip-cart-button.cart-full:hover::before,
+/* .tooltip-cart-button.cart-full:hover::before,
 .tooltip-cart-button.cart-full:focus::before{
   content: "";
   position: absolute;
@@ -644,7 +648,7 @@ button.small-button.enter{
   background-repeat: no-repeat;
   background-position: 0 0;
 
-}
+} */
 
 .tooltip-cart-field{
   font-family: 'Roboto', Arial, sans-serif;
@@ -662,9 +666,9 @@ button.small-button.enter{
   display: block;
 }
 
-.cart .tooltip-button.tooltip-cart-button .tooltip-container{
+/* .cart .tooltip-button.tooltip-cart-button .tooltip-container{
   display: block;
-}
+} */
 .table-button-wrapper{
   display: flex;
   flex-direction: column;
@@ -765,8 +769,7 @@ vertical-align: middle;
 
 
 .button-in-cart{
-
-
+  padding: 10px 15px 10px 15px;
 }
 
 /*часы работы магазина и телефон*/
@@ -2059,21 +2062,19 @@ a.current-page {
 /*хлебные крошки*/
 
 .breadcrumbs {
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  margin:0;
+  margin-top:-22px;
+  margin-bottom: 0px;
+  padding:0;
+  list-style: none;
   font-family: 'Roboto', Arial, sans-serif;
   font-size: 14px;
   line-height: 16px;
   font-weight: 400;
   color: rgb(254, 254, 254);
-
-  margin:0;
-  padding:0;
-  margin-bottom: 15px;
-
-  list-style: none;
-
-  display: flex;
-  justify-content: flex-start;
-  flex-wrap: wrap;
   }
 
   .breadcrumbs li {
@@ -2106,16 +2107,19 @@ a.current-page {
 
   position: absolute;
 
-  right: -15px;
+  right: -14px;
 }
 
-
+.breadcrumbs-2{
+  padding-left: 1px;
+}
 .page-title{
   font-family: 'Roboto', Arial, sans-serif;
   font-size: 35px;
   line-height: 41px;
   font-weight: bold;
   color: rgb(255, 255, 255);
+  margin: 5px 0 25px 0;
 
 }
 /*фильтры Сортировка*/
@@ -2132,18 +2136,17 @@ a.current-page {
 .sorting-wrapper form{
   display:flex;
   flex-wrap:wrap;
-  justify-content: space-between;
-  align-items: flex-start;
+  justify-content: flex-start;
+align-items: flex-start;
 }
 
-fieldset.filters,
-fieldset.price-sort,
-fieldset.sorting
- {
-  padding: 0px 0 0px 0;
+fieldset.filters
+{
+  padding: 0px 0px 0px 0;
   border: none;
-  margin:0;
+  margin:0 16px 0 0;
 }
+
 
 .filters legend {
   font-family: 'Roboto', Arial, sans-serif;
@@ -2151,31 +2154,33 @@ fieldset.sorting
   line-height: 16px;
   font-weight: 500;
   color: rgb(255, 255, 255);
-  padding-bottom: 10px;
+  padding: 0px 0 6px 16px;
   margin:0;
 }
 
 label.custom-select {
   position: relative;
   display: inline-block;
+  font-size: 14px;
+  line-height: 16px;
+  font-weight: 500;
 }
 
 .custom-select select {
   display: inline-block;
-  border: 2px solid rgba(255, 255, 255, 0.2);
-  font-family: 'Roboto', Arial, sans-serif;
-  font-size: 16px;
-  font-weight: 500;
-  color: rgb(255, 255, 255);
-  background-color: rgba(255, 255, 255, 0.2);
+  border: 1px solid rgba(169, 186, 176);
+  background-color: rgb(169, 186, 176);
   border-radius: 20px;
   padding: 5px 15px 5px 15px;
-  margin:0;
- -webkit-appearance:none; /* remove the strong OSX influence from Webkit */
-
+  -webkit-appearance:none; /* remove the strong OSX influence from Webkit */
   -webkit-border-radius: 20px;
   -moz-border-radius: 20px;
   border-radius: 20px;
+  font-family: 'Roboto', Arial, sans-serif;
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: 500;
+  color: rgb(255, 255, 255);
 }
 
 /* for Webkit's CSS-only solution */
@@ -2189,10 +2194,10 @@ label.custom-select {
 .custom-select:after {
   content: "▼";
   position: absolute;
-  top: 24px;
+  top: 4px;
   right: 5px;
   /* bottom: 0; */
-  font-size: 60%;
+  font-size: 105%;
   line-height: 30px;
   padding: 0 7px;
   background: transparent;
@@ -2213,10 +2218,10 @@ label.custom-select {
   font-size: 16px;
   font-weight: 500;
   color: rgb(255, 255, 255);
-  background-color: rgba(255, 255, 255, 0.2);
+  background-color: rgb(169, 186, 176);
   border-radius: 20px;
-  padding: 5px 20px 5px 15px;
-  margin:0;
+  padding: 7px 28px 7px 10px;
+  /* margin:0; */
 }
 
 .filters select option{
@@ -2231,19 +2236,7 @@ label.custom-select {
   border-radius: 20px;
 }
 
-.button-sort{
-  border: 2px solid  rgb(170, 188, 178);
-  background-color: rgb(170, 188, 178);
-  border-radius: 20px;
-  padding: 5px 30px;
-  font-family: 'Roboto', Arial, sans-serif;
-  font-size: 16px;
-  line-height: 18px;
-  font-weight: 500;
-  color: rgb(255, 255, 255);
-  text-align: center;
-  vertical-align: middle;
-}
+
 
 .button-sort:hover{
   background-color: rgb(255, 255, 255);
@@ -2267,14 +2260,33 @@ label.custom-select {
   opacity: 0.4;
 }
 /*сортировка по цене*/
+
+/* fieldset.price-sort
+{
+  padding: 0px 0 0px 0;
+  border: none;
+  margin:0 16px 0 0;
+} */
+
+.price-sort{
+margin: 0 16px 0 0;
+}
+.price-value{
+  font-family: 'Roboto', Arial, sans-serif;
+  font-size: 14px;
+  line-height: 16px;
+  font-weight: 500;
+  padding: 0 0 6px 14px;
+}
+
 .range-button-wrapper{
   display: flex;
   justify-content: space-between;
-  width: 220px;
+  width: 218px;
 
   background-color: rgba(255, 255, 255, 0.2);
   border-radius: 20px;
-  padding: 8px 65px 7px 35px;
+  padding: 8px 66px 7px 34px;
 }
 .range-button{
   cursor: pointer;
@@ -2322,6 +2334,21 @@ label.custom-select {
 
 
 /*соортировка по жирности*/
+fieldset.sorting-fat
+{
+  padding: 0px 0 0px 0;
+  border: none;
+  margin:0;
+}
+.sorting-fat legend {
+  font-family: 'Roboto', Arial, sans-serif;
+  font-size: 14px;
+  line-height: 16px;
+  font-weight: 500;
+  color: rgb(255, 255, 255);
+  padding: 0px 0 6px 15px;
+  margin:0;
+}
 .fatness,
 .filler {
   display: inline-flex;
@@ -2350,11 +2377,17 @@ label.custom-select {
   padding-right: 20px;
 }
 
+.fatness :first-child{
+  padding-right: 8px;
+}
+.fatness :last-child{
+  padding-right: 0px;
+}
 .fatness label::before{
   content: "";
   position: absolute;
-  top:3px;
-  left: -1px;
+  top:5px;
+  left: -2px;
   display: block;
   width: 22px;
   height:22px;
@@ -2372,12 +2405,30 @@ label.custom-select {
 }
 
 /*наполнители*/
+.sorting-fill legend {
+  font-family: 'Roboto', Arial, sans-serif;
+  font-size: 14px;
+  line-height: 16px;
+  font-weight: 500;
+  color: rgb(255, 255, 255);
+  padding: 0px 0 6px 15px;
+  margin:0;
+}
+
+fieldset.sorting-fill
+{
+  margin: 15px 14px 0 0;
+  padding: 0px 0 0px 0;
+  border: none;
+}
+
 .filler input{
   display: none;
 }
 
 .filler label{
   display: block;
+  position: relative;
   font-family: 'Roboto', Arial, sans-serif;
   font-size: 16px;
   line-height: 18px;
@@ -2389,12 +2440,27 @@ label.custom-select {
   padding-bottom:6px;
   padding-right: 20px;
 }
+.filler label:first-of-type{/*шоколад*/
+  padding: 6px 19px 6px 32px;
+}
+.filler :nth-of-type(2){ /*сахар*/
+  padding: 6px 19px 6px 34px;
+}
+.filler :nth-of-type(3){/*фрукты*/
+  padding: 6px 19px 21px 34px;
+}
+.filler :nth-of-type(4){/*сироп*/
+  padding: 6px 19px 6px 34px;
+}
+.filler :last-child{/*джем*/
+  padding: 6px 3px 6px 34px;
+}
 
 .filler label::before{
   content: "";
   position: absolute;
-  top:3px;
-  left: -1px;
+  top:6px;
+  left: 1px;
   display: block;
   width: 20px;
   height:20px;
@@ -2415,6 +2481,20 @@ label.custom-select {
   background-size: cover;
 }
 
+.button-sort{
+  border: 2px solid  rgb(252, 252, 252);
+  background-color: rgb(170, 188, 178);
+  border-radius: 20px;
+  padding: 6px 27px 7px 27px;
+  margin-top: 38px;
+  text-align: center;
+  vertical-align: middle;
+  font-family: 'Roboto', Arial, sans-serif;
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: 500;
+  color: rgb(255, 255, 255);
+}
 
 /*пагинатор*/
 

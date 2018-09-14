@@ -145,7 +145,7 @@
             <a href="index.html"><span class="underline-peach">Главная</span></a>
           </li>
           <li>
-            <a href="catalog.html"><span class="underline-peach">Магазин</span></a>
+            <a href="catalog.html"><span class="breadcrumbs-2 underline-peach">Каталог</span></a>
           </li>
           <li class="breadcrumbs-current">
             <a>Сливочное</a>
@@ -158,8 +158,9 @@
           <form action="https://echo.htmlacademy.ru" method="post" oninput="priceoutput.value=pricecount.value">
 
             <fieldset class="filters">
+              <legend>Сортировка:</legend>
               <label class="custom-select">
-                Сортировка: <br>
+
                 <select name="sort-option" id="sort-view">
                   <option value="popular">по популярности</option>
                   <option value="from-cheap">сначала недорогие</option>
@@ -174,7 +175,7 @@
                 Цена:
                 <span class="value1">100</span>
                 <span class="rouble">руб.</span>
-                <span>-</span>
+                <span>–</span>
                 <span class="value2">500</span>
                 <span class="rouble">руб.</span>
               </div>
@@ -184,7 +185,7 @@
               </div>
             </div>
 
-            <fieldset class="sorting">
+            <fieldset class="sorting-fat">
               <legend>Жирность:</legend>
               <div class="wrapper-sorting fatness">
 
@@ -202,7 +203,7 @@
               </div>
             </fieldset>
 
-            <fieldset class="sorting">
+            <fieldset class="sorting-fill">
               <legend>Наполнители</legend>
               <div class="wrapper-sorting filler">
                 <input type="checkbox" name="chocolate" id="chocolate-filler" checked>

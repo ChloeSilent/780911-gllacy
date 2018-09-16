@@ -1212,7 +1212,7 @@ li.hit{
   left: 0;
   top:-6px;
   width: 100%;
-  min-height: calc(100% + 71px);
+  min-height: calc(100% + 83px);
   background-color: rgba(248, 247, 244, 0.2);
   border-radius: 5px;
   box-shadow: 0px 20px 20px 0px rgba(0, 0, 0, 0.4);
@@ -1237,6 +1237,7 @@ li.hit{
   border: none;
   background: linear-gradient( 90deg, rgb(231,74,53) 0%, rgb(242,104,67) 100%);
   margin-bottom: 22px;
+  margin-top: 13px;
 }
 
 /*вафля блок */

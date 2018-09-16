@@ -353,19 +353,19 @@
     var modalSection = document.querySelector(".modal-feedback");
     var close = modal.querySelector(".modal-close");
     var modalForm = modal.querySelector("form");
-    var body = document.querySelector("body");
+    var siteBody = document.querySelector("body");
 
     modallink.addEventListener("click", function (evt) {
       evt.preventDefault();
       modal.classList.add("modal-show");
       modalName.focus();
-      body.classList.add(".scroll-hidden")
+      siteBody.classList.add(".scroll-hidden")
     });
 
     close.addEventListener("click", function (evt) {
       evt.preventDefault();
       modal.classList.remove("modal-show");
-      body.classList.remove(".scroll-hidden");
+      siteBody.classList.remove(".scroll-hidden");
     });
 
 

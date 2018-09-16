@@ -1232,7 +1232,7 @@ li.hit{
   margin-right: 0;
 }
 
-.catalog-item img{
+.catalog-item img:first-of-type{
   width: 100%;
   height:auto;
 
@@ -1260,17 +1260,25 @@ li.hit{
   text-shadow: 0px 1px 3px rgba(49, 50, 53, 0.5);
   color: rgb(254, 254, 254);
 }
-.catalog-item-price svg{
+
+.weight:before{
+  content: "";
+  position: absolute;
+  Background-image: url("../img/rouble.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  width: 30px;
+  height: 35px;
   display: inline-block;
   position: relative;
-  bottom:1px;
+  bottom:6px;
   vertical-align: middle;
-  left: -7px;
+  left: -2px;
 }
 
 .weight{
   position: relative;
-  right: 17px;
+  right: 5px;
   font-size: 29px;
   line-height: 44px;
 }
@@ -1832,9 +1840,11 @@ a.small-button.adress-button{
   text-decoration: none;
 }
 
-.footer-copyright img{
+.htmlacademy-logo {
+  margin: 0;
   margin-bottom: 4px;
   margin-left:2px;
+  padding:0;
 }
 
 
@@ -2633,59 +2643,6 @@ fieldset.sorting-fill
   color: rgb(50, 50, 50);
 }
 
-/* @-webkit-keyframes zoom {
-  from {-webkit-transform:scale(0)}
-  to {-webkit-transform:scale(1)}
-}
-
-@keyframes zoom {
-  from {transform:scale(0)}
-  to {transform:scale(1)}
-} */
-/* @keyframes zoom {
-  0% {
-      -webkit-transform: scale(0.1);
-      transform: scale(0.1);
-  }
-  100% {
-      -webkit-transform: scale(1);
-      transform: scale(1);
-  }
-}
-
-@-webkit-keyframes zoom {
-  0% {
-      -webkit-transform: scale(0.1);
-      transform: scale(0.1);
-  }
-  100% {
-      -webkit-transform: scale(1);
-      transform: scale(1);
-  }
-} */
-
-
-@keyframes shake {
-  0%,
-  100% {
-    transform: translateX(0);
-  }
-
-  10%,
-  30%,
-  50%,
-  70%,
-  90% {
-    transform: translateX(-10px);
-  }
-
-  20%,
-  40%,
-  60%,
-  80% {
-    transform: translateX(10px);
-  }
-}
 
 
 .modal-show {
@@ -2693,10 +2650,9 @@ fieldset.sorting-fill
 
 }
 
-.modal-error {
-  animation: shake 0.6s;
-  }
-
+.body-hide{
+  overflow: hidden;
+}
 
 
 

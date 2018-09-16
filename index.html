@@ -175,7 +175,7 @@
           <ul class="catalog-list-hit">
             <li class="catalog-item hit">
               <img src="img/ice-cream-1.png" width="267" height="271" alt="Сливочное с апельсиновым джемом и цитрусовой стружкой">
-              <p class="catalog-item-title"><span class="underline-peach">Сливочное с апельсиновым джемом и цитрусовой стружкой</span></p>
+              <p class="catalog-item-title"> <a href="#"><span class="underline-peach">Сливочное с апельсиновым джемом и цитрусовой стружкой</span></a></p>
               <div class="catalog-item-price">310
                 <span class="weight">/кг</span>
               </div>
@@ -208,7 +208,7 @@
 
             <li class="catalog-item hit">
               <img src="img/ice-cream-4.png" width="267" height="271" alt="Сливочное крем-брюле с карамельной подливкой">
-              <p class="catalog-item-title"><span class="underline">Сливочное крем-брюле с карамельной подливкой</span></p>
+              <p class="catalog-item-title"><span class="underline-peach">Сливочное крем-брюле с карамельной подливкой</span></p>
               <div class="catalog-item-price">415
                 <span class="weight">/кг</span>
               </div>
@@ -353,19 +353,19 @@
     var modalSection = document.querySelector(".modal-feedback");
     var close = modal.querySelector(".modal-close");
     var modalForm = modal.querySelector("form");
-    var body = document.querySelector(".site-wrapper");
+    var body = document.querySelector("body");
 
     modallink.addEventListener("click", function (evt) {
       evt.preventDefault();
       modal.classList.add("modal-show");
       modalName.focus();
-      body.classList.add("body-hide")
+      body.classList.add(".scroll-hidden")
     });
 
     close.addEventListener("click", function (evt) {
       evt.preventDefault();
       modal.classList.remove("modal-show");
-      body.classList.remove("body-hide");
+      body.classList.remove(".scroll-hidden");
     });
 
 
@@ -375,7 +375,7 @@
         evt.preventDefault();
         if (modal.classList.contains("modal-show")) {
           modal.classList.remove("modal-show");
-          body.classList.remove("body-hide");
+          body.classList.remove(".scroll-hidden");
         }
       }
     });

@@ -2066,7 +2066,7 @@ font-weight: 400;
   background-color: #849d8f;
 }
 
-a.current-page {
+.site-navigation > li a.current-page {
   background-color: rgb(208, 112, 88);
   border-bottom: none;
   color: white;

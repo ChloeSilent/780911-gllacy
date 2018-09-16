@@ -1223,6 +1223,8 @@ li.hit{
   margin-bottom: 23px;
   display: flex;
   flex-direction: column;
+  padding: 0 13px;
+
 
 }
 
@@ -1233,8 +1235,7 @@ li.hit{
 .catalog-item img{
   width: 100%;
   height:auto;
-  padding-left: 13px;
-  padding-right:13px;
+
   border-radius: 50%;
 }
 
@@ -1242,8 +1243,8 @@ li.hit{
   box-sizing: border-box;
   display: block;
   margin-top: 13px;
-  padding-left: 20px;
-  padding-right: 20px;
+  /* padding-left: 7px;
+  padding-right: 7px; */
   font-weight: 500;
   text-align: center;
 }
@@ -2068,7 +2069,7 @@ font-weight: 400;
   background-color: #849d8f;
 }
 
-.site-navigation > li a.current-page {
+.sub-menu > li a.current-page {
   background-color: rgb(208, 112, 88);
   border-bottom: none;
   color: white;

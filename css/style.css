@@ -1223,7 +1223,7 @@ li.hit{
   margin-bottom: 23px;
   display: flex;
   flex-direction: column;
-  box-shadow: 0px 20px 20px 0px rgba(0, 0, 0, 0.4);
+
 }
 
 .catalog-list li:nth-child(4n){
@@ -1288,6 +1288,7 @@ li.hit{
   min-height: calc(100% + 71px);
   background-color: rgba(248, 247, 244, 0.2);
   border-radius: 5px;
+  box-shadow: 0px 20px 20px 0px rgba(0, 0, 0, 0.4);
   }
 
 

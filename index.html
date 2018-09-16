@@ -259,7 +259,7 @@
         </div>
 
         <section class="adress">
-          <iframe src="https://yandex.ru/map-widget/v1/-/CBByzWf5HA" width="1200" height="429" frameborder="0" allowfullscreen="true"></iframe>
+          <iframe src="https://yandex.ru/map-widget/v1/-/CBByzWf5HA" width="1200" height="429"  allowfullscreen="allowfullscreen"></iframe>
           <h3 class="visually-hidden">Контактная информация</h3>
 
           <div class="adress-part">
@@ -353,7 +353,7 @@
     var modalSection = document.querySelector(".modal-feedback");
     var close = modal.querySelector(".modal-close");
     var modalForm = modal.querySelector("form");
-    var body = document.querySelector("body");
+    var body = document.querySelector(".site-wrapper");
 
     modallink.addEventListener("click", function (evt) {
       evt.preventDefault();

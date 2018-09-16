@@ -2650,13 +2650,13 @@ fieldset.sorting-fill
 
 }
 
-.body-hide{
+.scroll-hidden {
   overflow: hidden;
 }
 
-
-
-
+iframe{
+  border-width: 0px;
+}
 
 
 

@@ -1044,8 +1044,6 @@ margin-bottom:5px;
   border-radius: 60px;
 }
 
-
-
  .small-button.banner-button-2{
   font-family: 'Roboto', Arial, sans-serif;
   font-weight: bold;
@@ -1065,11 +1063,8 @@ margin-bottom:5px;
 .offer-item-1 {
   background-color: #8c0920;
   background-image: url("../img/raspberries-background.jpg");
-  /* background-position: top left; */
   background-repeat: no-repeat;
   background-position: -51px -94px;
-
-
 }
 
 .offer-item-2 {
@@ -1136,8 +1131,6 @@ li.hit{
   display: flex;
   flex-direction: column;
   padding: 0 13px;
-
-
 }
 
 .catalog-list li:nth-child(4n){
@@ -1147,7 +1140,6 @@ li.hit{
 .catalog-item img:first-of-type{
   width: 100%;
   height:auto;
-
   border-radius: 50%;
 }
 
@@ -1155,7 +1147,6 @@ li.hit{
   box-sizing: border-box;
   display: block;
   margin-top: 13px;
-
   font-weight: 500;
   text-align: center;
   color: rgb(254, 254, 254);
@@ -1163,9 +1154,7 @@ li.hit{
 }
 
 .catalog-item-title:hover{
-
   color:rgb(230,182,155);
-
 }
 .catalog-item-price {
   position: absolute;
@@ -1216,8 +1205,7 @@ li.hit{
   background-color: rgba(248, 247, 244, 0.2);
   border-radius: 5px;
   box-shadow: 0px 20px 20px 0px rgba(0, 0, 0, 0.4);
-  }
-
+}
 
 
 .catalog-item:hover .item-button-wrapper{
@@ -1251,14 +1239,10 @@ li.hit{
   font-size: 16px;
   line-height: 22px;
   color: #323232;
-
   background-color: #eddfc2;
   background-image: url("../img/layer-waffle.jpg");
   background-position: top left;
   background-repeat: repeat;
-
-  /* width: 1150px;
-  height: 306px; */
   width:100%;
   margin-bottom:40px;
   padding: 20px 22px 15px 20px;
@@ -1356,18 +1340,15 @@ li.hit{
   font-size: 16px;
   line-height: 22px;
   color: #323232;
-
   background-color: #ffffff;
   background-image: url("../img/news-strawberries.png");
   background-position: bottom right;
   background-repeat: no-repeat;
   background-size:cover;
-
   width: 48.8%;
   min-height: 220px;
   border-radius: 15px;
   padding:0px;
-
   border-radius: 15px;
 }
 
@@ -1382,15 +1363,11 @@ li.hit{
   margin-top:8px;
   margin-left:-1px;
   margin-bottom:0px;
-
-  /* background-color: aqua; */
 }
 .news span{
   display: block;
   max-width: 350px;
   padding: 2px 5px 10px 19px;
-  /* background-color:pink; */
-
 }
 
 a.news-link {
@@ -1431,10 +1408,6 @@ a.news-link:active{
 
 .newsletter-text{
   margin: 0 0 35px 0;
-  /* margin-top:29px;
-  margin-left:22px;
-  margin-right: 22px;
-  margin-bottom:36px; */
   font-family: 'Roboto', Arial, sans-serif;
   font-weight: 400;
   font-size: 16px;
@@ -1450,14 +1423,11 @@ a.news-link:active{
   display: flex;
   align-items: flex-start;
   width: 100%;
-  /* margin-left:22px;
-  margin-right:20px; */
 }
 
 .newslwtter-form input{
   box-sizing: border-box;
   flex-grow:1;
-  /* width: 368px; */
   margin-right:12px;
   border: 1px solid rgb(211, 211, 210);
   border-radius: 5px;
@@ -1521,13 +1491,11 @@ button.small-button.newsletter-button{
 /*адрес магазина*/
 
 .adress{
-  /* width: 1200px; */
   height: 429px;
   position: relative;
   background-image: url("../img/map.jpg");
   margin: 0 -27px;
   background-position: top center;
-  /* margin-right:-1153px; */
 }
 
 .adress-part {
@@ -1548,14 +1516,12 @@ button.small-button.newsletter-button{
   font-size: 14px;
   line-height: 20px;
   font-weight: 400;
-  /* background-color: royalblue; */
 }
 
 .bold-text{
   font-size: 18px;
   line-height: 24px;
   font-weight: bold;
-  /* background-color: royalblue; */
 }
 .adress-part p:first-child{
   margin: 0px 0px 0px 5px;
@@ -1582,13 +1548,10 @@ button.small-button.newsletter-button{
 
 a.small-button.adress-button{
   margin-left:5px;
-  /* margin-right:25px;
-  margin-bottom:30px; */
   padding: 10px 28px 12px 28px;
 }
 
 /*футер*/
-
  .main-footer{
   min-width: 900px;
   max-width: 1200px;
@@ -1597,7 +1560,6 @@ a.small-button.adress-button{
   padding: 0 0px;
   display: flex;
   justify-content: space-between;
-  /* background-color: palevioletred; */
 }
 
 
@@ -1611,7 +1573,6 @@ a.small-button.adress-button{
  margin-left:28px;
  margin-bottom:30px;
  padding: 0;
- /* background-color: royalblue; */
 }
 
 .social-button{
@@ -1621,7 +1582,7 @@ a.small-button.adress-button{
   box-sizing: border-box;
   border-radius: 22px;
 
-  border: 3px solid rgba(255, 255, 255, 0.502);/*эта обводка не полупрозрачная, как сделать прозрачность как в макете*/
+  border: 3px solid rgba(255, 255, 255, 0.502);
 
   vertical-align: middle;
   margin-right:11px;
@@ -1673,7 +1634,6 @@ a.small-button.adress-button{
 /*блок в футере посередине*/
 
 .navigation-to-custumers {
-  /* max-width:33%; */
   min-height:50px;
   display: flex;
   flex-direction: row;
@@ -1688,13 +1648,13 @@ a.small-button.adress-button{
 .left-column{
   margin:0;
   padding: 0;
-
   margin-right:30px;
   padding-left: 25px;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
 }
+
 .right-column{
   margin:0;
   padding: 0px 0 0 1px;
@@ -1711,14 +1671,11 @@ a.small-button.adress-button{
   display: block;
   text-decoration: none;
   padding: 0;
-
   padding-bottom: 4px;
-
 }
 .like {
   font-weight: bold;
   position: relative;
-
 }
 
 .like::before {
@@ -1736,19 +1693,18 @@ a.small-button.adress-button{
   flex-direction: column;
   align-items: flex-start;
   max-width:33%;
-
   margin-top: 19px;
   margin-right:25px;
-
   padding-left:31px;
   padding:0;
-
   font-family: 'Roboto', Arial, sans-serif;
   font-size: 12px;
   line-height: 18px;
   font-weight: 400;
   color: rgb(254, 254, 254);
 }
+
+
 .html-academy-link{
   color: rgb(254, 254, 254);
   padding-right: 5px;
@@ -1763,7 +1719,6 @@ a.small-button.adress-button{
 }
 
 
-
 /*оформление кнопок*/
 .small-button {
   font-family: 'Roboto', Arial, sans-serif;
@@ -1776,13 +1731,11 @@ a.small-button.adress-button{
   vertical-align: top;
   text-decoration: none;
   text-shadow: 0 2px 5px rgba(160, 32, 11, 0.76);
-
   background: #f26843;
   background: linear-gradient(to bottom, #f26843 0%, #e74a35 100%);
   border-radius: 50px;
   box-shadow: 0 2px 2px rgba(172, 16, 0, 0.64);
   border: none;
-
   cursor: pointer;
 }
 
@@ -1808,7 +1761,6 @@ a.small-button.adress-button{
   width: 120%;
   height: 120%;
   background-color: rgba(0,0,0, 0.3);
-
   z-index: 26;
 }
 
@@ -1834,7 +1786,6 @@ a.small-button.adress-button{
   line-height: 28px;
   font-weight: 500;
   color: rgb(50, 50, 50);
-
 }
 
 .modal-close {
@@ -1853,7 +1804,6 @@ a.small-button.adress-button{
 
 .modal-feedback p{
   margin:0 0 18px 0;
-
 }
 .modal-form fieldset{
   margin:0;
@@ -1867,9 +1817,7 @@ a.small-button.adress-button{
   font-size: 16px;
   line-height: 24px;
   font-weight: 400;
-  /* color: rgb(153, 153, 153); */
   color: rgb(50, 50, 50);
-
   border: 1px solid rgb(211, 211, 210);
   border-radius: 5px;
   width: 267px;
@@ -1879,12 +1827,10 @@ a.small-button.adress-button{
 
 .modal-form textarea {
   resize: none;
-
   font-family: 'Roboto', Arial, sans-serif;
   font-size: 16px;
   line-height: 24px;
   font-weight: 400;
-  /* color: rgb(153, 153, 153); */
   border: 1px solid rgb(211, 211, 210);
   border-radius: 5px;
   width: 428px;
@@ -1901,14 +1847,12 @@ button.small-button.modal-form-button{
 
 .modal-form input:hover{
   border: 3px solid rgb(199, 198, 197);
-
   border-radius: 5px;
   padding: 7px 12px;
   color: rgb(50, 50, 50);
 }
 .modal-form input:focus{
   border: 3px solid rgb(143, 189, 236);
-
   padding: 7px 12px;
   border-radius: 5px;
   color: rgb(50, 50, 50);
@@ -1918,14 +1862,12 @@ button.small-button.modal-form-button{
 
 .modal-form textarea:hover{
   border: 3px solid rgb(199, 198, 197);
-
   padding: 7px 12px;
   border-radius: 5px;
   color: rgb(50, 50, 50);
 }
 .modal-form textarea:focus{
   border: 3px solid rgb(143, 189, 236);
-
   padding: 7px 12px;
   border-radius: 5px;
   color: rgb(50, 50, 50);
@@ -1957,33 +1899,6 @@ font-weight: 400;
 font-weight: 400;
 }
 
-
-
-/* .modal-feedback input,
-.newsletter input,
-.tooltip-login input {
-  font: inherit;
-
-  background-color: transparent;
-  border: 1px solid rgb(211, 211, 210);
-} */
-/*
-
-.modal-feedback input:focus {
-  border-color: rgb(46, 136, 228);
-} */
-
-/*подписка на новостную рассылку*/
-
-
-
-/* .site-navigation-current {
-  background-color: rgb(248, 247, 244);
-  border: none;
-  border-radius: 30px;
-} */
-
-
 /*каталог */
 .wrapper{
   min-width: 900px;
@@ -2012,27 +1927,14 @@ font-weight: 400;
 .body-catalog{
   background-color: #849d8f;
 }
-/* }
-.site-wrapper-catalog{
-  min-width: 900px;
-  max-width: 1200px;
-   margin: 0 auto;
-  display: flex;
-  flex-direction: column;
-  background-color: #849d8f;
-
-
-} */
 
 .site-wrapper-catalog{
   margin: 0 auto;
   background-color: #849d8f;
-  /* align-items: center; */
 }
 
 .container-catalog{
  padding: 0 0;
-
 }
 /*хлебные крошки*/
 
@@ -2050,15 +1952,10 @@ font-weight: 400;
   line-height: 16px;
   font-weight: 400;
   color: rgb(254, 254, 254);
-  }
+}
 
-  .breadcrumbs li {
-  position: relative;
-
-
-  /* background-color: yellowgreen; */
-
-  margin:0;
+.breadcrumbs li {
+  position: relative; margin:0;
   margin-right: 20px;
   padding:0;
 }
@@ -2070,18 +1967,12 @@ font-weight: 400;
   font-weight: 400;
   color: rgb(254, 254, 254);
   text-decoration: none;
-  /* display: inline-block;
-  padding: 6px 4px 6px 4px;
-  /*margin-right:5px;
-  background-color:red; */
 }
 
 .breadcrumbs li:nth-child(1) a::after,
 .breadcrumbs li:nth-child(2) a::after{
   content: "»";
-
   position: absolute;
-
   right: -14px;
 }
 
@@ -2095,7 +1986,6 @@ font-weight: 400;
   font-weight: bold;
   color: rgb(255, 255, 255);
   margin: 5px 0 25px 0;
-
 }
 /*фильтры Сортировка*/
 
@@ -2112,11 +2002,10 @@ font-weight: 400;
   display:flex;
   flex-wrap:wrap;
   justify-content: flex-start;
-align-items: flex-start;
+  align-items: flex-start;
 }
 
-fieldset.filters
-{
+fieldset.filters{
   padding: 0px 0px 0px 0;
   border: none;
   margin:0 16px 0 0;
@@ -2171,7 +2060,6 @@ label.custom-select {
   position: absolute;
   top: 4px;
   right: 5px;
-  /* bottom: 0; */
   font-size: 105%;
   line-height: 30px;
   padding: 0 7px;
@@ -2196,7 +2084,6 @@ label.custom-select {
   background-color: rgba(255, 255, 255, 0.2);
   border-radius: 20px;
   padding: 7px 28px 7px 10px;
-  /* margin:0; */
 }
 
 .filters select option{
@@ -2219,7 +2106,6 @@ label.custom-select {
 }
 .button-sort:active {
   border: none;
-
   background-color: rgb(237, 237, 237);
   box-shadow: inset 0 2px 2px rgba(106, 107, 108, 1);
 }
@@ -2234,14 +2120,7 @@ label.custom-select {
 .filler input:disabled + label::before {
   opacity: 0.4;
 }
-/*сортировка по цене*/
 
-/* fieldset.price-sort
-{
-  padding: 0px 0 0px 0;
-  border: none;
-  margin:0 16px 0 0;
-} */
 
 .price-sort{
 margin: 0 16px 0 0;
@@ -2375,7 +2254,6 @@ fieldset.sorting-fat
 }
 
 .fatness input:checked + label::before {
-
   background-image: url("../img/radio-on.svg");
 }
 
@@ -2448,7 +2326,6 @@ fieldset.sorting-fill
 }
 
 .filler input:checked + label::before {
-
   background-image: url("../img/checkbox-on.svg");
   width: 24px;
   height:20px;
@@ -2528,22 +2405,7 @@ fieldset.sorting-fill
 .pagination-item-next a svg{
   margin: 0 -8px 0 0;
 }
-/*не раскодировать, тк они прописаны в html файле*/
-/* .pagination-item-back a {
-  display: block;
-  background-image: url("../img/icon-right-small.svg");
-  transform: rotate(180deg);
-  background-position: center bottom;
-  background-repeat:no-repeat;
-  padding: 5px 15px;
-}
 
- .pagination-item-next a {
-  background-image: url("../img/icon-right-small.svg");
-  background-position: 6px 8px;
-  background-position: center bottom;
-  background-repeat:no-repeat;
-} */
 .pagination-item:hover{
   background-color: rgba(255, 255, 255, 0.2);
 }
@@ -2562,7 +2424,6 @@ fieldset.sorting-fill
 
 .modal-show {
   display: block;
-
 }
 
 .scroll-hidden {

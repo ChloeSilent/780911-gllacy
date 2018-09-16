@@ -25,13 +25,14 @@
         <ul class="site-navigation">
           <li>
             <a href="catalog.html" class="site-item"><span class="underline-white">Каталог</span></a>
+            <div class="sub-container">
             <ul class="sub-menu">
-              <li>
+              <li >
                 <a href="catalog.html" class="new-in-catalog">Новинки
                 </a>
               </li>
               <li>
-                <a>Сливочное</a>
+                <a href="catalog.html" >Сливочное</a>
               </li>
               <li>
                 <a href="#">Щербеты</a>
@@ -43,7 +44,7 @@
                 <a href="#">Мелорин</a>
               </li>
             </ul>
-
+          </div>
           </li>
           <li>
             <a href="shippingpayment.html" class="site-item"><span class="underline-white">Доставка и оплата</span></a>
@@ -382,12 +383,12 @@
           <input type="text" name="callback-name" id="callback-name" placeholder="Как вас зовут?" >
 
           <label for="callback-mail" class="visually-hidden">Введите вашу электронную почту</label>
-          <input type="email" name="callback-mail" id="callback-mail" placeholder="Ваша почта для ответа?" >
+          <input type="email" name="callback-mail" id="callback-mail" placeholder="Ваша почта для ответа?" required>
 
           <label for="comment-field" class="visually-hidden">Напишите нам что-нибудь</label>
-          <textarea name="comment" id="comment-field" rows="5" placeholder="Напишите что-нибудь..." ></textarea>
+          <textarea name="comment" id="comment-field" rows="5" placeholder="Напишите что-нибудь..." required></textarea>
 
-          <button class="small-button modal-form-button" type="submit" value="Отправить">Отправить</button>
+          <button class="small-button modal-form-button" type="submit" value="Отправить" >Отправить</button>
 
 
         </div>

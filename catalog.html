@@ -22,6 +22,7 @@
         <ul class="site-navigation">
           <li>
             <a class="current-page site-item" href="catalog.html">Каталог</a>
+            <div class="sub-container"></div>
             <ul class="sub-menu">
               <li>
                 <a href="catalog.html" class="new-in-catalog"><span>Новинки</span></a>
@@ -39,521 +40,558 @@
                 <a href="catalog.html">Мелорин</a>
               </li>
             </ul>
-
-          </li>
-          <li>
-            <a href="shippingpayment.html" class="site-item"><span class="underline-white">Доставка и оплата</span></a>
-          </li>
-          <li>
-            <a href="aboutus.html" class="site-item"><span class="underline-white">О Компании</span></a>
-          </li>
-
-        </ul>
       </div>
-      <div class="right-wrapper">
-        <ul class="user-navigation">
-          <li class="search">
-            <div class=" tooltip-button tooltip-search-button">
-              <div class="tooltip-container">
-                <div class="tooltip-inner tooltip-search-field">
-                  <form class="search-window" action="https://echo.htmlacademy.ru" method="post">
-                    <label for="search" class="visually-hidden"> Поиск</label>
-                    <input type="search" name="search" id="search" placeholder="Что ищем?" class="search">
-                  </form>
-                </div>
-              </div>
+      </li>
+      <li>
+        <a href="shippingpayment.html" class="site-item"><span class="underline-white">Доставка и оплата</span></a>
+      </li>
+      <li>
+        <a href="aboutus.html" class="site-item"><span class="underline-white">О Компании</span></a>
+      </li>
+
+      </ul>
+  </div>
+  <div class="right-wrapper">
+    <ul class="user-navigation">
+      <li class="search">
+        <div class=" tooltip-button tooltip-search-button">
+          <div class="tooltip-container">
+            <div class="tooltip-inner tooltip-search-field">
+              <form class="search-window" action="https://echo.htmlacademy.ru" method="post">
+                <label for="search" class="visually-hidden"> Поиск</label>
+                <input type="search" name="search" id="search" placeholder="Что ищем?" class="search">
+              </form>
             </div>
-          </li>
-          <li class="login-link">
-            <div class="tooltip-button tooltip-login-button">
-              Вход
-              <div class="tooltip-container">
-                <div class="tooltip-inner tooltip-login-field">
-                  <form class="login-form" action="https://echo.htmlacademy.ru" method="post">
-                    <fieldset class="tooltip tooltip-login">
+          </div>
+        </div>
+      </li>
+      <li class="login-link">
+        <div class="tooltip-button tooltip-login-button">
+          Вход
+          <div class="tooltip-container">
+            <div class="tooltip-inner tooltip-login-field">
+              <form class="login-form" action="https://echo.htmlacademy.ru" method="post">
+                <fieldset class="tooltip tooltip-login">
 
-                      <legend class="visually-hidden">Войти на сайт</legend>
+                  <legend class="visually-hidden">Войти на сайт</legend>
 
-                      <label for="email" class="visually-hidden">Введите вашу электронную почту</label>
-                      <input type="email" name="email" id="email" placeholder="Электронная почта" required>
+                  <label for="email" class="visually-hidden">Введите вашу электронную почту</label>
+                  <input type="email" name="email" id="email" placeholder="Электронная почта" required>
 
-                      <label for="password-field" class="visually-hidden">Введите ваш пароль</label>
-                      <input type="password" name="password" id="password-field" placeholder="Пароль" required>
-                      <div class="button-links">
-                        <button class="small-button enter" type="submit">Войти</button>
-                        <div class="wrapper-link">
+                  <label for="password-field" class="visually-hidden">Введите ваш пароль</label>
+                  <input type="password" name="password" id="password-field" placeholder="Пароль" required>
+                  <div class="button-links">
+                    <button class="small-button enter" type="submit">Войти</button>
+                    <div class="wrapper-link">
 
-                          <a class="restore" href="#">Забыли пароль?</a>
-                          <a class="registration" href="#">Новая регистрация</a>
-                        </div>
-                      </div>
-                    </fieldset>
-                  </form>
-                </div>
-              </div>
-            </div>
-          </li>
-
-          <li class="cart">
-
-            <div class="tooltip-button tooltip-cart-button cart-full">2 товара
-              <div class="tooltip-container">
-                <section class="tooltip-inner tooltip-cart-field">
-                  <h2 class="visually-hidden">Корзина</h2>
-                  <div class="table-button-wrapper">
-                    <table>
-                      <tr class="table-row-1">
-                        <td class="table-delete-1"><button class="delete-item" type="button">Удалить наименование</button></td>
-                        <td class="table-image-1"><img src="img/ice-cream-1.png" width="33" height="33" alt="Сливочное с апельсиновым джемом и цитрусовой стружкой"></td>
-                        <td class="table-title-1">Пломбир с апельсиновым джемом</td>
-                        <td class="table-weight-1">1,5 кг х</td>
-                        <td class="table-price-1">200 руб.</td>
-                        <td class="table-cost-1">300 руб.</td>
-                      </tr>
-                      <tr class="table-row-2">
-                        <td class="table-delete-2"><button class="delete-item" type="button">Удалить наименование</button></td>
-                        <td class="table-image-2"><img src="img/ice-cream-3.png" width="33" height="33" alt="Клубничный пломбир с присыпкой из белого шоколада"></td>
-                        <td class="table-title-2">Клубничный пломбир с присыпкой из белого шоколада</td>
-                        <td class="table-weight-2">1,5 кг х</td>
-                        <td class="table-price-2">300 руб.</td>
-                        <td class="table-cost-2">450 руб.</td>
-                      </tr>
-                    </table>
-                    <div class="final">Итого:
-                      <div class="final-cost"> 750 руб.</div>
+                      <a class="restore" href="#">Забыли пароль?</a>
+                      <a class="registration" href="#">Новая регистрация</a>
                     </div>
-                    <button class="small-button button-in-cart" type="submit">Оформить заказ</button>
                   </div>
-                </section>
-              </div>
+                </fieldset>
+              </form>
             </div>
-          </li>
-        </ul>
-        <div class="store-info">
-          <h2 class="visually-hidden">Как с нами связаться:</h2>
-          <p class="openhours">C 10 до 20, ежедневно</p>
-          <p class="telefon">8 812 450-25-25</p>
+          </div>
         </div>
-      </div>
+      </li>
 
-    </header>
+      <li class="cart">
 
-    <main class="main-content container caontainer-main">
-      <div class="container-catalog ">
-        <ul class="breadcrumbs">
-          <li>
-            <a href="index.html"><span class="underline-peach">Главная</span></a>
-          </li>
-          <li>
-            <a href="catalog.html"><span class="breadcrumbs-2 underline-peach">Каталог</span></a>
-          </li>
-          <li class="breadcrumbs-current">
-            <a>Сливочное</a>
-          </li>
-        </ul>
-
-        <h1 class="page-title">Сливочное мороженое</h1>
-        <section class="sorting-wrapper">
-          <h2 class="visually-hidden">Фильтр товаров</h2>
-          <form action="https://echo.htmlacademy.ru" method="post" oninput="priceoutput.value=pricecount.value">
-
-            <fieldset class="filters">
-              <legend>Сортировка:</legend>
-              <label class="custom-select">
-
-                <select name="sort-option" id="sort-view">
-                  <option value="popular">по популярности</option>
-                  <option value="from-cheap">сначала недорогие</option>
-                  <option value="from-expensive">сначала дорогие</option>
-                  <option value="fett">по жирности</option>
-                </select>
-              </label>
-            </fieldset>
-            <div class="price-sort">
-              <h3 class="visually-hidden"> Цена:</h3>
-              <div class="price-value">
-                Цена:
-                <span class="value1">100</span>
-                <span class="rouble">руб.</span>
-                <span>–</span>
-                <span class="value2">500</span>
-                <span class="rouble">руб.</span>
+        <div class="tooltip-button tooltip-cart-button cart-full">2 товара
+          <div class="tooltip-container">
+            <section class="tooltip-inner tooltip-cart-field">
+              <h2 class="visually-hidden">Корзина</h2>
+              <div class="table-button-wrapper">
+                <table>
+                  <tr class="table-row-1">
+                    <td class="table-delete-1"><button class="delete-item" type="button">Удалить наименование</button></td>
+                    <td class="table-image-1"><img src="img/ice-cream-1.png" width="33" height="33" alt="Сливочное с апельсиновым джемом и цитрусовой стружкой"></td>
+                    <td class="table-title-1">Пломбир с апельсиновым джемом</td>
+                    <td class="table-weight-1">1,5 кг х</td>
+                    <td class="table-price-1">200 руб.</td>
+                    <td class="table-cost-1">300 руб.</td>
+                  </tr>
+                  <tr class="table-row-2">
+                    <td class="table-delete-2"><button class="delete-item" type="button">Удалить наименование</button></td>
+                    <td class="table-image-2"><img src="img/ice-cream-3.png" width="33" height="33" alt="Клубничный пломбир с присыпкой из белого шоколада"></td>
+                    <td class="table-title-2">Клубничный пломбир с присыпкой из белого шоколада</td>
+                    <td class="table-weight-2">1,5 кг х</td>
+                    <td class="table-price-2">300 руб.</td>
+                    <td class="table-cost-2">450 руб.</td>
+                  </tr>
+                </table>
+                <div class="final">Итого:
+                  <div class="final-cost"> 750 руб.</div>
+                </div>
+                <button class="small-button button-in-cart" type="submit">Оформить заказ</button>
               </div>
-              <div class="range-button-wrapper">
-                <div class="range-button first-range"></div>
-                <div class="range-button second-range"></div>
-              </div>
-            </div>
-
-            <fieldset class="sorting-fat">
-              <legend>Жирность:</legend>
-              <div class="wrapper-sorting fatness">
-
-                <input type="radio" name="fat-choice" id="fat-contain-0" value="0%">
-                <label for="fat-contain-0">0%</label>
-
-                <input type="radio" name="fat-choice" id="fat-contain-less10" value="до 10%">
-                <label for="fat-contain-less10">до 10%</label>
-
-                <input type="radio" name="fat-choice" id="fat-contain-less30" value="до 30%">
-                <label for="fat-contain-less30">до 30%</label>
-
-                <input type="radio" name="fat-choice" id="fat-contain-more30" value="выше 30%">
-                <label for="fat-contain-more30">выше 30%</label>
-              </div>
-            </fieldset>
-
-            <fieldset class="sorting-fill">
-              <legend>Наполнители</legend>
-              <div class="wrapper-sorting filler">
-                <input type="checkbox" name="chocolate" id="chocolate-filler" checked>
-                <label for="chocolate-filler">шоколадные</label>
-                <input type="checkbox" name="sugar" id="sugar-filler" checked>
-                <label for="sugar-filler">сахарные присыпки</label>
-                <input type="checkbox" name="fruit" id="fruit-filler">
-                <label for="fruit-filler">фрукты</label>
-                <input type="checkbox" name="syrup" id="syrup-filler">
-                <label for="syrup-filler">сиропы</label>
-                <input type="checkbox" name="jam" id="jam-filler">
-                <label for="jam-filler">джемы</label>
-              </div>
-            </fieldset>
-
-            <button class="button-sort" type="submit">Применить</button>
-
-          </form>
-        </section>
-        <section class="catalog">
-
-          <ul class="catalog-list">
-
-            <li class="catalog-item">
-              <img src="img/ice-cream-1.png" width="267" height="267" alt="Сливочное с апельсиновым джемом и цитрусовой стружкой">
-              <p class="catalog-item-title"><span class="underline-peach">Сливочное с апельсиновым джемом и цитрусовой стружкой</span></p>
-              <div class="catalog-item-price">310
-                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="31" height="36" viewBox="0 0 31 36">
-                <metadata><?xpacket begin="﻿" id="W5M0MpCehiHzreSzNTczkc9d"?>
-              <x:xmpmeta xmlns:x="adobe:ns:meta/" x:xmptk="Adobe XMP Core 5.6-c142 79.160924, 2017/07/13-01:06:39        ">
-                 <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
-                    <rdf:Description rdf:about=""/>
-                 </rdf:RDF>
-              </x:xmpmeta>
-              <?xpacket end="w"?></metadata>
-              <image id="Р" width="31" height="36" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAjCAMAAAC0CkrjAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAABU1BMVEUxMjUxMjUxMjUxMjUxMjUxMjUxMjUxMjUxMjX+/v739/fp6eqrq60xMjUxMjX+/v7n5+doaWsxMjX09PSEhYcxMjUxMjXz8/NbXF7b29sxMjVhYmVPUFJRUlVTVFZNTlF3eHrOzs/9/f15enwxMjUxMjUxMjUxMjUxMjUxMjWoqKn+/v7LzMwxMjUxMjUxMjUxMjUxMjUxMjXd3d7q6uoxMjUxMjWur7D5+fkxMjUxMjUxMjWRkpMxMjUxMjXKy8z4+PgxMjUxMjXw8fHo6Ojh4eLCwsMxMjUxMjUxMjVlZWjJycrw8PD+/v5naGrNzc4xMjXs7e1ISUsxMjVeX2HPz8/9/f3s7OzIyMlubnAxMjV+foBgYWNWV1lDREYxMjUxMjUxMjUxMjUxMjUxMjUxMjVQUVMxMjUxMjVWV1k0NTgxMjUxMjUxMjUxMjX///8AAACPY/1qAAAAb3RSTlMAAgUKDQ4LBwT51pg7EwH9qSkR3T4VCN42sCmEb2ZiYHK0/FYfSzguLTB7/KgvEh4QGCer2j0bUvNIIgYrTwxD9FEomt1TszcdDxQ1lPtzwFPmZj9yw/vjuXdAK0ZYXFVKPisjHBRrQRlZPDlMOiYcK8QjAAAAAWJLR0Rw2ABsdAAAAAlwSFlzAAALEgAACxIB0t1+/AAAAAd0SU1FB+IJCxcLFzQHHKAAAAGWSURBVDjLdZRZW4JAFIaBAaQNi7KF1MpIsUXJyjLbtEVoNdtTs8wWy+T/38UMiFPAe3ee7zlzlu8AQRiQFKCZLjTr40iiC6Xj9PT29Q8AjrdloP/DPzgk+OwHaN3B8EhgtKMzTlkfGw/4eG9ZnxAFDpcng6GwwdT0TATVn5UAj8nBuWhMluVYPDq/AOPFpQSHyaFoUlAMEsupFRivrqV9mByOCSRvQFLKOow3MpsAl2XFrMVnt2Ac2U7tuMkEtwvjvVyeds/eh/GBa7ZR+xB1fgRrQ7fSZucFVTP8Oj45PUNzn8POKd2DiyKcG3iol6UruDXaQ73OoJ272uG/KWVk5Jgz+/bu/qH4KJp+g3KlGsIde6rlnl/iknUtlJbMF3DH5Hr+tWHfGgfe0iKS3z/qUtJAbXwGEgoNKNJxpRhlLcsTnnPrlSTr2rlFNc/wHnN3HfLMbooa7zK3RfNLgrWdc5uIkgI7J7Mso5p+W5dqorFZtDbjNplOMXSpNvYXqn63aq0fNKgLFKO2620VrckF9HewlvyXX4Ri924UL0YRAAAAAElFTkSuQmCC"/>
-              </svg>
-                <span class="weight">/кг</span>
-              </div>
-              <div class="item-button-wrapper">
-                <button class="catalog-button small-button">Быстрый просмотр</button>
-              </div>
-            </li>
-
-            <li class="catalog-item">
-              <img src="img/ice-cream-2.png" width="267" height="267" alt="Сливочно-кофейное с кусочками шоколада">
-              <p class="catalog-item-title"><span class="underline-peach">Сливочно-кофейное с кусочками шоколада</span></p>
-              <div class="catalog-item-price">380
-                  <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="31" height="36" viewBox="0 0 31 36">
-                    <metadata><?xpacket begin="﻿" id="W5M0MpCehiHzreSzNTczkc9d"?>
-                  <x:xmpmeta xmlns:x="adobe:ns:meta/" x:xmptk="Adobe XMP Core 5.6-c142 79.160924, 2017/07/13-01:06:39        ">
-                     <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
-                        <rdf:Description rdf:about=""/>
-                     </rdf:RDF>
-                  </x:xmpmeta>
-                  <?xpacket end="w"?></metadata>
-                  <image id="Р" width="31" height="36" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAjCAMAAAC0CkrjAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAABU1BMVEUxMjUxMjUxMjUxMjUxMjUxMjUxMjUxMjUxMjX+/v739/fp6eqrq60xMjUxMjX+/v7n5+doaWsxMjX09PSEhYcxMjUxMjXz8/NbXF7b29sxMjVhYmVPUFJRUlVTVFZNTlF3eHrOzs/9/f15enwxMjUxMjUxMjUxMjUxMjUxMjWoqKn+/v7LzMwxMjUxMjUxMjUxMjUxMjUxMjXd3d7q6uoxMjUxMjWur7D5+fkxMjUxMjUxMjWRkpMxMjUxMjXKy8z4+PgxMjUxMjXw8fHo6Ojh4eLCwsMxMjUxMjUxMjVlZWjJycrw8PD+/v5naGrNzc4xMjXs7e1ISUsxMjVeX2HPz8/9/f3s7OzIyMlubnAxMjV+foBgYWNWV1lDREYxMjUxMjUxMjUxMjUxMjUxMjUxMjVQUVMxMjUxMjVWV1k0NTgxMjUxMjUxMjUxMjX///8AAACPY/1qAAAAb3RSTlMAAgUKDQ4LBwT51pg7EwH9qSkR3T4VCN42sCmEb2ZiYHK0/FYfSzguLTB7/KgvEh4QGCer2j0bUvNIIgYrTwxD9FEomt1TszcdDxQ1lPtzwFPmZj9yw/vjuXdAK0ZYXFVKPisjHBRrQRlZPDlMOiYcK8QjAAAAAWJLR0Rw2ABsdAAAAAlwSFlzAAALEgAACxIB0t1+/AAAAAd0SU1FB+IJCxcLFzQHHKAAAAGWSURBVDjLdZRZW4JAFIaBAaQNi7KF1MpIsUXJyjLbtEVoNdtTs8wWy+T/38UMiFPAe3ee7zlzlu8AQRiQFKCZLjTr40iiC6Xj9PT29Q8AjrdloP/DPzgk+OwHaN3B8EhgtKMzTlkfGw/4eG9ZnxAFDpcng6GwwdT0TATVn5UAj8nBuWhMluVYPDq/AOPFpQSHyaFoUlAMEsupFRivrqV9mByOCSRvQFLKOow3MpsAl2XFrMVnt2Ac2U7tuMkEtwvjvVyeds/eh/GBa7ZR+xB1fgRrQ7fSZucFVTP8Oj45PUNzn8POKd2DiyKcG3iol6UruDXaQ73OoJ272uG/KWVk5Jgz+/bu/qH4KJp+g3KlGsIde6rlnl/iknUtlJbMF3DH5Hr+tWHfGgfe0iKS3z/qUtJAbXwGEgoNKNJxpRhlLcsTnnPrlSTr2rlFNc/wHnN3HfLMbooa7zK3RfNLgrWdc5uIkgI7J7Mso5p+W5dqorFZtDbjNplOMXSpNvYXqn63aq0fNKgLFKO2620VrckF9HewlvyXX4Ri924UL0YRAAAAAElFTkSuQmCC"/>
-                  </svg>
-                <span class="weight">/кг</span>
-              </div>
-              <div class="item-button-wrapper">
-                <button class="catalog-button small-button">Быстрый просмотр</button>
-              </div>
-            </li>
-
-            <li class="catalog-item">
-              <img src="img/ice-cream-3.png" width="267" height="267" alt="Сливочно-клубничное с присыпкой из белого шоколада">
-              <p class="catalog-item-title"><span class="underline-peach">Сливочно-клубничное с присыпкой из белого шоколада</span></p>
-              <div class="catalog-item-price">355
-                  <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="31" height="36" viewBox="0 0 31 36">
-                    <metadata><?xpacket begin="﻿" id="W5M0MpCehiHzreSzNTczkc9d"?>
-                  <x:xmpmeta xmlns:x="adobe:ns:meta/" x:xmptk="Adobe XMP Core 5.6-c142 79.160924, 2017/07/13-01:06:39        ">
-                     <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
-                        <rdf:Description rdf:about=""/>
-                     </rdf:RDF>
-                  </x:xmpmeta>
-                  <?xpacket end="w"?></metadata>
-                  <image id="Р" width="31" height="36" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAjCAMAAAC0CkrjAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAABU1BMVEUxMjUxMjUxMjUxMjUxMjUxMjUxMjUxMjUxMjX+/v739/fp6eqrq60xMjUxMjX+/v7n5+doaWsxMjX09PSEhYcxMjUxMjXz8/NbXF7b29sxMjVhYmVPUFJRUlVTVFZNTlF3eHrOzs/9/f15enwxMjUxMjUxMjUxMjUxMjUxMjWoqKn+/v7LzMwxMjUxMjUxMjUxMjUxMjUxMjXd3d7q6uoxMjUxMjWur7D5+fkxMjUxMjUxMjWRkpMxMjUxMjXKy8z4+PgxMjUxMjXw8fHo6Ojh4eLCwsMxMjUxMjUxMjVlZWjJycrw8PD+/v5naGrNzc4xMjXs7e1ISUsxMjVeX2HPz8/9/f3s7OzIyMlubnAxMjV+foBgYWNWV1lDREYxMjUxMjUxMjUxMjUxMjUxMjUxMjVQUVMxMjUxMjVWV1k0NTgxMjUxMjUxMjUxMjX///8AAACPY/1qAAAAb3RSTlMAAgUKDQ4LBwT51pg7EwH9qSkR3T4VCN42sCmEb2ZiYHK0/FYfSzguLTB7/KgvEh4QGCer2j0bUvNIIgYrTwxD9FEomt1TszcdDxQ1lPtzwFPmZj9yw/vjuXdAK0ZYXFVKPisjHBRrQRlZPDlMOiYcK8QjAAAAAWJLR0Rw2ABsdAAAAAlwSFlzAAALEgAACxIB0t1+/AAAAAd0SU1FB+IJCxcLFzQHHKAAAAGWSURBVDjLdZRZW4JAFIaBAaQNi7KF1MpIsUXJyjLbtEVoNdtTs8wWy+T/38UMiFPAe3ee7zlzlu8AQRiQFKCZLjTr40iiC6Xj9PT29Q8AjrdloP/DPzgk+OwHaN3B8EhgtKMzTlkfGw/4eG9ZnxAFDpcng6GwwdT0TATVn5UAj8nBuWhMluVYPDq/AOPFpQSHyaFoUlAMEsupFRivrqV9mByOCSRvQFLKOow3MpsAl2XFrMVnt2Ac2U7tuMkEtwvjvVyeds/eh/GBa7ZR+xB1fgRrQ7fSZucFVTP8Oj45PUNzn8POKd2DiyKcG3iol6UruDXaQ73OoJ272uG/KWVk5Jgz+/bu/qH4KJp+g3KlGsIde6rlnl/iknUtlJbMF3DH5Hr+tWHfGgfe0iKS3z/qUtJAbXwGEgoNKNJxpRhlLcsTnnPrlSTr2rlFNc/wHnN3HfLMbooa7zK3RfNLgrWdc5uIkgI7J7Mso5p+W5dqorFZtDbjNplOMXSpNvYXqn63aq0fNKgLFKO2620VrckF9HewlvyXX4Ri924UL0YRAAAAAElFTkSuQmCC"/>
-                  </svg>
-                <span class="weight">/кг</span>
-              </div>
-              <div class="item-button-wrapper">
-                <button class="catalog-button small-button">Быстрый просмотр</button>
-              </div>
-            </li>
-
-            <li class="catalog-item">
-              <img src="img/ice-cream-4.png" width="267" height="267" alt="Сливочное крем-брюле с карамельной подливкой">
-              <p class="catalog-item-title"><span class="underline-peach">Сливочное крем-брюле с карамельной подливкой</span></p>
-              <div class="catalog-item-price">415
-                  <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="31" height="36" viewBox="0 0 31 36">
-                    <metadata><?xpacket begin="﻿" id="W5M0MpCehiHzreSzNTczkc9d"?>
-                  <x:xmpmeta xmlns:x="adobe:ns:meta/" x:xmptk="Adobe XMP Core 5.6-c142 79.160924, 2017/07/13-01:06:39        ">
-                     <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
-                        <rdf:Description rdf:about=""/>
-                     </rdf:RDF>
-                  </x:xmpmeta>
-                  <?xpacket end="w"?></metadata>
-                  <image id="Р" width="31" height="36" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAjCAMAAAC0CkrjAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAABU1BMVEUxMjUxMjUxMjUxMjUxMjUxMjUxMjUxMjUxMjX+/v739/fp6eqrq60xMjUxMjX+/v7n5+doaWsxMjX09PSEhYcxMjUxMjXz8/NbXF7b29sxMjVhYmVPUFJRUlVTVFZNTlF3eHrOzs/9/f15enwxMjUxMjUxMjUxMjUxMjUxMjWoqKn+/v7LzMwxMjUxMjUxMjUxMjUxMjUxMjXd3d7q6uoxMjUxMjWur7D5+fkxMjUxMjUxMjWRkpMxMjUxMjXKy8z4+PgxMjUxMjXw8fHo6Ojh4eLCwsMxMjUxMjUxMjVlZWjJycrw8PD+/v5naGrNzc4xMjXs7e1ISUsxMjVeX2HPz8/9/f3s7OzIyMlubnAxMjV+foBgYWNWV1lDREYxMjUxMjUxMjUxMjUxMjUxMjUxMjVQUVMxMjUxMjVWV1k0NTgxMjUxMjUxMjUxMjX///8AAACPY/1qAAAAb3RSTlMAAgUKDQ4LBwT51pg7EwH9qSkR3T4VCN42sCmEb2ZiYHK0/FYfSzguLTB7/KgvEh4QGCer2j0bUvNIIgYrTwxD9FEomt1TszcdDxQ1lPtzwFPmZj9yw/vjuXdAK0ZYXFVKPisjHBRrQRlZPDlMOiYcK8QjAAAAAWJLR0Rw2ABsdAAAAAlwSFlzAAALEgAACxIB0t1+/AAAAAd0SU1FB+IJCxcLFzQHHKAAAAGWSURBVDjLdZRZW4JAFIaBAaQNi7KF1MpIsUXJyjLbtEVoNdtTs8wWy+T/38UMiFPAe3ee7zlzlu8AQRiQFKCZLjTr40iiC6Xj9PT29Q8AjrdloP/DPzgk+OwHaN3B8EhgtKMzTlkfGw/4eG9ZnxAFDpcng6GwwdT0TATVn5UAj8nBuWhMluVYPDq/AOPFpQSHyaFoUlAMEsupFRivrqV9mByOCSRvQFLKOow3MpsAl2XFrMVnt2Ac2U7tuMkEtwvjvVyeds/eh/GBa7ZR+xB1fgRrQ7fSZucFVTP8Oj45PUNzn8POKd2DiyKcG3iol6UruDXaQ73OoJ272uG/KWVk5Jgz+/bu/qH4KJp+g3KlGsIde6rlnl/iknUtlJbMF3DH5Hr+tWHfGgfe0iKS3z/qUtJAbXwGEgoNKNJxpRhlLcsTnnPrlSTr2rlFNc/wHnN3HfLMbooa7zK3RfNLgrWdc5uIkgI7J7Mso5p+W5dqorFZtDbjNplOMXSpNvYXqn63aq0fNKgLFKO2620VrckF9HewlvyXX4Ri924UL0YRAAAAAElFTkSuQmCC"/>
-                  </svg>
-                <span class="weight">/кг</span>
-              </div>
-              <div class="item-button-wrapper">
-                <button class="catalog-button small-button">Быстрый просмотр</button>
-              </div>
-            </li>
-
-            <li class="catalog-item">
-              <img src="img/ice-cream-5.png" width="267" height="267" alt="Сливочное с брусничным джемом">
-              <p class="catalog-item-title"><span class="underline-peach">Сливочное с брусничным джемом</span></p>
-              <div class="catalog-item-price">325
-                  <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="31" height="36" viewBox="0 0 31 36">
-                    <metadata><?xpacket begin="﻿" id="W5M0MpCehiHzreSzNTczkc9d"?>
-                  <x:xmpmeta xmlns:x="adobe:ns:meta/" x:xmptk="Adobe XMP Core 5.6-c142 79.160924, 2017/07/13-01:06:39        ">
-                     <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
-                        <rdf:Description rdf:about=""/>
-                     </rdf:RDF>
-                  </x:xmpmeta>
-                  <?xpacket end="w"?></metadata>
-                  <image id="Р" width="31" height="36" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAjCAMAAAC0CkrjAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAABU1BMVEUxMjUxMjUxMjUxMjUxMjUxMjUxMjUxMjUxMjX+/v739/fp6eqrq60xMjUxMjX+/v7n5+doaWsxMjX09PSEhYcxMjUxMjXz8/NbXF7b29sxMjVhYmVPUFJRUlVTVFZNTlF3eHrOzs/9/f15enwxMjUxMjUxMjUxMjUxMjUxMjWoqKn+/v7LzMwxMjUxMjUxMjUxMjUxMjUxMjXd3d7q6uoxMjUxMjWur7D5+fkxMjUxMjUxMjWRkpMxMjUxMjXKy8z4+PgxMjUxMjXw8fHo6Ojh4eLCwsMxMjUxMjUxMjVlZWjJycrw8PD+/v5naGrNzc4xMjXs7e1ISUsxMjVeX2HPz8/9/f3s7OzIyMlubnAxMjV+foBgYWNWV1lDREYxMjUxMjUxMjUxMjUxMjUxMjUxMjVQUVMxMjUxMjVWV1k0NTgxMjUxMjUxMjUxMjX///8AAACPY/1qAAAAb3RSTlMAAgUKDQ4LBwT51pg7EwH9qSkR3T4VCN42sCmEb2ZiYHK0/FYfSzguLTB7/KgvEh4QGCer2j0bUvNIIgYrTwxD9FEomt1TszcdDxQ1lPtzwFPmZj9yw/vjuXdAK0ZYXFVKPisjHBRrQRlZPDlMOiYcK8QjAAAAAWJLR0Rw2ABsdAAAAAlwSFlzAAALEgAACxIB0t1+/AAAAAd0SU1FB+IJCxcLFzQHHKAAAAGWSURBVDjLdZRZW4JAFIaBAaQNi7KF1MpIsUXJyjLbtEVoNdtTs8wWy+T/38UMiFPAe3ee7zlzlu8AQRiQFKCZLjTr40iiC6Xj9PT29Q8AjrdloP/DPzgk+OwHaN3B8EhgtKMzTlkfGw/4eG9ZnxAFDpcng6GwwdT0TATVn5UAj8nBuWhMluVYPDq/AOPFpQSHyaFoUlAMEsupFRivrqV9mByOCSRvQFLKOow3MpsAl2XFrMVnt2Ac2U7tuMkEtwvjvVyeds/eh/GBa7ZR+xB1fgRrQ7fSZucFVTP8Oj45PUNzn8POKd2DiyKcG3iol6UruDXaQ73OoJ272uG/KWVk5Jgz+/bu/qH4KJp+g3KlGsIde6rlnl/iknUtlJbMF3DH5Hr+tWHfGgfe0iKS3z/qUtJAbXwGEgoNKNJxpRhlLcsTnnPrlSTr2rlFNc/wHnN3HfLMbooa7zK3RfNLgrWdc5uIkgI7J7Mso5p+W5dqorFZtDbjNplOMXSpNvYXqn63aq0fNKgLFKO2620VrckF9HewlvyXX4Ri924UL0YRAAAAAElFTkSuQmCC"/>
-                  </svg>
-                <span class="weight">/кг</span>
-              </div>
-              <div class="item-button-wrapper">
-                <button class="catalog-button small-button">Быстрый просмотр</button>
-              </div>
-            </li>
-
-            <li class="catalog-item">
-              <img src="img/ice-cream-6.png" width="267" height="267" alt="Сливочно-черничное с цельными ягодами черники">
-              <p class="catalog-item-title"><span class="underline-peach">Сливочно-черничное с цельными ягодами черники</span></p>
-              <div class="catalog-item-price">410
-                  <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="31" height="36" viewBox="0 0 31 36">
-                    <metadata><?xpacket begin="﻿" id="W5M0MpCehiHzreSzNTczkc9d"?>
-                  <x:xmpmeta xmlns:x="adobe:ns:meta/" x:xmptk="Adobe XMP Core 5.6-c142 79.160924, 2017/07/13-01:06:39        ">
-                     <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
-                        <rdf:Description rdf:about=""/>
-                     </rdf:RDF>
-                  </x:xmpmeta>
-                  <?xpacket end="w"?></metadata>
-                  <image id="Р" width="31" height="36" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAjCAMAAAC0CkrjAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAABU1BMVEUxMjUxMjUxMjUxMjUxMjUxMjUxMjUxMjUxMjX+/v739/fp6eqrq60xMjUxMjX+/v7n5+doaWsxMjX09PSEhYcxMjUxMjXz8/NbXF7b29sxMjVhYmVPUFJRUlVTVFZNTlF3eHrOzs/9/f15enwxMjUxMjUxMjUxMjUxMjUxMjWoqKn+/v7LzMwxMjUxMjUxMjUxMjUxMjUxMjXd3d7q6uoxMjUxMjWur7D5+fkxMjUxMjUxMjWRkpMxMjUxMjXKy8z4+PgxMjUxMjXw8fHo6Ojh4eLCwsMxMjUxMjUxMjVlZWjJycrw8PD+/v5naGrNzc4xMjXs7e1ISUsxMjVeX2HPz8/9/f3s7OzIyMlubnAxMjV+foBgYWNWV1lDREYxMjUxMjUxMjUxMjUxMjUxMjUxMjVQUVMxMjUxMjVWV1k0NTgxMjUxMjUxMjUxMjX///8AAACPY/1qAAAAb3RSTlMAAgUKDQ4LBwT51pg7EwH9qSkR3T4VCN42sCmEb2ZiYHK0/FYfSzguLTB7/KgvEh4QGCer2j0bUvNIIgYrTwxD9FEomt1TszcdDxQ1lPtzwFPmZj9yw/vjuXdAK0ZYXFVKPisjHBRrQRlZPDlMOiYcK8QjAAAAAWJLR0Rw2ABsdAAAAAlwSFlzAAALEgAACxIB0t1+/AAAAAd0SU1FB+IJCxcLFzQHHKAAAAGWSURBVDjLdZRZW4JAFIaBAaQNi7KF1MpIsUXJyjLbtEVoNdtTs8wWy+T/38UMiFPAe3ee7zlzlu8AQRiQFKCZLjTr40iiC6Xj9PT29Q8AjrdloP/DPzgk+OwHaN3B8EhgtKMzTlkfGw/4eG9ZnxAFDpcng6GwwdT0TATVn5UAj8nBuWhMluVYPDq/AOPFpQSHyaFoUlAMEsupFRivrqV9mByOCSRvQFLKOow3MpsAl2XFrMVnt2Ac2U7tuMkEtwvjvVyeds/eh/GBa7ZR+xB1fgRrQ7fSZucFVTP8Oj45PUNzn8POKd2DiyKcG3iol6UruDXaQ73OoJ272uG/KWVk5Jgz+/bu/qH4KJp+g3KlGsIde6rlnl/iknUtlJbMF3DH5Hr+tWHfGgfe0iKS3z/qUtJAbXwGEgoNKNJxpRhlLcsTnnPrlSTr2rlFNc/wHnN3HfLMbooa7zK3RfNLgrWdc5uIkgI7J7Mso5p+W5dqorFZtDbjNplOMXSpNvYXqn63aq0fNKgLFKO2620VrckF9HewlvyXX4Ri924UL0YRAAAAAElFTkSuQmCC"/>
-                  </svg>
-                <span class="weight">/кг</span>
-              </div>
-              <div class="item-button-wrapper">
-                <button class="catalog-button small-button">Быстрый просмотр</button>
-              </div>
-            </li>
-
-            <li class="catalog-item">
-              <img src="img/ice-cream-7.png" width="267" height="267" alt="Сливочно-лимонное с карамельной присыпкой">
-              <p class="catalog-item-title"><span class="underline-peach">Сливочно-лимонное с карамельной присыпкой</span></p>
-              <div class="catalog-item-price">375
-                  <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="31" height="36" viewBox="0 0 31 36">
-                    <metadata><?xpacket begin="﻿" id="W5M0MpCehiHzreSzNTczkc9d"?>
-                  <x:xmpmeta xmlns:x="adobe:ns:meta/" x:xmptk="Adobe XMP Core 5.6-c142 79.160924, 2017/07/13-01:06:39        ">
-                     <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
-                        <rdf:Description rdf:about=""/>
-                     </rdf:RDF>
-                  </x:xmpmeta>
-                  <?xpacket end="w"?></metadata>
-                  <image id="Р" width="31" height="36" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAjCAMAAAC0CkrjAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAABU1BMVEUxMjUxMjUxMjUxMjUxMjUxMjUxMjUxMjUxMjX+/v739/fp6eqrq60xMjUxMjX+/v7n5+doaWsxMjX09PSEhYcxMjUxMjXz8/NbXF7b29sxMjVhYmVPUFJRUlVTVFZNTlF3eHrOzs/9/f15enwxMjUxMjUxMjUxMjUxMjUxMjWoqKn+/v7LzMwxMjUxMjUxMjUxMjUxMjUxMjXd3d7q6uoxMjUxMjWur7D5+fkxMjUxMjUxMjWRkpMxMjUxMjXKy8z4+PgxMjUxMjXw8fHo6Ojh4eLCwsMxMjUxMjUxMjVlZWjJycrw8PD+/v5naGrNzc4xMjXs7e1ISUsxMjVeX2HPz8/9/f3s7OzIyMlubnAxMjV+foBgYWNWV1lDREYxMjUxMjUxMjUxMjUxMjUxMjUxMjVQUVMxMjUxMjVWV1k0NTgxMjUxMjUxMjUxMjX///8AAACPY/1qAAAAb3RSTlMAAgUKDQ4LBwT51pg7EwH9qSkR3T4VCN42sCmEb2ZiYHK0/FYfSzguLTB7/KgvEh4QGCer2j0bUvNIIgYrTwxD9FEomt1TszcdDxQ1lPtzwFPmZj9yw/vjuXdAK0ZYXFVKPisjHBRrQRlZPDlMOiYcK8QjAAAAAWJLR0Rw2ABsdAAAAAlwSFlzAAALEgAACxIB0t1+/AAAAAd0SU1FB+IJCxcLFzQHHKAAAAGWSURBVDjLdZRZW4JAFIaBAaQNi7KF1MpIsUXJyjLbtEVoNdtTs8wWy+T/38UMiFPAe3ee7zlzlu8AQRiQFKCZLjTr40iiC6Xj9PT29Q8AjrdloP/DPzgk+OwHaN3B8EhgtKMzTlkfGw/4eG9ZnxAFDpcng6GwwdT0TATVn5UAj8nBuWhMluVYPDq/AOPFpQSHyaFoUlAMEsupFRivrqV9mByOCSRvQFLKOow3MpsAl2XFrMVnt2Ac2U7tuMkEtwvjvVyeds/eh/GBa7ZR+xB1fgRrQ7fSZucFVTP8Oj45PUNzn8POKd2DiyKcG3iol6UruDXaQ73OoJ272uG/KWVk5Jgz+/bu/qH4KJp+g3KlGsIde6rlnl/iknUtlJbMF3DH5Hr+tWHfGgfe0iKS3z/qUtJAbXwGEgoNKNJxpRhlLcsTnnPrlSTr2rlFNc/wHnN3HfLMbooa7zK3RfNLgrWdc5uIkgI7J7Mso5p+W5dqorFZtDbjNplOMXSpNvYXqn63aq0fNKgLFKO2620VrckF9HewlvyXX4Ri924UL0YRAAAAAElFTkSuQmCC"/>
-                  </svg>
-                <span class="weight">/кг</span>
-              </div>
-              <div class="item-button-wrapper">
-                <button class="catalog-button small-button">Быстрый просмотр</button>
-              </div>
-            </li>
-
-            <li class="catalog-item">
-              <img src="img/ice-cream-8.png" width="267" height="267" alt="Сливочное с шоколадной стружкой">
-              <p class="catalog-item-title"><span class="underline-peach">Сливочное с шоколадной стружкой</span></p>
-              <div class="catalog-item-price">320
-                  <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="31" height="36" viewBox="0 0 31 36">
-                    <metadata><?xpacket begin="﻿" id="W5M0MpCehiHzreSzNTczkc9d"?>
-                  <x:xmpmeta xmlns:x="adobe:ns:meta/" x:xmptk="Adobe XMP Core 5.6-c142 79.160924, 2017/07/13-01:06:39        ">
-                     <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
-                        <rdf:Description rdf:about=""/>
-                     </rdf:RDF>
-                  </x:xmpmeta>
-                  <?xpacket end="w"?></metadata>
-                  <image id="Р" width="31" height="36" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAjCAMAAAC0CkrjAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAABU1BMVEUxMjUxMjUxMjUxMjUxMjUxMjUxMjUxMjUxMjX+/v739/fp6eqrq60xMjUxMjX+/v7n5+doaWsxMjX09PSEhYcxMjUxMjXz8/NbXF7b29sxMjVhYmVPUFJRUlVTVFZNTlF3eHrOzs/9/f15enwxMjUxMjUxMjUxMjUxMjUxMjWoqKn+/v7LzMwxMjUxMjUxMjUxMjUxMjUxMjXd3d7q6uoxMjUxMjWur7D5+fkxMjUxMjUxMjWRkpMxMjUxMjXKy8z4+PgxMjUxMjXw8fHo6Ojh4eLCwsMxMjUxMjUxMjVlZWjJycrw8PD+/v5naGrNzc4xMjXs7e1ISUsxMjVeX2HPz8/9/f3s7OzIyMlubnAxMjV+foBgYWNWV1lDREYxMjUxMjUxMjUxMjUxMjUxMjUxMjVQUVMxMjUxMjVWV1k0NTgxMjUxMjUxMjUxMjX///8AAACPY/1qAAAAb3RSTlMAAgUKDQ4LBwT51pg7EwH9qSkR3T4VCN42sCmEb2ZiYHK0/FYfSzguLTB7/KgvEh4QGCer2j0bUvNIIgYrTwxD9FEomt1TszcdDxQ1lPtzwFPmZj9yw/vjuXdAK0ZYXFVKPisjHBRrQRlZPDlMOiYcK8QjAAAAAWJLR0Rw2ABsdAAAAAlwSFlzAAALEgAACxIB0t1+/AAAAAd0SU1FB+IJCxcLFzQHHKAAAAGWSURBVDjLdZRZW4JAFIaBAaQNi7KF1MpIsUXJyjLbtEVoNdtTs8wWy+T/38UMiFPAe3ee7zlzlu8AQRiQFKCZLjTr40iiC6Xj9PT29Q8AjrdloP/DPzgk+OwHaN3B8EhgtKMzTlkfGw/4eG9ZnxAFDpcng6GwwdT0TATVn5UAj8nBuWhMluVYPDq/AOPFpQSHyaFoUlAMEsupFRivrqV9mByOCSRvQFLKOow3MpsAl2XFrMVnt2Ac2U7tuMkEtwvjvVyeds/eh/GBa7ZR+xB1fgRrQ7fSZucFVTP8Oj45PUNzn8POKd2DiyKcG3iol6UruDXaQ73OoJ272uG/KWVk5Jgz+/bu/qH4KJp+g3KlGsIde6rlnl/iknUtlJbMF3DH5Hr+tWHfGgfe0iKS3z/qUtJAbXwGEgoNKNJxpRhlLcsTnnPrlSTr2rlFNc/wHnN3HfLMbooa7zK3RfNLgrWdc5uIkgI7J7Mso5p+W5dqorFZtDbjNplOMXSpNvYXqn63aq0fNKgLFKO2620VrckF9HewlvyXX4Ri924UL0YRAAAAAElFTkSuQmCC"/>
-                  </svg>
-                <span class="weight">/кг</span>
-              </div>
-              <div class="item-button-wrapper">
-                <button class="catalog-button small-button">Быстрый просмотр</button>
-              </div>
-            </li>
-
-            <li class="catalog-item">
-              <img src="img/ice-cream-9.png" width="267" height="267" alt="Сливочно-ванильное с кусочками шоколада">
-              <p class="catalog-item-title"><span class="underline-peach">Сливочно-ванильное с кусочками шоколада</span></p>
-              <div class="catalog-item-price">440
-                  <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="31" height="36" viewBox="0 0 31 36">
-                    <metadata><?xpacket begin="﻿" id="W5M0MpCehiHzreSzNTczkc9d"?>
-                  <x:xmpmeta xmlns:x="adobe:ns:meta/" x:xmptk="Adobe XMP Core 5.6-c142 79.160924, 2017/07/13-01:06:39        ">
-                     <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
-                        <rdf:Description rdf:about=""/>
-                     </rdf:RDF>
-                  </x:xmpmeta>
-                  <?xpacket end="w"?></metadata>
-                  <image id="Р" width="31" height="36" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAjCAMAAAC0CkrjAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAABU1BMVEUxMjUxMjUxMjUxMjUxMjUxMjUxMjUxMjUxMjX+/v739/fp6eqrq60xMjUxMjX+/v7n5+doaWsxMjX09PSEhYcxMjUxMjXz8/NbXF7b29sxMjVhYmVPUFJRUlVTVFZNTlF3eHrOzs/9/f15enwxMjUxMjUxMjUxMjUxMjUxMjWoqKn+/v7LzMwxMjUxMjUxMjUxMjUxMjUxMjXd3d7q6uoxMjUxMjWur7D5+fkxMjUxMjUxMjWRkpMxMjUxMjXKy8z4+PgxMjUxMjXw8fHo6Ojh4eLCwsMxMjUxMjUxMjVlZWjJycrw8PD+/v5naGrNzc4xMjXs7e1ISUsxMjVeX2HPz8/9/f3s7OzIyMlubnAxMjV+foBgYWNWV1lDREYxMjUxMjUxMjUxMjUxMjUxMjUxMjVQUVMxMjUxMjVWV1k0NTgxMjUxMjUxMjUxMjX///8AAACPY/1qAAAAb3RSTlMAAgUKDQ4LBwT51pg7EwH9qSkR3T4VCN42sCmEb2ZiYHK0/FYfSzguLTB7/KgvEh4QGCer2j0bUvNIIgYrTwxD9FEomt1TszcdDxQ1lPtzwFPmZj9yw/vjuXdAK0ZYXFVKPisjHBRrQRlZPDlMOiYcK8QjAAAAAWJLR0Rw2ABsdAAAAAlwSFlzAAALEgAACxIB0t1+/AAAAAd0SU1FB+IJCxcLFzQHHKAAAAGWSURBVDjLdZRZW4JAFIaBAaQNi7KF1MpIsUXJyjLbtEVoNdtTs8wWy+T/38UMiFPAe3ee7zlzlu8AQRiQFKCZLjTr40iiC6Xj9PT29Q8AjrdloP/DPzgk+OwHaN3B8EhgtKMzTlkfGw/4eG9ZnxAFDpcng6GwwdT0TATVn5UAj8nBuWhMluVYPDq/AOPFpQSHyaFoUlAMEsupFRivrqV9mByOCSRvQFLKOow3MpsAl2XFrMVnt2Ac2U7tuMkEtwvjvVyeds/eh/GBa7ZR+xB1fgRrQ7fSZucFVTP8Oj45PUNzn8POKd2DiyKcG3iol6UruDXaQ73OoJ272uG/KWVk5Jgz+/bu/qH4KJp+g3KlGsIde6rlnl/iknUtlJbMF3DH5Hr+tWHfGgfe0iKS3z/qUtJAbXwGEgoNKNJxpRhlLcsTnnPrlSTr2rlFNc/wHnN3HfLMbooa7zK3RfNLgrWdc5uIkgI7J7Mso5p+W5dqorFZtDbjNplOMXSpNvYXqn63aq0fNKgLFKO2620VrckF9HewlvyXX4Ri924UL0YRAAAAAElFTkSuQmCC"/>
-                  </svg>
-                <span class="weight">/кг</span>
-              </div>
-              <div class="item-button-wrapper">
-                <button class="catalog-button small-button">Быстрый просмотр</button>
-              </div>
-            </li>
-
-            <li class="catalog-item">
-              <img src="img/ice-cream-10.png" width="267" height="267" alt="Сливочное с ментоловым сиропом">
-              <p class="catalog-item-title"><span class="underline">Сливочное с ментоловым сиропом</span></p>
-              <div class="catalog-item-price">435
-                  <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="31" height="36" viewBox="0 0 31 36">
-                    <metadata><?xpacket begin="﻿" id="W5M0MpCehiHzreSzNTczkc9d"?>
-                  <x:xmpmeta xmlns:x="adobe:ns:meta/" x:xmptk="Adobe XMP Core 5.6-c142 79.160924, 2017/07/13-01:06:39        ">
-                     <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
-                        <rdf:Description rdf:about=""/>
-                     </rdf:RDF>
-                  </x:xmpmeta>
-                  <?xpacket end="w"?></metadata>
-                  <image id="Р" width="31" height="36" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAjCAMAAAC0CkrjAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAABU1BMVEUxMjUxMjUxMjUxMjUxMjUxMjUxMjUxMjUxMjX+/v739/fp6eqrq60xMjUxMjX+/v7n5+doaWsxMjX09PSEhYcxMjUxMjXz8/NbXF7b29sxMjVhYmVPUFJRUlVTVFZNTlF3eHrOzs/9/f15enwxMjUxMjUxMjUxMjUxMjUxMjWoqKn+/v7LzMwxMjUxMjUxMjUxMjUxMjUxMjXd3d7q6uoxMjUxMjWur7D5+fkxMjUxMjUxMjWRkpMxMjUxMjXKy8z4+PgxMjUxMjXw8fHo6Ojh4eLCwsMxMjUxMjUxMjVlZWjJycrw8PD+/v5naGrNzc4xMjXs7e1ISUsxMjVeX2HPz8/9/f3s7OzIyMlubnAxMjV+foBgYWNWV1lDREYxMjUxMjUxMjUxMjUxMjUxMjUxMjVQUVMxMjUxMjVWV1k0NTgxMjUxMjUxMjUxMjX///8AAACPY/1qAAAAb3RSTlMAAgUKDQ4LBwT51pg7EwH9qSkR3T4VCN42sCmEb2ZiYHK0/FYfSzguLTB7/KgvEh4QGCer2j0bUvNIIgYrTwxD9FEomt1TszcdDxQ1lPtzwFPmZj9yw/vjuXdAK0ZYXFVKPisjHBRrQRlZPDlMOiYcK8QjAAAAAWJLR0Rw2ABsdAAAAAlwSFlzAAALEgAACxIB0t1+/AAAAAd0SU1FB+IJCxcLFzQHHKAAAAGWSURBVDjLdZRZW4JAFIaBAaQNi7KF1MpIsUXJyjLbtEVoNdtTs8wWy+T/38UMiFPAe3ee7zlzlu8AQRiQFKCZLjTr40iiC6Xj9PT29Q8AjrdloP/DPzgk+OwHaN3B8EhgtKMzTlkfGw/4eG9ZnxAFDpcng6GwwdT0TATVn5UAj8nBuWhMluVYPDq/AOPFpQSHyaFoUlAMEsupFRivrqV9mByOCSRvQFLKOow3MpsAl2XFrMVnt2Ac2U7tuMkEtwvjvVyeds/eh/GBa7ZR+xB1fgRrQ7fSZucFVTP8Oj45PUNzn8POKd2DiyKcG3iol6UruDXaQ73OoJ272uG/KWVk5Jgz+/bu/qH4KJp+g3KlGsIde6rlnl/iknUtlJbMF3DH5Hr+tWHfGgfe0iKS3z/qUtJAbXwGEgoNKNJxpRhlLcsTnnPrlSTr2rlFNc/wHnN3HfLMbooa7zK3RfNLgrWdc5uIkgI7J7Mso5p+W5dqorFZtDbjNplOMXSpNvYXqn63aq0fNKgLFKO2620VrckF9HewlvyXX4Ri924UL0YRAAAAAElFTkSuQmCC"/>
-                  </svg>
-                <span class="weight">/кг</span>
-              </div>
-              <div class="item-button-wrapper">
-                <button class="catalog-button small-button">Быстрый просмотр</button>
-              </div>
-            </li>
-
-            <li class="catalog-item">
-              <img src="img/ice-cream-11.png" width="267" height="267" alt="Сливочное с кусочками черного шоколада">
-              <p class="catalog-item-title"><span class="underline-peach">Сливочное с кусочками черного шоколада</span></p>
-              <div class="catalog-item-price">355
-                  <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="31" height="36" viewBox="0 0 31 36">
-                    <metadata><?xpacket begin="﻿" id="W5M0MpCehiHzreSzNTczkc9d"?>
-                  <x:xmpmeta xmlns:x="adobe:ns:meta/" x:xmptk="Adobe XMP Core 5.6-c142 79.160924, 2017/07/13-01:06:39        ">
-                     <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
-                        <rdf:Description rdf:about=""/>
-                     </rdf:RDF>
-                  </x:xmpmeta>
-                  <?xpacket end="w"?></metadata>
-                  <image id="Р" width="31" height="36" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAjCAMAAAC0CkrjAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAABU1BMVEUxMjUxMjUxMjUxMjUxMjUxMjUxMjUxMjUxMjX+/v739/fp6eqrq60xMjUxMjX+/v7n5+doaWsxMjX09PSEhYcxMjUxMjXz8/NbXF7b29sxMjVhYmVPUFJRUlVTVFZNTlF3eHrOzs/9/f15enwxMjUxMjUxMjUxMjUxMjUxMjWoqKn+/v7LzMwxMjUxMjUxMjUxMjUxMjUxMjXd3d7q6uoxMjUxMjWur7D5+fkxMjUxMjUxMjWRkpMxMjUxMjXKy8z4+PgxMjUxMjXw8fHo6Ojh4eLCwsMxMjUxMjUxMjVlZWjJycrw8PD+/v5naGrNzc4xMjXs7e1ISUsxMjVeX2HPz8/9/f3s7OzIyMlubnAxMjV+foBgYWNWV1lDREYxMjUxMjUxMjUxMjUxMjUxMjUxMjVQUVMxMjUxMjVWV1k0NTgxMjUxMjUxMjUxMjX///8AAACPY/1qAAAAb3RSTlMAAgUKDQ4LBwT51pg7EwH9qSkR3T4VCN42sCmEb2ZiYHK0/FYfSzguLTB7/KgvEh4QGCer2j0bUvNIIgYrTwxD9FEomt1TszcdDxQ1lPtzwFPmZj9yw/vjuXdAK0ZYXFVKPisjHBRrQRlZPDlMOiYcK8QjAAAAAWJLR0Rw2ABsdAAAAAlwSFlzAAALEgAACxIB0t1+/AAAAAd0SU1FB+IJCxcLFzQHHKAAAAGWSURBVDjLdZRZW4JAFIaBAaQNi7KF1MpIsUXJyjLbtEVoNdtTs8wWy+T/38UMiFPAe3ee7zlzlu8AQRiQFKCZLjTr40iiC6Xj9PT29Q8AjrdloP/DPzgk+OwHaN3B8EhgtKMzTlkfGw/4eG9ZnxAFDpcng6GwwdT0TATVn5UAj8nBuWhMluVYPDq/AOPFpQSHyaFoUlAMEsupFRivrqV9mByOCSRvQFLKOow3MpsAl2XFrMVnt2Ac2U7tuMkEtwvjvVyeds/eh/GBa7ZR+xB1fgRrQ7fSZucFVTP8Oj45PUNzn8POKd2DiyKcG3iol6UruDXaQ73OoJ272uG/KWVk5Jgz+/bu/qH4KJp+g3KlGsIde6rlnl/iknUtlJbMF3DH5Hr+tWHfGgfe0iKS3z/qUtJAbXwGEgoNKNJxpRhlLcsTnnPrlSTr2rlFNc/wHnN3HfLMbooa7zK3RfNLgrWdc5uIkgI7J7Mso5p+W5dqorFZtDbjNplOMXSpNvYXqn63aq0fNKgLFKO2620VrckF9HewlvyXX4Ri924UL0YRAAAAAElFTkSuQmCC"/>
-                  </svg>
-                <span class="weight">/кг</span>
-              </div>
-              <div class="item-button-wrapper">
-                <button class="catalog-button small-button">Быстрый просмотр</button>
-              </div>
-            </li>
-
-            <li class="catalog-item">
-              <img src="img/ice-cream-12.png" width="267" height="267" alt="Сливочное с мятным сиропом">
-              <p class="catalog-item-title"><span class="underline-peach">Сливочное с мятным сиропом</span></p>
-              <div class="catalog-item-price">420
-                  <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="31" height="36" viewBox="0 0 31 36">
-                    <metadata><?xpacket begin="﻿" id="W5M0MpCehiHzreSzNTczkc9d"?>
-                  <x:xmpmeta xmlns:x="adobe:ns:meta/" x:xmptk="Adobe XMP Core 5.6-c142 79.160924, 2017/07/13-01:06:39        ">
-                     <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
-                        <rdf:Description rdf:about=""/>
-                     </rdf:RDF>
-                  </x:xmpmeta>
-                  <?xpacket end="w"?></metadata>
-                  <image id="Р" width="31" height="36" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAjCAMAAAC0CkrjAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAABU1BMVEUxMjUxMjUxMjUxMjUxMjUxMjUxMjUxMjUxMjX+/v739/fp6eqrq60xMjUxMjX+/v7n5+doaWsxMjX09PSEhYcxMjUxMjXz8/NbXF7b29sxMjVhYmVPUFJRUlVTVFZNTlF3eHrOzs/9/f15enwxMjUxMjUxMjUxMjUxMjUxMjWoqKn+/v7LzMwxMjUxMjUxMjUxMjUxMjUxMjXd3d7q6uoxMjUxMjWur7D5+fkxMjUxMjUxMjWRkpMxMjUxMjXKy8z4+PgxMjUxMjXw8fHo6Ojh4eLCwsMxMjUxMjUxMjVlZWjJycrw8PD+/v5naGrNzc4xMjXs7e1ISUsxMjVeX2HPz8/9/f3s7OzIyMlubnAxMjV+foBgYWNWV1lDREYxMjUxMjUxMjUxMjUxMjUxMjUxMjVQUVMxMjUxMjVWV1k0NTgxMjUxMjUxMjUxMjX///8AAACPY/1qAAAAb3RSTlMAAgUKDQ4LBwT51pg7EwH9qSkR3T4VCN42sCmEb2ZiYHK0/FYfSzguLTB7/KgvEh4QGCer2j0bUvNIIgYrTwxD9FEomt1TszcdDxQ1lPtzwFPmZj9yw/vjuXdAK0ZYXFVKPisjHBRrQRlZPDlMOiYcK8QjAAAAAWJLR0Rw2ABsdAAAAAlwSFlzAAALEgAACxIB0t1+/AAAAAd0SU1FB+IJCxcLFzQHHKAAAAGWSURBVDjLdZRZW4JAFIaBAaQNi7KF1MpIsUXJyjLbtEVoNdtTs8wWy+T/38UMiFPAe3ee7zlzlu8AQRiQFKCZLjTr40iiC6Xj9PT29Q8AjrdloP/DPzgk+OwHaN3B8EhgtKMzTlkfGw/4eG9ZnxAFDpcng6GwwdT0TATVn5UAj8nBuWhMluVYPDq/AOPFpQSHyaFoUlAMEsupFRivrqV9mByOCSRvQFLKOow3MpsAl2XFrMVnt2Ac2U7tuMkEtwvjvVyeds/eh/GBa7ZR+xB1fgRrQ7fSZucFVTP8Oj45PUNzn8POKd2DiyKcG3iol6UruDXaQ73OoJ272uG/KWVk5Jgz+/bu/qH4KJp+g3KlGsIde6rlnl/iknUtlJbMF3DH5Hr+tWHfGgfe0iKS3z/qUtJAbXwGEgoNKNJxpRhlLcsTnnPrlSTr2rlFNc/wHnN3HfLMbooa7zK3RfNLgrWdc5uIkgI7J7Mso5p+W5dqorFZtDbjNplOMXSpNvYXqn63aq0fNKgLFKO2620VrckF9HewlvyXX4Ri924UL0YRAAAAAElFTkSuQmCC"/>
-                  </svg>
-                <span class="weight">/кг</span>
-              </div>
-              <div class="item-button-wrapper">
-                <button class="catalog-button small-button">Быстрый просмотр</button>
-              </div>
-            </li>
-
-          </ul>
-
-          <ul class="pagination-list">
-            <li class="pagination-item pagination-item-back">
-              <a href="#"><span class="visually-hidden">Назад</span>
-                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="9px" height="14px">
-                  <image opacity="0.8" x="0px" y="0px" width="9px" height="14px" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAkAAAAOCAQAAABXnf4jAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAAmJLR0QA/4ePzL8AAAAHdElNRQfiCQQOGQ36BR2gAAAAYElEQVQY013PoQoCURQE0MNldbEZBAWTxf//H8Mm81NQTPpMl33cmXbSjG7o3A/dZM3sausbBV6eUeDmFxWICkQFws4G7wTCw6I7OidNaLg44Z5UMNcPuB5K/IwfG/baH+UBJ7ZcGhGfAAAAAElFTkSuQmCC"
-                  />
-                </svg></a>
-            </li>
-            <li class="pagination-item pagination-item-current">
-              <a href="#">1</a>
-            </li>
-            <li class="pagination-item">
-              <a href="#">2</a>
-            </li>
-            <li class="pagination-item">
-              <a href="#">3</a>
-            </li>
-            <li class="pagination-item">
-              <a href="#">4</a>
-            </li>
-            <li class="pagination-item">
-              <a href="#">5</a>
-            </li>
-            <li class="pagination-item pagination-item-next">
-              <a href="#"><span class="visually-hidden">Вперед</span>
-                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="9px" height="14px">
-                  <image x="0px" y="0px" width="9px" height="14px" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAkAAAAOCAQAAABXnf4jAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAAmJLR0QA/4ePzL8AAAAHdElNRQfiCQQOGC82fm0FAAAAYklEQVQY02XNqxGAMBBF0QsCh8cyQzO0gEXQDm3QBwVQAvSAwF1EJpNksuvO2w/i5iipcVHvHLH3LBErDEmB8UKG6VPAx7El1ssFDExxpnFXP+e4mEGgAqQCwbUEwc4jB/kBedmWZeGUfVUAAAAASUVORK5CYII="
-                  />
-                </svg></a>
-            </li>
-          </ul>
-
-        </section>
+            </section>
+          </div>
         </div>
-    </main>
-    <footer class="main-footer container">
-
-
-      <div class="footer-social">
-        <ul>
-          <li>
-            <a class="social-button twitter" href="#">Twitter</a>
-          </li>
-          <li>
-            <a class=" social-button instagram" href="#">Instagram</a>
-          </li>
-          <li>
-            <a class="social-button facebook" href="#">Facebook</a>
-          </li>
-          <li>
-            <a class="social-button vkontakte" href="#">Vkontakte</a>
-          </li>
-        </ul>
-      </div>
-
-      <nav class="navigation-to-custumers">
-        <div class="left-column">
-          <a class="info-to-custumers-item like" href="#"><span class="underline-peach">Для поставщиков</span></a>
-
-          <a class="info-to-custumers-item" href="#"><span class="underline-peach">О производстве</span></a>
-        </div>
-        <div class="right-column">
-          <a class="info-to-custumers-item" href="#"><span class="underline-peach">Наши документы</span></a>
-
-          <a class="info-to-custumers-item" href="#"><span class="underline-peach">Экологические стандарты</span></a>
-        </div>
-      </nav>
-      <p class="footer-copyright">
-        <img src="img/logo-htmlacademy.svg" width="108" height="39" alt="логотип HTML Academy">
-        <span class="made-in">Сделано в <a class="html-academy-link" href="https://htmlacademy.ru/intensive/htmlcss"><span class="underline-peach">HTML Academy</span></a>© 2017</span>
-      </p>
-    </footer>
+      </li>
+    </ul>
+    <div class="store-info">
+      <h2 class="visually-hidden">Как с нами связаться:</h2>
+      <p class="openhours">C 10 до 20, ежедневно</p>
+      <p class="telefon">8 812 450-25-25</p>
     </div>
+  </div>
+
+  </header>
+
+  <main class="main-content container caontainer-main">
+    <div class="container-catalog ">
+      <ul class="breadcrumbs">
+        <li>
+          <a href="index.html"><span class="underline-peach">Главная</span></a>
+        </li>
+        <li>
+          <a href="catalog.html"><span class="breadcrumbs-2 underline-peach">Каталог</span></a>
+        </li>
+        <li class="breadcrumbs-current">
+          <a>Сливочное</a>
+        </li>
+      </ul>
+
+      <h1 class="page-title">Сливочное мороженое</h1>
+      <section class="sorting-wrapper">
+        <h2 class="visually-hidden">Фильтр товаров</h2>
+        <form action="https://echo.htmlacademy.ru" method="post" oninput="priceoutput.value=pricecount.value">
+
+          <fieldset class="filters">
+            <legend>Сортировка:</legend>
+            <label class="custom-select">
+
+              <select name="sort-option" id="sort-view">
+                <option value="popular">по популярности</option>
+                <option value="from-cheap">сначала недорогие</option>
+                <option value="from-expensive">сначала дорогие</option>
+                <option value="fett">по жирности</option>
+              </select>
+            </label>
+          </fieldset>
+          <div class="price-sort">
+            <h3 class="visually-hidden"> Цена:</h3>
+            <div class="price-value">
+              Цена:
+              <span class="value1">100</span>
+              <span class="rouble">руб.</span>
+              <span>–</span>
+              <span class="value2">500</span>
+              <span class="rouble">руб.</span>
+            </div>
+            <div class="range-button-wrapper">
+              <div class="range-button first-range"></div>
+              <div class="range-button second-range"></div>
+            </div>
+          </div>
+
+          <fieldset class="sorting-fat">
+            <legend>Жирность:</legend>
+            <div class="wrapper-sorting fatness">
+
+              <input type="radio" name="fat-choice" id="fat-contain-0" value="0%">
+              <label for="fat-contain-0">0%</label>
+
+              <input type="radio" name="fat-choice" id="fat-contain-less10" value="до 10%">
+              <label for="fat-contain-less10">до 10%</label>
+
+              <input type="radio" name="fat-choice" id="fat-contain-less30" value="до 30%">
+              <label for="fat-contain-less30">до 30%</label>
+
+              <input type="radio" name="fat-choice" id="fat-contain-more30" value="выше 30%">
+              <label for="fat-contain-more30">выше 30%</label>
+            </div>
+          </fieldset>
+
+          <fieldset class="sorting-fill">
+            <legend>Наполнители</legend>
+            <div class="wrapper-sorting filler">
+              <input type="checkbox" name="chocolate" id="chocolate-filler" checked>
+              <label for="chocolate-filler">шоколадные</label>
+              <input type="checkbox" name="sugar" id="sugar-filler" checked>
+              <label for="sugar-filler">сахарные присыпки</label>
+              <input type="checkbox" name="fruit" id="fruit-filler">
+              <label for="fruit-filler">фрукты</label>
+              <input type="checkbox" name="syrup" id="syrup-filler">
+              <label for="syrup-filler">сиропы</label>
+              <input type="checkbox" name="jam" id="jam-filler">
+              <label for="jam-filler">джемы</label>
+            </div>
+          </fieldset>
+
+          <button class="button-sort" type="submit">Применить</button>
+
+        </form>
+      </section>
+      <section class="catalog">
+
+        <ul class="catalog-list">
+
+          <li class="catalog-item">
+            <img src="img/ice-cream-1.png" width="267" height="267" alt="Сливочное с апельсиновым джемом и цитрусовой стружкой">
+            <p class="catalog-item-title"><span class="underline-peach">Сливочное с апельсиновым джемом и цитрусовой стружкой</span></p>
+            <div class="catalog-item-price">310
+              <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="31" height="36" viewBox="0 0 31 36">
+                <metadata>
+                  <?xpacket begin="﻿" id="W5M0MpCehiHzreSzNTczkc9d"?>
+                    <x:xmpmeta xmlns:x="adobe:ns:meta/" x:xmptk="Adobe XMP Core 5.6-c142 79.160924, 2017/07/13-01:06:39        ">
+                      <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+                        <rdf:Description rdf:about="" />
+                      </rdf:RDF>
+                    </x:xmpmeta>
+                    <?xpacket end="w"?>
+                </metadata>
+                <image id="Р" width="31" height="36" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAjCAMAAAC0CkrjAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAABU1BMVEUxMjUxMjUxMjUxMjUxMjUxMjUxMjUxMjUxMjX+/v739/fp6eqrq60xMjUxMjX+/v7n5+doaWsxMjX09PSEhYcxMjUxMjXz8/NbXF7b29sxMjVhYmVPUFJRUlVTVFZNTlF3eHrOzs/9/f15enwxMjUxMjUxMjUxMjUxMjUxMjWoqKn+/v7LzMwxMjUxMjUxMjUxMjUxMjUxMjXd3d7q6uoxMjUxMjWur7D5+fkxMjUxMjUxMjWRkpMxMjUxMjXKy8z4+PgxMjUxMjXw8fHo6Ojh4eLCwsMxMjUxMjUxMjVlZWjJycrw8PD+/v5naGrNzc4xMjXs7e1ISUsxMjVeX2HPz8/9/f3s7OzIyMlubnAxMjV+foBgYWNWV1lDREYxMjUxMjUxMjUxMjUxMjUxMjUxMjVQUVMxMjUxMjVWV1k0NTgxMjUxMjUxMjUxMjX///8AAACPY/1qAAAAb3RSTlMAAgUKDQ4LBwT51pg7EwH9qSkR3T4VCN42sCmEb2ZiYHK0/FYfSzguLTB7/KgvEh4QGCer2j0bUvNIIgYrTwxD9FEomt1TszcdDxQ1lPtzwFPmZj9yw/vjuXdAK0ZYXFVKPisjHBRrQRlZPDlMOiYcK8QjAAAAAWJLR0Rw2ABsdAAAAAlwSFlzAAALEgAACxIB0t1+/AAAAAd0SU1FB+IJCxcLFzQHHKAAAAGWSURBVDjLdZRZW4JAFIaBAaQNi7KF1MpIsUXJyjLbtEVoNdtTs8wWy+T/38UMiFPAe3ee7zlzlu8AQRiQFKCZLjTr40iiC6Xj9PT29Q8AjrdloP/DPzgk+OwHaN3B8EhgtKMzTlkfGw/4eG9ZnxAFDpcng6GwwdT0TATVn5UAj8nBuWhMluVYPDq/AOPFpQSHyaFoUlAMEsupFRivrqV9mByOCSRvQFLKOow3MpsAl2XFrMVnt2Ac2U7tuMkEtwvjvVyeds/eh/GBa7ZR+xB1fgRrQ7fSZucFVTP8Oj45PUNzn8POKd2DiyKcG3iol6UruDXaQ73OoJ272uG/KWVk5Jgz+/bu/qH4KJp+g3KlGsIde6rlnl/iknUtlJbMF3DH5Hr+tWHfGgfe0iKS3z/qUtJAbXwGEgoNKNJxpRhlLcsTnnPrlSTr2rlFNc/wHnN3HfLMbooa7zK3RfNLgrWdc5uIkgI7J7Mso5p+W5dqorFZtDbjNplOMXSpNvYXqn63aq0fNKgLFKO2620VrckF9HewlvyXX4Ri924UL0YRAAAAAElFTkSuQmCC"
+                />
+              </svg>
+              <span class="weight">/кг</span>
+            </div>
+            <div class="item-button-wrapper">
+              <button class="catalog-button small-button">Быстрый просмотр</button>
+            </div>
+          </li>
+
+          <li class="catalog-item">
+            <img src="img/ice-cream-2.png" width="267" height="267" alt="Сливочно-кофейное с кусочками шоколада">
+            <p class="catalog-item-title"><span class="underline-peach">Сливочно-кофейное с кусочками шоколада</span></p>
+            <div class="catalog-item-price">380
+              <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="31" height="36" viewBox="0 0 31 36">
+                <metadata>
+                  <?xpacket begin="﻿" id="W5M0MpCehiHzreSzNTczkc9d"?>
+                    <x:xmpmeta xmlns:x="adobe:ns:meta/" x:xmptk="Adobe XMP Core 5.6-c142 79.160924, 2017/07/13-01:06:39        ">
+                      <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+                        <rdf:Description rdf:about="" />
+                      </rdf:RDF>
+                    </x:xmpmeta>
+                    <?xpacket end="w"?>
+                </metadata>
+                <image id="Р" width="31" height="36" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAjCAMAAAC0CkrjAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAABU1BMVEUxMjUxMjUxMjUxMjUxMjUxMjUxMjUxMjUxMjX+/v739/fp6eqrq60xMjUxMjX+/v7n5+doaWsxMjX09PSEhYcxMjUxMjXz8/NbXF7b29sxMjVhYmVPUFJRUlVTVFZNTlF3eHrOzs/9/f15enwxMjUxMjUxMjUxMjUxMjUxMjWoqKn+/v7LzMwxMjUxMjUxMjUxMjUxMjUxMjXd3d7q6uoxMjUxMjWur7D5+fkxMjUxMjUxMjWRkpMxMjUxMjXKy8z4+PgxMjUxMjXw8fHo6Ojh4eLCwsMxMjUxMjUxMjVlZWjJycrw8PD+/v5naGrNzc4xMjXs7e1ISUsxMjVeX2HPz8/9/f3s7OzIyMlubnAxMjV+foBgYWNWV1lDREYxMjUxMjUxMjUxMjUxMjUxMjUxMjVQUVMxMjUxMjVWV1k0NTgxMjUxMjUxMjUxMjX///8AAACPY/1qAAAAb3RSTlMAAgUKDQ4LBwT51pg7EwH9qSkR3T4VCN42sCmEb2ZiYHK0/FYfSzguLTB7/KgvEh4QGCer2j0bUvNIIgYrTwxD9FEomt1TszcdDxQ1lPtzwFPmZj9yw/vjuXdAK0ZYXFVKPisjHBRrQRlZPDlMOiYcK8QjAAAAAWJLR0Rw2ABsdAAAAAlwSFlzAAALEgAACxIB0t1+/AAAAAd0SU1FB+IJCxcLFzQHHKAAAAGWSURBVDjLdZRZW4JAFIaBAaQNi7KF1MpIsUXJyjLbtEVoNdtTs8wWy+T/38UMiFPAe3ee7zlzlu8AQRiQFKCZLjTr40iiC6Xj9PT29Q8AjrdloP/DPzgk+OwHaN3B8EhgtKMzTlkfGw/4eG9ZnxAFDpcng6GwwdT0TATVn5UAj8nBuWhMluVYPDq/AOPFpQSHyaFoUlAMEsupFRivrqV9mByOCSRvQFLKOow3MpsAl2XFrMVnt2Ac2U7tuMkEtwvjvVyeds/eh/GBa7ZR+xB1fgRrQ7fSZucFVTP8Oj45PUNzn8POKd2DiyKcG3iol6UruDXaQ73OoJ272uG/KWVk5Jgz+/bu/qH4KJp+g3KlGsIde6rlnl/iknUtlJbMF3DH5Hr+tWHfGgfe0iKS3z/qUtJAbXwGEgoNKNJxpRhlLcsTnnPrlSTr2rlFNc/wHnN3HfLMbooa7zK3RfNLgrWdc5uIkgI7J7Mso5p+W5dqorFZtDbjNplOMXSpNvYXqn63aq0fNKgLFKO2620VrckF9HewlvyXX4Ri924UL0YRAAAAAElFTkSuQmCC"
+                />
+              </svg>
+              <span class="weight">/кг</span>
+            </div>
+            <div class="item-button-wrapper">
+              <button class="catalog-button small-button">Быстрый просмотр</button>
+            </div>
+          </li>
+
+          <li class="catalog-item">
+            <img src="img/ice-cream-3.png" width="267" height="267" alt="Сливочно-клубничное с присыпкой из белого шоколада">
+            <p class="catalog-item-title"><span class="underline-peach">Сливочно-клубничное с присыпкой из белого шоколада</span></p>
+            <div class="catalog-item-price">355
+              <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="31" height="36" viewBox="0 0 31 36">
+                <metadata>
+                  <?xpacket begin="﻿" id="W5M0MpCehiHzreSzNTczkc9d"?>
+                    <x:xmpmeta xmlns:x="adobe:ns:meta/" x:xmptk="Adobe XMP Core 5.6-c142 79.160924, 2017/07/13-01:06:39        ">
+                      <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+                        <rdf:Description rdf:about="" />
+                      </rdf:RDF>
+                    </x:xmpmeta>
+                    <?xpacket end="w"?>
+                </metadata>
+                <image id="Р" width="31" height="36" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAjCAMAAAC0CkrjAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAABU1BMVEUxMjUxMjUxMjUxMjUxMjUxMjUxMjUxMjUxMjX+/v739/fp6eqrq60xMjUxMjX+/v7n5+doaWsxMjX09PSEhYcxMjUxMjXz8/NbXF7b29sxMjVhYmVPUFJRUlVTVFZNTlF3eHrOzs/9/f15enwxMjUxMjUxMjUxMjUxMjUxMjWoqKn+/v7LzMwxMjUxMjUxMjUxMjUxMjUxMjXd3d7q6uoxMjUxMjWur7D5+fkxMjUxMjUxMjWRkpMxMjUxMjXKy8z4+PgxMjUxMjXw8fHo6Ojh4eLCwsMxMjUxMjUxMjVlZWjJycrw8PD+/v5naGrNzc4xMjXs7e1ISUsxMjVeX2HPz8/9/f3s7OzIyMlubnAxMjV+foBgYWNWV1lDREYxMjUxMjUxMjUxMjUxMjUxMjUxMjVQUVMxMjUxMjVWV1k0NTgxMjUxMjUxMjUxMjX///8AAACPY/1qAAAAb3RSTlMAAgUKDQ4LBwT51pg7EwH9qSkR3T4VCN42sCmEb2ZiYHK0/FYfSzguLTB7/KgvEh4QGCer2j0bUvNIIgYrTwxD9FEomt1TszcdDxQ1lPtzwFPmZj9yw/vjuXdAK0ZYXFVKPisjHBRrQRlZPDlMOiYcK8QjAAAAAWJLR0Rw2ABsdAAAAAlwSFlzAAALEgAACxIB0t1+/AAAAAd0SU1FB+IJCxcLFzQHHKAAAAGWSURBVDjLdZRZW4JAFIaBAaQNi7KF1MpIsUXJyjLbtEVoNdtTs8wWy+T/38UMiFPAe3ee7zlzlu8AQRiQFKCZLjTr40iiC6Xj9PT29Q8AjrdloP/DPzgk+OwHaN3B8EhgtKMzTlkfGw/4eG9ZnxAFDpcng6GwwdT0TATVn5UAj8nBuWhMluVYPDq/AOPFpQSHyaFoUlAMEsupFRivrqV9mByOCSRvQFLKOow3MpsAl2XFrMVnt2Ac2U7tuMkEtwvjvVyeds/eh/GBa7ZR+xB1fgRrQ7fSZucFVTP8Oj45PUNzn8POKd2DiyKcG3iol6UruDXaQ73OoJ272uG/KWVk5Jgz+/bu/qH4KJp+g3KlGsIde6rlnl/iknUtlJbMF3DH5Hr+tWHfGgfe0iKS3z/qUtJAbXwGEgoNKNJxpRhlLcsTnnPrlSTr2rlFNc/wHnN3HfLMbooa7zK3RfNLgrWdc5uIkgI7J7Mso5p+W5dqorFZtDbjNplOMXSpNvYXqn63aq0fNKgLFKO2620VrckF9HewlvyXX4Ri924UL0YRAAAAAElFTkSuQmCC"
+                />
+              </svg>
+              <span class="weight">/кг</span>
+            </div>
+            <div class="item-button-wrapper">
+              <button class="catalog-button small-button">Быстрый просмотр</button>
+            </div>
+          </li>
+
+          <li class="catalog-item">
+            <img src="img/ice-cream-4.png" width="267" height="267" alt="Сливочное крем-брюле с карамельной подливкой">
+            <p class="catalog-item-title"><span class="underline-peach">Сливочное крем-брюле с карамельной подливкой</span></p>
+            <div class="catalog-item-price">415
+              <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="31" height="36" viewBox="0 0 31 36">
+                <metadata>
+                  <?xpacket begin="﻿" id="W5M0MpCehiHzreSzNTczkc9d"?>
+                    <x:xmpmeta xmlns:x="adobe:ns:meta/" x:xmptk="Adobe XMP Core 5.6-c142 79.160924, 2017/07/13-01:06:39        ">
+                      <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+                        <rdf:Description rdf:about="" />
+                      </rdf:RDF>
+                    </x:xmpmeta>
+                    <?xpacket end="w"?>
+                </metadata>
+                <image id="Р" width="31" height="36" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAjCAMAAAC0CkrjAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAABU1BMVEUxMjUxMjUxMjUxMjUxMjUxMjUxMjUxMjUxMjX+/v739/fp6eqrq60xMjUxMjX+/v7n5+doaWsxMjX09PSEhYcxMjUxMjXz8/NbXF7b29sxMjVhYmVPUFJRUlVTVFZNTlF3eHrOzs/9/f15enwxMjUxMjUxMjUxMjUxMjUxMjWoqKn+/v7LzMwxMjUxMjUxMjUxMjUxMjUxMjXd3d7q6uoxMjUxMjWur7D5+fkxMjUxMjUxMjWRkpMxMjUxMjXKy8z4+PgxMjUxMjXw8fHo6Ojh4eLCwsMxMjUxMjUxMjVlZWjJycrw8PD+/v5naGrNzc4xMjXs7e1ISUsxMjVeX2HPz8/9/f3s7OzIyMlubnAxMjV+foBgYWNWV1lDREYxMjUxMjUxMjUxMjUxMjUxMjUxMjVQUVMxMjUxMjVWV1k0NTgxMjUxMjUxMjUxMjX///8AAACPY/1qAAAAb3RSTlMAAgUKDQ4LBwT51pg7EwH9qSkR3T4VCN42sCmEb2ZiYHK0/FYfSzguLTB7/KgvEh4QGCer2j0bUvNIIgYrTwxD9FEomt1TszcdDxQ1lPtzwFPmZj9yw/vjuXdAK0ZYXFVKPisjHBRrQRlZPDlMOiYcK8QjAAAAAWJLR0Rw2ABsdAAAAAlwSFlzAAALEgAACxIB0t1+/AAAAAd0SU1FB+IJCxcLFzQHHKAAAAGWSURBVDjLdZRZW4JAFIaBAaQNi7KF1MpIsUXJyjLbtEVoNdtTs8wWy+T/38UMiFPAe3ee7zlzlu8AQRiQFKCZLjTr40iiC6Xj9PT29Q8AjrdloP/DPzgk+OwHaN3B8EhgtKMzTlkfGw/4eG9ZnxAFDpcng6GwwdT0TATVn5UAj8nBuWhMluVYPDq/AOPFpQSHyaFoUlAMEsupFRivrqV9mByOCSRvQFLKOow3MpsAl2XFrMVnt2Ac2U7tuMkEtwvjvVyeds/eh/GBa7ZR+xB1fgRrQ7fSZucFVTP8Oj45PUNzn8POKd2DiyKcG3iol6UruDXaQ73OoJ272uG/KWVk5Jgz+/bu/qH4KJp+g3KlGsIde6rlnl/iknUtlJbMF3DH5Hr+tWHfGgfe0iKS3z/qUtJAbXwGEgoNKNJxpRhlLcsTnnPrlSTr2rlFNc/wHnN3HfLMbooa7zK3RfNLgrWdc5uIkgI7J7Mso5p+W5dqorFZtDbjNplOMXSpNvYXqn63aq0fNKgLFKO2620VrckF9HewlvyXX4Ri924UL0YRAAAAAElFTkSuQmCC"
+                />
+              </svg>
+              <span class="weight">/кг</span>
+            </div>
+            <div class="item-button-wrapper">
+              <button class="catalog-button small-button">Быстрый просмотр</button>
+            </div>
+          </li>
+
+          <li class="catalog-item">
+            <img src="img/ice-cream-5.png" width="267" height="267" alt="Сливочное с брусничным джемом">
+            <p class="catalog-item-title"><span class="underline-peach">Сливочное с брусничным джемом</span></p>
+            <div class="catalog-item-price">325
+              <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="31" height="36" viewBox="0 0 31 36">
+                <metadata>
+                  <?xpacket begin="﻿" id="W5M0MpCehiHzreSzNTczkc9d"?>
+                    <x:xmpmeta xmlns:x="adobe:ns:meta/" x:xmptk="Adobe XMP Core 5.6-c142 79.160924, 2017/07/13-01:06:39        ">
+                      <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+                        <rdf:Description rdf:about="" />
+                      </rdf:RDF>
+                    </x:xmpmeta>
+                    <?xpacket end="w"?>
+                </metadata>
+                <image id="Р" width="31" height="36" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAjCAMAAAC0CkrjAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAABU1BMVEUxMjUxMjUxMjUxMjUxMjUxMjUxMjUxMjUxMjX+/v739/fp6eqrq60xMjUxMjX+/v7n5+doaWsxMjX09PSEhYcxMjUxMjXz8/NbXF7b29sxMjVhYmVPUFJRUlVTVFZNTlF3eHrOzs/9/f15enwxMjUxMjUxMjUxMjUxMjUxMjWoqKn+/v7LzMwxMjUxMjUxMjUxMjUxMjUxMjXd3d7q6uoxMjUxMjWur7D5+fkxMjUxMjUxMjWRkpMxMjUxMjXKy8z4+PgxMjUxMjXw8fHo6Ojh4eLCwsMxMjUxMjUxMjVlZWjJycrw8PD+/v5naGrNzc4xMjXs7e1ISUsxMjVeX2HPz8/9/f3s7OzIyMlubnAxMjV+foBgYWNWV1lDREYxMjUxMjUxMjUxMjUxMjUxMjUxMjVQUVMxMjUxMjVWV1k0NTgxMjUxMjUxMjUxMjX///8AAACPY/1qAAAAb3RSTlMAAgUKDQ4LBwT51pg7EwH9qSkR3T4VCN42sCmEb2ZiYHK0/FYfSzguLTB7/KgvEh4QGCer2j0bUvNIIgYrTwxD9FEomt1TszcdDxQ1lPtzwFPmZj9yw/vjuXdAK0ZYXFVKPisjHBRrQRlZPDlMOiYcK8QjAAAAAWJLR0Rw2ABsdAAAAAlwSFlzAAALEgAACxIB0t1+/AAAAAd0SU1FB+IJCxcLFzQHHKAAAAGWSURBVDjLdZRZW4JAFIaBAaQNi7KF1MpIsUXJyjLbtEVoNdtTs8wWy+T/38UMiFPAe3ee7zlzlu8AQRiQFKCZLjTr40iiC6Xj9PT29Q8AjrdloP/DPzgk+OwHaN3B8EhgtKMzTlkfGw/4eG9ZnxAFDpcng6GwwdT0TATVn5UAj8nBuWhMluVYPDq/AOPFpQSHyaFoUlAMEsupFRivrqV9mByOCSRvQFLKOow3MpsAl2XFrMVnt2Ac2U7tuMkEtwvjvVyeds/eh/GBa7ZR+xB1fgRrQ7fSZucFVTP8Oj45PUNzn8POKd2DiyKcG3iol6UruDXaQ73OoJ272uG/KWVk5Jgz+/bu/qH4KJp+g3KlGsIde6rlnl/iknUtlJbMF3DH5Hr+tWHfGgfe0iKS3z/qUtJAbXwGEgoNKNJxpRhlLcsTnnPrlSTr2rlFNc/wHnN3HfLMbooa7zK3RfNLgrWdc5uIkgI7J7Mso5p+W5dqorFZtDbjNplOMXSpNvYXqn63aq0fNKgLFKO2620VrckF9HewlvyXX4Ri924UL0YRAAAAAElFTkSuQmCC"
+                />
+              </svg>
+              <span class="weight">/кг</span>
+            </div>
+            <div class="item-button-wrapper">
+              <button class="catalog-button small-button">Быстрый просмотр</button>
+            </div>
+          </li>
+
+          <li class="catalog-item">
+            <img src="img/ice-cream-6.png" width="267" height="267" alt="Сливочно-черничное с цельными ягодами черники">
+            <p class="catalog-item-title"><span class="underline-peach">Сливочно-черничное с цельными ягодами черники</span></p>
+            <div class="catalog-item-price">410
+              <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="31" height="36" viewBox="0 0 31 36">
+                <metadata>
+                  <?xpacket begin="﻿" id="W5M0MpCehiHzreSzNTczkc9d"?>
+                    <x:xmpmeta xmlns:x="adobe:ns:meta/" x:xmptk="Adobe XMP Core 5.6-c142 79.160924, 2017/07/13-01:06:39        ">
+                      <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+                        <rdf:Description rdf:about="" />
+                      </rdf:RDF>
+                    </x:xmpmeta>
+                    <?xpacket end="w"?>
+                </metadata>
+                <image id="Р" width="31" height="36" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAjCAMAAAC0CkrjAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAABU1BMVEUxMjUxMjUxMjUxMjUxMjUxMjUxMjUxMjUxMjX+/v739/fp6eqrq60xMjUxMjX+/v7n5+doaWsxMjX09PSEhYcxMjUxMjXz8/NbXF7b29sxMjVhYmVPUFJRUlVTVFZNTlF3eHrOzs/9/f15enwxMjUxMjUxMjUxMjUxMjUxMjWoqKn+/v7LzMwxMjUxMjUxMjUxMjUxMjUxMjXd3d7q6uoxMjUxMjWur7D5+fkxMjUxMjUxMjWRkpMxMjUxMjXKy8z4+PgxMjUxMjXw8fHo6Ojh4eLCwsMxMjUxMjUxMjVlZWjJycrw8PD+/v5naGrNzc4xMjXs7e1ISUsxMjVeX2HPz8/9/f3s7OzIyMlubnAxMjV+foBgYWNWV1lDREYxMjUxMjUxMjUxMjUxMjUxMjUxMjVQUVMxMjUxMjVWV1k0NTgxMjUxMjUxMjUxMjX///8AAACPY/1qAAAAb3RSTlMAAgUKDQ4LBwT51pg7EwH9qSkR3T4VCN42sCmEb2ZiYHK0/FYfSzguLTB7/KgvEh4QGCer2j0bUvNIIgYrTwxD9FEomt1TszcdDxQ1lPtzwFPmZj9yw/vjuXdAK0ZYXFVKPisjHBRrQRlZPDlMOiYcK8QjAAAAAWJLR0Rw2ABsdAAAAAlwSFlzAAALEgAACxIB0t1+/AAAAAd0SU1FB+IJCxcLFzQHHKAAAAGWSURBVDjLdZRZW4JAFIaBAaQNi7KF1MpIsUXJyjLbtEVoNdtTs8wWy+T/38UMiFPAe3ee7zlzlu8AQRiQFKCZLjTr40iiC6Xj9PT29Q8AjrdloP/DPzgk+OwHaN3B8EhgtKMzTlkfGw/4eG9ZnxAFDpcng6GwwdT0TATVn5UAj8nBuWhMluVYPDq/AOPFpQSHyaFoUlAMEsupFRivrqV9mByOCSRvQFLKOow3MpsAl2XFrMVnt2Ac2U7tuMkEtwvjvVyeds/eh/GBa7ZR+xB1fgRrQ7fSZucFVTP8Oj45PUNzn8POKd2DiyKcG3iol6UruDXaQ73OoJ272uG/KWVk5Jgz+/bu/qH4KJp+g3KlGsIde6rlnl/iknUtlJbMF3DH5Hr+tWHfGgfe0iKS3z/qUtJAbXwGEgoNKNJxpRhlLcsTnnPrlSTr2rlFNc/wHnN3HfLMbooa7zK3RfNLgrWdc5uIkgI7J7Mso5p+W5dqorFZtDbjNplOMXSpNvYXqn63aq0fNKgLFKO2620VrckF9HewlvyXX4Ri924UL0YRAAAAAElFTkSuQmCC"
+                />
+              </svg>
+              <span class="weight">/кг</span>
+            </div>
+            <div class="item-button-wrapper">
+              <button class="catalog-button small-button">Быстрый просмотр</button>
+            </div>
+          </li>
+
+          <li class="catalog-item">
+            <img src="img/ice-cream-7.png" width="267" height="267" alt="Сливочно-лимонное с карамельной присыпкой">
+            <p class="catalog-item-title"><span class="underline-peach">Сливочно-лимонное с карамельной присыпкой</span></p>
+            <div class="catalog-item-price">375
+              <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="31" height="36" viewBox="0 0 31 36">
+                <metadata>
+                  <?xpacket begin="﻿" id="W5M0MpCehiHzreSzNTczkc9d"?>
+                    <x:xmpmeta xmlns:x="adobe:ns:meta/" x:xmptk="Adobe XMP Core 5.6-c142 79.160924, 2017/07/13-01:06:39        ">
+                      <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+                        <rdf:Description rdf:about="" />
+                      </rdf:RDF>
+                    </x:xmpmeta>
+                    <?xpacket end="w"?>
+                </metadata>
+                <image id="Р" width="31" height="36" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAjCAMAAAC0CkrjAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAABU1BMVEUxMjUxMjUxMjUxMjUxMjUxMjUxMjUxMjUxMjX+/v739/fp6eqrq60xMjUxMjX+/v7n5+doaWsxMjX09PSEhYcxMjUxMjXz8/NbXF7b29sxMjVhYmVPUFJRUlVTVFZNTlF3eHrOzs/9/f15enwxMjUxMjUxMjUxMjUxMjUxMjWoqKn+/v7LzMwxMjUxMjUxMjUxMjUxMjUxMjXd3d7q6uoxMjUxMjWur7D5+fkxMjUxMjUxMjWRkpMxMjUxMjXKy8z4+PgxMjUxMjXw8fHo6Ojh4eLCwsMxMjUxMjUxMjVlZWjJycrw8PD+/v5naGrNzc4xMjXs7e1ISUsxMjVeX2HPz8/9/f3s7OzIyMlubnAxMjV+foBgYWNWV1lDREYxMjUxMjUxMjUxMjUxMjUxMjUxMjVQUVMxMjUxMjVWV1k0NTgxMjUxMjUxMjUxMjX///8AAACPY/1qAAAAb3RSTlMAAgUKDQ4LBwT51pg7EwH9qSkR3T4VCN42sCmEb2ZiYHK0/FYfSzguLTB7/KgvEh4QGCer2j0bUvNIIgYrTwxD9FEomt1TszcdDxQ1lPtzwFPmZj9yw/vjuXdAK0ZYXFVKPisjHBRrQRlZPDlMOiYcK8QjAAAAAWJLR0Rw2ABsdAAAAAlwSFlzAAALEgAACxIB0t1+/AAAAAd0SU1FB+IJCxcLFzQHHKAAAAGWSURBVDjLdZRZW4JAFIaBAaQNi7KF1MpIsUXJyjLbtEVoNdtTs8wWy+T/38UMiFPAe3ee7zlzlu8AQRiQFKCZLjTr40iiC6Xj9PT29Q8AjrdloP/DPzgk+OwHaN3B8EhgtKMzTlkfGw/4eG9ZnxAFDpcng6GwwdT0TATVn5UAj8nBuWhMluVYPDq/AOPFpQSHyaFoUlAMEsupFRivrqV9mByOCSRvQFLKOow3MpsAl2XFrMVnt2Ac2U7tuMkEtwvjvVyeds/eh/GBa7ZR+xB1fgRrQ7fSZucFVTP8Oj45PUNzn8POKd2DiyKcG3iol6UruDXaQ73OoJ272uG/KWVk5Jgz+/bu/qH4KJp+g3KlGsIde6rlnl/iknUtlJbMF3DH5Hr+tWHfGgfe0iKS3z/qUtJAbXwGEgoNKNJxpRhlLcsTnnPrlSTr2rlFNc/wHnN3HfLMbooa7zK3RfNLgrWdc5uIkgI7J7Mso5p+W5dqorFZtDbjNplOMXSpNvYXqn63aq0fNKgLFKO2620VrckF9HewlvyXX4Ri924UL0YRAAAAAElFTkSuQmCC"
+                />
+              </svg>
+              <span class="weight">/кг</span>
+            </div>
+            <div class="item-button-wrapper">
+              <button class="catalog-button small-button">Быстрый просмотр</button>
+            </div>
+          </li>
+
+          <li class="catalog-item">
+            <img src="img/ice-cream-8.png" width="267" height="267" alt="Сливочное с шоколадной стружкой">
+            <p class="catalog-item-title"><span class="underline-peach">Сливочное с шоколадной стружкой</span></p>
+            <div class="catalog-item-price">320
+              <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="31" height="36" viewBox="0 0 31 36">
+                <metadata>
+                  <?xpacket begin="﻿" id="W5M0MpCehiHzreSzNTczkc9d"?>
+                    <x:xmpmeta xmlns:x="adobe:ns:meta/" x:xmptk="Adobe XMP Core 5.6-c142 79.160924, 2017/07/13-01:06:39        ">
+                      <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+                        <rdf:Description rdf:about="" />
+                      </rdf:RDF>
+                    </x:xmpmeta>
+                    <?xpacket end="w"?>
+                </metadata>
+                <image id="Р" width="31" height="36" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAjCAMAAAC0CkrjAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAABU1BMVEUxMjUxMjUxMjUxMjUxMjUxMjUxMjUxMjUxMjX+/v739/fp6eqrq60xMjUxMjX+/v7n5+doaWsxMjX09PSEhYcxMjUxMjXz8/NbXF7b29sxMjVhYmVPUFJRUlVTVFZNTlF3eHrOzs/9/f15enwxMjUxMjUxMjUxMjUxMjUxMjWoqKn+/v7LzMwxMjUxMjUxMjUxMjUxMjUxMjXd3d7q6uoxMjUxMjWur7D5+fkxMjUxMjUxMjWRkpMxMjUxMjXKy8z4+PgxMjUxMjXw8fHo6Ojh4eLCwsMxMjUxMjUxMjVlZWjJycrw8PD+/v5naGrNzc4xMjXs7e1ISUsxMjVeX2HPz8/9/f3s7OzIyMlubnAxMjV+foBgYWNWV1lDREYxMjUxMjUxMjUxMjUxMjUxMjUxMjVQUVMxMjUxMjVWV1k0NTgxMjUxMjUxMjUxMjX///8AAACPY/1qAAAAb3RSTlMAAgUKDQ4LBwT51pg7EwH9qSkR3T4VCN42sCmEb2ZiYHK0/FYfSzguLTB7/KgvEh4QGCer2j0bUvNIIgYrTwxD9FEomt1TszcdDxQ1lPtzwFPmZj9yw/vjuXdAK0ZYXFVKPisjHBRrQRlZPDlMOiYcK8QjAAAAAWJLR0Rw2ABsdAAAAAlwSFlzAAALEgAACxIB0t1+/AAAAAd0SU1FB+IJCxcLFzQHHKAAAAGWSURBVDjLdZRZW4JAFIaBAaQNi7KF1MpIsUXJyjLbtEVoNdtTs8wWy+T/38UMiFPAe3ee7zlzlu8AQRiQFKCZLjTr40iiC6Xj9PT29Q8AjrdloP/DPzgk+OwHaN3B8EhgtKMzTlkfGw/4eG9ZnxAFDpcng6GwwdT0TATVn5UAj8nBuWhMluVYPDq/AOPFpQSHyaFoUlAMEsupFRivrqV9mByOCSRvQFLKOow3MpsAl2XFrMVnt2Ac2U7tuMkEtwvjvVyeds/eh/GBa7ZR+xB1fgRrQ7fSZucFVTP8Oj45PUNzn8POKd2DiyKcG3iol6UruDXaQ73OoJ272uG/KWVk5Jgz+/bu/qH4KJp+g3KlGsIde6rlnl/iknUtlJbMF3DH5Hr+tWHfGgfe0iKS3z/qUtJAbXwGEgoNKNJxpRhlLcsTnnPrlSTr2rlFNc/wHnN3HfLMbooa7zK3RfNLgrWdc5uIkgI7J7Mso5p+W5dqorFZtDbjNplOMXSpNvYXqn63aq0fNKgLFKO2620VrckF9HewlvyXX4Ri924UL0YRAAAAAElFTkSuQmCC"
+                />
+              </svg>
+              <span class="weight">/кг</span>
+            </div>
+            <div class="item-button-wrapper">
+              <button class="catalog-button small-button">Быстрый просмотр</button>
+            </div>
+          </li>
+
+          <li class="catalog-item">
+            <img src="img/ice-cream-9.png" width="267" height="267" alt="Сливочно-ванильное с кусочками шоколада">
+            <p class="catalog-item-title"><span class="underline-peach">Сливочно-ванильное с кусочками шоколада</span></p>
+            <div class="catalog-item-price">440
+              <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="31" height="36" viewBox="0 0 31 36">
+                <metadata>
+                  <?xpacket begin="﻿" id="W5M0MpCehiHzreSzNTczkc9d"?>
+                    <x:xmpmeta xmlns:x="adobe:ns:meta/" x:xmptk="Adobe XMP Core 5.6-c142 79.160924, 2017/07/13-01:06:39        ">
+                      <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+                        <rdf:Description rdf:about="" />
+                      </rdf:RDF>
+                    </x:xmpmeta>
+                    <?xpacket end="w"?>
+                </metadata>
+                <image id="Р" width="31" height="36" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAjCAMAAAC0CkrjAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAABU1BMVEUxMjUxMjUxMjUxMjUxMjUxMjUxMjUxMjUxMjX+/v739/fp6eqrq60xMjUxMjX+/v7n5+doaWsxMjX09PSEhYcxMjUxMjXz8/NbXF7b29sxMjVhYmVPUFJRUlVTVFZNTlF3eHrOzs/9/f15enwxMjUxMjUxMjUxMjUxMjUxMjWoqKn+/v7LzMwxMjUxMjUxMjUxMjUxMjUxMjXd3d7q6uoxMjUxMjWur7D5+fkxMjUxMjUxMjWRkpMxMjUxMjXKy8z4+PgxMjUxMjXw8fHo6Ojh4eLCwsMxMjUxMjUxMjVlZWjJycrw8PD+/v5naGrNzc4xMjXs7e1ISUsxMjVeX2HPz8/9/f3s7OzIyMlubnAxMjV+foBgYWNWV1lDREYxMjUxMjUxMjUxMjUxMjUxMjUxMjVQUVMxMjUxMjVWV1k0NTgxMjUxMjUxMjUxMjX///8AAACPY/1qAAAAb3RSTlMAAgUKDQ4LBwT51pg7EwH9qSkR3T4VCN42sCmEb2ZiYHK0/FYfSzguLTB7/KgvEh4QGCer2j0bUvNIIgYrTwxD9FEomt1TszcdDxQ1lPtzwFPmZj9yw/vjuXdAK0ZYXFVKPisjHBRrQRlZPDlMOiYcK8QjAAAAAWJLR0Rw2ABsdAAAAAlwSFlzAAALEgAACxIB0t1+/AAAAAd0SU1FB+IJCxcLFzQHHKAAAAGWSURBVDjLdZRZW4JAFIaBAaQNi7KF1MpIsUXJyjLbtEVoNdtTs8wWy+T/38UMiFPAe3ee7zlzlu8AQRiQFKCZLjTr40iiC6Xj9PT29Q8AjrdloP/DPzgk+OwHaN3B8EhgtKMzTlkfGw/4eG9ZnxAFDpcng6GwwdT0TATVn5UAj8nBuWhMluVYPDq/AOPFpQSHyaFoUlAMEsupFRivrqV9mByOCSRvQFLKOow3MpsAl2XFrMVnt2Ac2U7tuMkEtwvjvVyeds/eh/GBa7ZR+xB1fgRrQ7fSZucFVTP8Oj45PUNzn8POKd2DiyKcG3iol6UruDXaQ73OoJ272uG/KWVk5Jgz+/bu/qH4KJp+g3KlGsIde6rlnl/iknUtlJbMF3DH5Hr+tWHfGgfe0iKS3z/qUtJAbXwGEgoNKNJxpRhlLcsTnnPrlSTr2rlFNc/wHnN3HfLMbooa7zK3RfNLgrWdc5uIkgI7J7Mso5p+W5dqorFZtDbjNplOMXSpNvYXqn63aq0fNKgLFKO2620VrckF9HewlvyXX4Ri924UL0YRAAAAAElFTkSuQmCC"
+                />
+              </svg>
+              <span class="weight">/кг</span>
+            </div>
+            <div class="item-button-wrapper">
+              <button class="catalog-button small-button">Быстрый просмотр</button>
+            </div>
+          </li>
+
+          <li class="catalog-item">
+            <img src="img/ice-cream-10.png" width="267" height="267" alt="Сливочное с ментоловым сиропом">
+            <p class="catalog-item-title"><span class="underline">Сливочное с ментоловым сиропом</span></p>
+            <div class="catalog-item-price">435
+              <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="31" height="36" viewBox="0 0 31 36">
+                <metadata>
+                  <?xpacket begin="﻿" id="W5M0MpCehiHzreSzNTczkc9d"?>
+                    <x:xmpmeta xmlns:x="adobe:ns:meta/" x:xmptk="Adobe XMP Core 5.6-c142 79.160924, 2017/07/13-01:06:39        ">
+                      <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+                        <rdf:Description rdf:about="" />
+                      </rdf:RDF>
+                    </x:xmpmeta>
+                    <?xpacket end="w"?>
+                </metadata>
+                <image id="Р" width="31" height="36" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAjCAMAAAC0CkrjAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAABU1BMVEUxMjUxMjUxMjUxMjUxMjUxMjUxMjUxMjUxMjX+/v739/fp6eqrq60xMjUxMjX+/v7n5+doaWsxMjX09PSEhYcxMjUxMjXz8/NbXF7b29sxMjVhYmVPUFJRUlVTVFZNTlF3eHrOzs/9/f15enwxMjUxMjUxMjUxMjUxMjUxMjWoqKn+/v7LzMwxMjUxMjUxMjUxMjUxMjUxMjXd3d7q6uoxMjUxMjWur7D5+fkxMjUxMjUxMjWRkpMxMjUxMjXKy8z4+PgxMjUxMjXw8fHo6Ojh4eLCwsMxMjUxMjUxMjVlZWjJycrw8PD+/v5naGrNzc4xMjXs7e1ISUsxMjVeX2HPz8/9/f3s7OzIyMlubnAxMjV+foBgYWNWV1lDREYxMjUxMjUxMjUxMjUxMjUxMjUxMjVQUVMxMjUxMjVWV1k0NTgxMjUxMjUxMjUxMjX///8AAACPY/1qAAAAb3RSTlMAAgUKDQ4LBwT51pg7EwH9qSkR3T4VCN42sCmEb2ZiYHK0/FYfSzguLTB7/KgvEh4QGCer2j0bUvNIIgYrTwxD9FEomt1TszcdDxQ1lPtzwFPmZj9yw/vjuXdAK0ZYXFVKPisjHBRrQRlZPDlMOiYcK8QjAAAAAWJLR0Rw2ABsdAAAAAlwSFlzAAALEgAACxIB0t1+/AAAAAd0SU1FB+IJCxcLFzQHHKAAAAGWSURBVDjLdZRZW4JAFIaBAaQNi7KF1MpIsUXJyjLbtEVoNdtTs8wWy+T/38UMiFPAe3ee7zlzlu8AQRiQFKCZLjTr40iiC6Xj9PT29Q8AjrdloP/DPzgk+OwHaN3B8EhgtKMzTlkfGw/4eG9ZnxAFDpcng6GwwdT0TATVn5UAj8nBuWhMluVYPDq/AOPFpQSHyaFoUlAMEsupFRivrqV9mByOCSRvQFLKOow3MpsAl2XFrMVnt2Ac2U7tuMkEtwvjvVyeds/eh/GBa7ZR+xB1fgRrQ7fSZucFVTP8Oj45PUNzn8POKd2DiyKcG3iol6UruDXaQ73OoJ272uG/KWVk5Jgz+/bu/qH4KJp+g3KlGsIde6rlnl/iknUtlJbMF3DH5Hr+tWHfGgfe0iKS3z/qUtJAbXwGEgoNKNJxpRhlLcsTnnPrlSTr2rlFNc/wHnN3HfLMbooa7zK3RfNLgrWdc5uIkgI7J7Mso5p+W5dqorFZtDbjNplOMXSpNvYXqn63aq0fNKgLFKO2620VrckF9HewlvyXX4Ri924UL0YRAAAAAElFTkSuQmCC"
+                />
+              </svg>
+              <span class="weight">/кг</span>
+            </div>
+            <div class="item-button-wrapper">
+              <button class="catalog-button small-button">Быстрый просмотр</button>
+            </div>
+          </li>
+
+          <li class="catalog-item">
+            <img src="img/ice-cream-11.png" width="267" height="267" alt="Сливочное с кусочками черного шоколада">
+            <p class="catalog-item-title"><span class="underline-peach">Сливочное с кусочками черного шоколада</span></p>
+            <div class="catalog-item-price">355
+              <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="31" height="36" viewBox="0 0 31 36">
+                <metadata>
+                  <?xpacket begin="﻿" id="W5M0MpCehiHzreSzNTczkc9d"?>
+                    <x:xmpmeta xmlns:x="adobe:ns:meta/" x:xmptk="Adobe XMP Core 5.6-c142 79.160924, 2017/07/13-01:06:39        ">
+                      <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+                        <rdf:Description rdf:about="" />
+                      </rdf:RDF>
+                    </x:xmpmeta>
+                    <?xpacket end="w"?>
+                </metadata>
+                <image id="Р" width="31" height="36" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAjCAMAAAC0CkrjAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAABU1BMVEUxMjUxMjUxMjUxMjUxMjUxMjUxMjUxMjUxMjX+/v739/fp6eqrq60xMjUxMjX+/v7n5+doaWsxMjX09PSEhYcxMjUxMjXz8/NbXF7b29sxMjVhYmVPUFJRUlVTVFZNTlF3eHrOzs/9/f15enwxMjUxMjUxMjUxMjUxMjUxMjWoqKn+/v7LzMwxMjUxMjUxMjUxMjUxMjUxMjXd3d7q6uoxMjUxMjWur7D5+fkxMjUxMjUxMjWRkpMxMjUxMjXKy8z4+PgxMjUxMjXw8fHo6Ojh4eLCwsMxMjUxMjUxMjVlZWjJycrw8PD+/v5naGrNzc4xMjXs7e1ISUsxMjVeX2HPz8/9/f3s7OzIyMlubnAxMjV+foBgYWNWV1lDREYxMjUxMjUxMjUxMjUxMjUxMjUxMjVQUVMxMjUxMjVWV1k0NTgxMjUxMjUxMjUxMjX///8AAACPY/1qAAAAb3RSTlMAAgUKDQ4LBwT51pg7EwH9qSkR3T4VCN42sCmEb2ZiYHK0/FYfSzguLTB7/KgvEh4QGCer2j0bUvNIIgYrTwxD9FEomt1TszcdDxQ1lPtzwFPmZj9yw/vjuXdAK0ZYXFVKPisjHBRrQRlZPDlMOiYcK8QjAAAAAWJLR0Rw2ABsdAAAAAlwSFlzAAALEgAACxIB0t1+/AAAAAd0SU1FB+IJCxcLFzQHHKAAAAGWSURBVDjLdZRZW4JAFIaBAaQNi7KF1MpIsUXJyjLbtEVoNdtTs8wWy+T/38UMiFPAe3ee7zlzlu8AQRiQFKCZLjTr40iiC6Xj9PT29Q8AjrdloP/DPzgk+OwHaN3B8EhgtKMzTlkfGw/4eG9ZnxAFDpcng6GwwdT0TATVn5UAj8nBuWhMluVYPDq/AOPFpQSHyaFoUlAMEsupFRivrqV9mByOCSRvQFLKOow3MpsAl2XFrMVnt2Ac2U7tuMkEtwvjvVyeds/eh/GBa7ZR+xB1fgRrQ7fSZucFVTP8Oj45PUNzn8POKd2DiyKcG3iol6UruDXaQ73OoJ272uG/KWVk5Jgz+/bu/qH4KJp+g3KlGsIde6rlnl/iknUtlJbMF3DH5Hr+tWHfGgfe0iKS3z/qUtJAbXwGEgoNKNJxpRhlLcsTnnPrlSTr2rlFNc/wHnN3HfLMbooa7zK3RfNLgrWdc5uIkgI7J7Mso5p+W5dqorFZtDbjNplOMXSpNvYXqn63aq0fNKgLFKO2620VrckF9HewlvyXX4Ri924UL0YRAAAAAElFTkSuQmCC"
+                />
+              </svg>
+              <span class="weight">/кг</span>
+            </div>
+            <div class="item-button-wrapper">
+              <button class="catalog-button small-button">Быстрый просмотр</button>
+            </div>
+          </li>
+
+          <li class="catalog-item">
+            <img src="img/ice-cream-12.png" width="267" height="267" alt="Сливочное с мятным сиропом">
+            <p class="catalog-item-title"><span class="underline-peach">Сливочное с мятным сиропом</span></p>
+            <div class="catalog-item-price">420
+              <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="31" height="36" viewBox="0 0 31 36">
+                <metadata>
+                  <?xpacket begin="﻿" id="W5M0MpCehiHzreSzNTczkc9d"?>
+                    <x:xmpmeta xmlns:x="adobe:ns:meta/" x:xmptk="Adobe XMP Core 5.6-c142 79.160924, 2017/07/13-01:06:39        ">
+                      <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+                        <rdf:Description rdf:about="" />
+                      </rdf:RDF>
+                    </x:xmpmeta>
+                    <?xpacket end="w"?>
+                </metadata>
+                <image id="Р" width="31" height="36" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAjCAMAAAC0CkrjAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAABU1BMVEUxMjUxMjUxMjUxMjUxMjUxMjUxMjUxMjUxMjX+/v739/fp6eqrq60xMjUxMjX+/v7n5+doaWsxMjX09PSEhYcxMjUxMjXz8/NbXF7b29sxMjVhYmVPUFJRUlVTVFZNTlF3eHrOzs/9/f15enwxMjUxMjUxMjUxMjUxMjUxMjWoqKn+/v7LzMwxMjUxMjUxMjUxMjUxMjUxMjXd3d7q6uoxMjUxMjWur7D5+fkxMjUxMjUxMjWRkpMxMjUxMjXKy8z4+PgxMjUxMjXw8fHo6Ojh4eLCwsMxMjUxMjUxMjVlZWjJycrw8PD+/v5naGrNzc4xMjXs7e1ISUsxMjVeX2HPz8/9/f3s7OzIyMlubnAxMjV+foBgYWNWV1lDREYxMjUxMjUxMjUxMjUxMjUxMjUxMjVQUVMxMjUxMjVWV1k0NTgxMjUxMjUxMjUxMjX///8AAACPY/1qAAAAb3RSTlMAAgUKDQ4LBwT51pg7EwH9qSkR3T4VCN42sCmEb2ZiYHK0/FYfSzguLTB7/KgvEh4QGCer2j0bUvNIIgYrTwxD9FEomt1TszcdDxQ1lPtzwFPmZj9yw/vjuXdAK0ZYXFVKPisjHBRrQRlZPDlMOiYcK8QjAAAAAWJLR0Rw2ABsdAAAAAlwSFlzAAALEgAACxIB0t1+/AAAAAd0SU1FB+IJCxcLFzQHHKAAAAGWSURBVDjLdZRZW4JAFIaBAaQNi7KF1MpIsUXJyjLbtEVoNdtTs8wWy+T/38UMiFPAe3ee7zlzlu8AQRiQFKCZLjTr40iiC6Xj9PT29Q8AjrdloP/DPzgk+OwHaN3B8EhgtKMzTlkfGw/4eG9ZnxAFDpcng6GwwdT0TATVn5UAj8nBuWhMluVYPDq/AOPFpQSHyaFoUlAMEsupFRivrqV9mByOCSRvQFLKOow3MpsAl2XFrMVnt2Ac2U7tuMkEtwvjvVyeds/eh/GBa7ZR+xB1fgRrQ7fSZucFVTP8Oj45PUNzn8POKd2DiyKcG3iol6UruDXaQ73OoJ272uG/KWVk5Jgz+/bu/qH4KJp+g3KlGsIde6rlnl/iknUtlJbMF3DH5Hr+tWHfGgfe0iKS3z/qUtJAbXwGEgoNKNJxpRhlLcsTnnPrlSTr2rlFNc/wHnN3HfLMbooa7zK3RfNLgrWdc5uIkgI7J7Mso5p+W5dqorFZtDbjNplOMXSpNvYXqn63aq0fNKgLFKO2620VrckF9HewlvyXX4Ri924UL0YRAAAAAElFTkSuQmCC"
+                />
+              </svg>
+              <span class="weight">/кг</span>
+            </div>
+            <div class="item-button-wrapper">
+              <button class="catalog-button small-button">Быстрый просмотр</button>
+            </div>
+          </li>
+
+        </ul>
+
+        <ul class="pagination-list">
+          <li class="pagination-item pagination-item-back">
+            <a href="#"><span class="visually-hidden">Назад</span>
+              <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="9px" height="14px">
+                <image opacity="0.8" x="0px" y="0px" width="9px" height="14px" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAkAAAAOCAQAAABXnf4jAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAAmJLR0QA/4ePzL8AAAAHdElNRQfiCQQOGQ36BR2gAAAAYElEQVQY013PoQoCURQE0MNldbEZBAWTxf//H8Mm81NQTPpMl33cmXbSjG7o3A/dZM3sausbBV6eUeDmFxWICkQFws4G7wTCw6I7OidNaLg44Z5UMNcPuB5K/IwfG/baH+UBJ7ZcGhGfAAAAAElFTkSuQmCC"
+                />
+              </svg></a>
+          </li>
+          <li class="pagination-item pagination-item-current">
+            <a href="#">1</a>
+          </li>
+          <li class="pagination-item">
+            <a href="#">2</a>
+          </li>
+          <li class="pagination-item">
+            <a href="#">3</a>
+          </li>
+          <li class="pagination-item">
+            <a href="#">4</a>
+          </li>
+          <li class="pagination-item">
+            <a href="#">5</a>
+          </li>
+          <li class="pagination-item pagination-item-next">
+            <a href="#"><span class="visually-hidden">Вперед</span>
+              <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="9px" height="14px">
+                <image x="0px" y="0px" width="9px" height="14px" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAkAAAAOCAQAAABXnf4jAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAAmJLR0QA/4ePzL8AAAAHdElNRQfiCQQOGC82fm0FAAAAYklEQVQY02XNqxGAMBBF0QsCh8cyQzO0gEXQDm3QBwVQAvSAwF1EJpNksuvO2w/i5iipcVHvHLH3LBErDEmB8UKG6VPAx7El1ssFDExxpnFXP+e4mEGgAqQCwbUEwc4jB/kBedmWZeGUfVUAAAAASUVORK5CYII="
+                />
+              </svg></a>
+          </li>
+        </ul>
+
+      </section>
+    </div>
+  </main>
+  <footer class="main-footer container">
+
+
+    <div class="footer-social">
+      <ul>
+        <li>
+          <a class="social-button twitter" href="#">Twitter</a>
+        </li>
+        <li>
+          <a class=" social-button instagram" href="#">Instagram</a>
+        </li>
+        <li>
+          <a class="social-button facebook" href="#">Facebook</a>
+        </li>
+        <li>
+          <a class="social-button vkontakte" href="#">Vkontakte</a>
+        </li>
+      </ul>
+    </div>
+
+    <nav class="navigation-to-custumers">
+      <div class="left-column">
+        <a class="info-to-custumers-item like" href="#"><span class="underline-peach">Для поставщиков</span></a>
+
+        <a class="info-to-custumers-item" href="#"><span class="underline-peach">О производстве</span></a>
+      </div>
+      <div class="right-column">
+        <a class="info-to-custumers-item" href="#"><span class="underline-peach">Наши документы</span></a>
+
+        <a class="info-to-custumers-item" href="#"><span class="underline-peach">Экологические стандарты</span></a>
+      </div>
+    </nav>
+    <p class="footer-copyright">
+      <img src="img/logo-htmlacademy.svg" width="108" height="39" alt="логотип HTML Academy">
+      <span class="made-in">Сделано в <a class="html-academy-link" href="https://htmlacademy.ru/intensive/htmlcss"><span
+            class="underline-peach">HTML Academy</span></a>© 2017</span>
+    </p>
+  </footer>
+  </div>
 
 </body>
 

@@ -208,6 +208,12 @@ a.site-item:active{
 }
 
 /*меню-выпадашка*/
+.current-page.site-item {
+  background-color: rgb(208, 112, 88);
+  border-bottom: none;
+  color: white;
+}
+
 .site-navigation .sub-menu {
   display:none;
   width: 143px;
@@ -1188,7 +1194,7 @@ li.hit{
  li.hit:before{
   content: "";
   position: absolute;
-  Background-image: url("../img/hit.svg");
+  Background-image: url("../img/hit.png");
   background-repeat: no-repeat;
   background-position: 0 0;
   left:14px;
@@ -1553,6 +1559,7 @@ a.news-link:active{
 }
 
 .newsletter-text{
+  max-width: 100%;
   margin: 0 0 35px 0;
   font-family: 'Roboto', Arial, sans-serif;
   font-weight: 400;
@@ -2218,6 +2225,7 @@ font-weight: 400;
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
+  min-width: 860px;
 }
 
 fieldset.filters{

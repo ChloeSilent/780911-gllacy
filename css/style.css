@@ -2203,9 +2203,14 @@ font-weight: 400;
 .sorting-row-2{
   margin:0;
   padding: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-wrap: nowrap;
-  justify-content:space-between;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  -webkit-box-pack:justify;
+      -ms-flex-pack:justify;
+          justify-content:space-between;
 }
 
 
@@ -2606,28 +2611,6 @@ fieldset.sorting-fill
   text-decoration: none;
   cursor: pointer;
 }
-
-/* .pagination-item-back a svg{
-  margin: -1px 4px 0 0;
-}
-.pagination-item:nth-child(2) a{
-  margin: -1px -2px 0 0
-}
-.pagination-item:nth-child(3) a{
-  margin: -1px -1px 0 0;
-}
-.pagination-item:nth-child(4) a{
-  margin: -1px -1px 0 0;
-}
-.pagination-item:nth-child(5) a{
-  margin: -1px 0px 0 0;
-}
-.pagination-item:nth-child(6) a{
-  margin: -1px 2px 0 0;
-}
-.pagination-item-next a svg{
-  margin: 0 -8px 0 0;
-} */
 
 .pagination-item:hover{
   background-color: rgba(255, 255, 255, 0.2);

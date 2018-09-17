@@ -123,17 +123,13 @@
       <div class="container container-main">
         <h1 class="visually-hidden">Магазин Глейси по продаже мороженого собственного производства</h1>
         <div class="container-slider">
-
           <h2 class="visually-hidden-slider">Предложения</h2>
-
-
           <section class="slider">
             <div class="slider-controls">
               <label for="product-1">Первый</label>
               <label for="product-2">Второй</label>
               <label for="product-3">Третий</label>
             </div>
-
             <ul class="slider-list">
               <li class="slider-item slide" id="slide1">
                 <h3 class="slide-title">
@@ -155,7 +151,6 @@
               </li>
             </ul>
           </section>
-
         </div>
         <section class="banner">
           <div class="banner-item offer-item-1">
@@ -163,7 +158,6 @@
             <p>При покупке 2 кг любого фруктового мороженого, добавим в ваш заказ банку малинового варенья бесплатно.</p>
             <a class="small-button banner-button-1" href="#">Хочу варенье!</a>
           </div>
-
           <div class="banner-item offer-item-2">
             <h2 class="banner-item-header-2">Шоколадки даром!</h2>
             <p>При покупке 2 кг пломбира, добавим в ваш заказ упаковку вкуснейшей шоколадной присыпки совершенно бесплатно.</p>
@@ -175,7 +169,7 @@
           <ul class="catalog-list-hit">
             <li class="catalog-item hit">
               <img src="img/ice-cream-1.png" width="267" height="271" alt="Сливочное с апельсиновым джемом и цитрусовой стружкой">
-              Сливочное с апельсиновым джемом и цитрусовой стружкой
+              <a class="catalog-item-title" href="#" >Сливочное с апельсиновым джемом и цитрусовой стружкой</a>
               <div class="catalog-item-price">310
                 <span class="weight">/кг</span>
               </div>
@@ -183,7 +177,6 @@
                 <button class="catalog-button small-button">Быстрый просмотр</button>
               </div>
             </li>
-
             <li class="catalog-item hit">
               <img src="img/ice-cream-2.png" width="267" height="271" alt="Сливочно-кофейное с кусочками шоколада">
               <a class="catalog-item-title" href="#" >Сливочно-кофейное с кусочками шоколада</a>
@@ -194,7 +187,6 @@
                 <button class="catalog-button small-button">Быстрый просмотр</button>
               </div>
             </li>
-
             <li class="catalog-item hit">
               <img src="img/ice-cream-3.png" width="267" height="271" alt="Сливочно-клубничное с присыпкой из белого шоколада">
               <a class="catalog-item-title" href="#" >Сливочно-клубничное с присыпкой из белого шоколада</a>
@@ -205,7 +197,6 @@
                 <button class="catalog-button small-button">Быстрый просмотр</button>
               </div>
             </li>
-
             <li class="catalog-item hit">
               <img src="img/ice-cream-4.png" width="267" height="271" alt="Сливочное крем-брюле с карамельной подливкой">
               <a class="catalog-item-title" href="#" >Сливочное крем-брюле с карамельной подливкой</a>
@@ -258,24 +249,27 @@
           </section>
         </div>
 
-        <section class="adress">
-          <iframe src="https://yandex.ru/map-widget/v1/-/CBByzWf5HA" width="1200" height="429"  allowfullscreen="allowfullscreen"></iframe>
-          <h3 class="visually-hidden">Контактная информация</h3>
 
-          <div class="adress-part">
-            <p class="small-text">Адрес главного офиса
-              <br> и офлайн-магазина:</p>
-            <p class="bold-text">ул. Большая Конюшенная
-              <br>19/8, Санкт-Петербург</p>
-            <p class="small-text">Для заказов по телефону:</p>
-            <p class="bold-text">8 812 450-25-25</p>
-            <p class="small-text">(с 10 до 20 ежедневно)</p>
-            <div class="feedback-link">
-              <a class="small-button adress-button" href="#">Форма обратной связи</a>
-            </div>
-          </div>
-        </section>
       </div>
+      <section class="adress">
+          <h3 class="visually-hidden">Контактная информация</h3>
+        <iframe src="https://yandex.ru/map-widget/v1/-/CBByzWf5HA" width="1200" height="429"  allowfullscreen="allowfullscreen"></iframe>
+
+        <div class="image-map-feedback-wrapper">
+        <div class="adress-part">
+          <p class="small-text">Адрес главного офиса
+            <br> и офлайн-магазина:</p>
+          <p class="bold-text">ул. Большая Конюшенная
+            <br>19/8, Санкт-Петербург</p>
+          <p class="small-text">Для заказов по телефону:</p>
+          <p class="bold-text">8 812 450-25-25</p>
+          <p class="small-text">(с 10 до 20 ежедневно)</p>
+          <div class="feedback-link">
+            <a class="small-button adress-button" href="#">Форма обратной связи</a>
+          </div>
+        </div>
+      </div>
+      </section>
     </main>
     <footer class="main-footer container">
 
@@ -319,19 +313,15 @@
       </p>
     </footer>
 
-
   </div>
-
   <div class="modal-overlay">
     <section class="modal-feedback">
       <button class="modal-close" type="button">Закрыть</button>
       <p>Мы обязательно вам ответим!</p>
       <form class="modal-form" action="https://echo.htmlacademy.ru" method="post">
         <div class="form-modal">
-
-
           <label for="callback-name" class="visually-hidden">Введите ваше имя</label>
-          <input type="text" name="callback-name" id="callback-name" placeholder="Как вас зовут?">
+          <input type="text" name="callback-name" id="callback-name" placeholder="Как вас зовут?" required>
 
           <label for="callback-mail" class="visually-hidden">Введите вашу электронную почту</label>
           <input type="email" name="callback-mail" id="callback-mail" placeholder="Ваша почта для ответа?" required>
@@ -341,46 +331,12 @@
 
           <button class="small-button modal-form-button" type="submit" value="Отправить">Отправить</button>
 
-
         </div>
       </form>
     </section>
   </div>
+  <script src="js/script.js"></script>
 
-  <script>
-    var modallink = document.querySelector(".adress-button");
-    var modal = document.querySelector(".modal-overlay");
-    var modalSection = document.querySelector(".modal-feedback");
-    var close = modal.querySelector(".modal-close");
-    var modalForm = modal.querySelector("form");
-    var siteBody = document.querySelector("body");
-
-    modallink.addEventListener("click", function (evt) {
-      evt.preventDefault();
-      modal.classList.add("modal-show");
-      modalName.focus();
-      siteBody.classList.add(".scroll-hidden")
-    });
-
-    close.addEventListener("click", function (evt) {
-      evt.preventDefault();
-      modal.classList.remove("modal-show");
-      siteBody.classList.remove(".scroll-hidden");
-    });
-
-
-
-    window.addEventListener("keydown", function (evt) {
-      if (evt.keyCode === 27) {
-        evt.preventDefault();
-        if (modal.classList.contains("modal-show")) {
-          modal.classList.remove("modal-show");
-          body.classList.remove(".scroll-hidden");
-        }
-      }
-    });
-
-  </script>
 </body>
 
 </html>

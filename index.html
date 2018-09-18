@@ -6,7 +6,7 @@
   <title>Магазин Глейси</title>
   <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&amp;subset=cyrillic" rel="stylesheet">
   <link href="css/normalize.css" rel="stylesheet">
-  <link href="css/min.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
 </head>
 
 <body>
@@ -28,8 +28,7 @@
             <div class="sub-container">
               <ul class="sub-menu">
                 <li>
-                  <a href="catalog.html" class="new-in-catalog">Новинки
-                  </a>
+                  <a href="catalog.html" class="new-in-catalog">Новинки</a>
                 </li>
                 <li>
                   <a href="catalog.html">Сливочное</a>
@@ -69,9 +68,8 @@
             </div>
           </li>
           <li class="login-link">
-            <div class=" tooltip-button tooltip-login-button">
-              Вход
-              <div class="tooltip-container">
+            <div class=" tooltip-button tooltip-login-button">Вход
+              <div class="tooltip-container-login">
                 <div class="tooltip-inner tooltip-login-field">
                   <form class="login-form" action="https://echo.htmlacademy.ru" method="post">
                     <fieldset class="tooltip tooltip-login">
@@ -210,7 +208,7 @@
           </ul>
         </section>
         <section class="about-us-container">
-          <h2>Магазин Глейси — это онлайн- и офлайн-магазин по продаже мороженого собственного производства на развес</h2>
+          <h2>Магазин Глэйси — это онлайн- и офлайн-магазин по продаже мороженого собственного производства на развес</h2>
           <ul class="about-us">
             <li>Все наше мороженое изготавливается на собственном производстве, с использованием современного оборудования
               и проверенных временем технологий</li>
@@ -226,12 +224,8 @@
         <div class="wrapper-news">
           <article class="news">
             <h2 class="visually-hidden">Новости</h2>
-            <p>Новое в нашем блоге</p>
-            <span>
-              <a class="news-link" href="news.html">
-                10 способов сервировки<br> фруктовых щербетов к<br> столу
-              </a>
-            </span>
+            <p class="new-in-blog">Новое в нашем блоге</p>
+            <span class="news-link-wrapper"><a class="news-link" href="news.html">10 способов сервировки<br>фруктовых щербетов к<br>столу</a></span>
           </article>
 
           <section class="newsletter">
@@ -277,16 +271,16 @@
       <div class="footer-social">
         <ul>
           <li>
-            <a class="social-button twitter" href="#">Twitter</a>
+            <a class="social-button twitter" href="#"><span class="visually-hidden">Twitter</span></a>
           </li>
           <li>
-            <a class=" social-button instagram" href="#">Instagram</a>
+            <a class=" social-button instagram" href="#"><span class="visually-hidden">Instagram</span></a>
           </li>
           <li>
-            <a class="social-button facebook" href="#">Facebook</a>
+            <a class="social-button facebook" href="#"><span class="visually-hidden">Facebook</span></a>
           </li>
           <li>
-            <a class="social-button vkontakte" href="#">Vkontakte</a>
+            <a class="social-button vkontakte" href="#"><span class="visually-hidden">Vkontakte</span></a>
           </li>
         </ul>
       </div>
@@ -303,14 +297,13 @@
           <a class="info-to-custumers-item" href="#"><span class="underline-peach">Экологические стандарты</span></a>
         </div>
       </nav>
-      <p class="footer-copyright">
+      <div class="footer-copyright">
         <a class="htmlacademy-logo" href="https://htmlacademy.ru/intensive/htmlcss">
           <img src="img/logo-htmlacademy.svg" width="108" height="39" alt="логотип HTML Academy">
         </a>
         <span class="made-in">Сделано в <a class="html-academy-link" href="https://htmlacademy.ru/intensive/htmlcss"><span
-              class="underline-peach">HTML Academy</span></a>© 2017</span>
-
-      </p>
+          class="underline-peach">HTML Academy</span></a>© 2017</span>
+        </div>
     </footer>
 
   </div>
@@ -321,13 +314,13 @@
       <form class="modal-form" action="https://echo.htmlacademy.ru" method="post">
         <div class="form-modal">
           <label for="callback-name" class="visually-hidden">Введите ваше имя</label>
-          <input type="text" name="callback-name" id="callback-name" placeholder="Как вас зовут?" required>
+          <input type="text" name="callback-name" id="callback-name" placeholder="Как вас зовут?" >
 
           <label for="callback-mail" class="visually-hidden">Введите вашу электронную почту</label>
-          <input type="email" name="callback-mail" id="callback-mail" placeholder="Ваша почта для ответа?" required>
+          <input type="email" name="callback-mail" id="callback-mail" placeholder="Ваша почта для ответа?" >
 
           <label for="comment-field" class="visually-hidden">Напишите нам что-нибудь</label>
-          <textarea name="comment" id="comment-field" rows="5" placeholder="Напишите что-нибудь..." required></textarea>
+          <textarea name="comment" id="comment-field" rows="5" placeholder="Напишите что-нибудь..." ></textarea>
 
           <button class="small-button modal-form-button" type="submit" value="Отправить">Отправить</button>
 
@@ -335,7 +328,7 @@
       </form>
     </section>
   </div>
-  <script src="js/min.js"></script>
+  <script src="js/script.js"></script>
 
 </body>
 

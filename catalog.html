@@ -6,7 +6,7 @@
   <title>Магазин Глейси</title>
   <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&amp;subset=cyrillic" rel="stylesheet">
   <link href="css/normalize.css" rel="stylesheet">
-  <link href="css/min.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
 </head>
 
 <body class="body-catalog">
@@ -25,7 +25,7 @@
             <div class="sub-container">
               <ul class="sub-menu">
                 <li>
-                  <a href="catalog.html" class="new-in-catalog"><span>Новинки</span></a>
+                  <a href="catalog.html" class="new-in-catalog">Новинки</a>
                 </li>
                 <li>
                   <a class="current-page" href="catalog.html">Сливочное</a>
@@ -67,9 +67,8 @@
             </div>
           </li>
           <li class="login-link">
-            <div class="tooltip-button tooltip-login-button">
-              Вход
-              <div class="tooltip-container">
+            <div class="tooltip-button tooltip-login-button">Вход
+              <div class="tooltip-container-login">
                 <div class="tooltip-inner tooltip-login-field">
                   <form class="login-form" action="https://echo.htmlacademy.ru" method="post">
                     <fieldset class="tooltip tooltip-login">
@@ -161,26 +160,17 @@
             <div class="sorting-row-1">
               <fieldset class="filters">
                 <legend>Сортировка:</legend>
-                <label class="custom-select">
 
-                  <select name="sort-option" id="sort-view">
-                    <option value="popular">по популярности</option>
-                    <option value="from-cheap">сначала недорогие</option>
-                    <option value="from-expensive">сначала дорогие</option>
-                    <option value="fett">по жирности</option>
-                  </select>
-                </label>
-              </fieldset>
+	<select class="custom-select" name="sort-option" id="sort-view">
+<option value="popular">по популярности</option>
+<option value="from-cheap">сначала недорогие</option>
+<option value="from-expensive">сначала дорогие</option>
+<option value="fett">по жирности</option>
+	</select>
+
+     </fieldset>
               <div class="price-sort">
-                <h3 class="visually-hidden"> Цена:</h3>
-                <div class="price-value">
-                  Цена:
-                  <span class="value1">100</span>
-                  <span class="rouble">руб.</span>
-                  <span>–</span>
-                  <span class="value2">500</span>
-                  <span class="rouble">руб.</span>
-                </div>
+                <div class="price-value"><span class="price-name">Цена:</span><span class="value1">100</span><span class="rouble">руб.</span><span class="from-to">–</span><span class="value2">500</span><span class="rouble">руб.</span></div>
                 <div class="range-button-wrapper">
                   <div class="range-button first-range"></div>
                   <div class="range-button second-range"></div>
@@ -207,7 +197,7 @@
             </div>
             <div class="sorting-row-2">
               <fieldset class="sorting-fill">
-                <legend>Наполнители</legend>
+                <legend>Наполнители:</legend>
                 <div class="wrapper-sorting filler">
                   <input type="checkbox" name="chocolate" id="chocolate-filler" checked>
                   <label for="chocolate-filler">шоколадные</label>
@@ -416,16 +406,16 @@
       <div class="footer-social">
         <ul>
           <li>
-            <a class="social-button twitter" href="#">Twitter</a>
+            <a class="social-button twitter" href="#"><span class="visually-hidden">Twitter</span></a>
           </li>
           <li>
-            <a class=" social-button instagram" href="#">Instagram</a>
+            <a class=" social-button instagram" href="#"><span class="visually-hidden">Instagram</span></a>
           </li>
           <li>
-            <a class="social-button facebook" href="#">Facebook</a>
+            <a class="social-button facebook" href="#"><span class="visually-hidden">Facebook</span></a>
           </li>
           <li>
-            <a class="social-button vkontakte" href="#">Vkontakte</a>
+            <a class="social-button vkontakte" href="#"><span class="visually-hidden">Vkontakte</span></a>
           </li>
         </ul>
       </div>

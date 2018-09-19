@@ -683,9 +683,7 @@ button.small-button.enter{
           align-items: flex-end;
 }
 
-.tooltip-cart-button .tooltip-container {
-  display:block;
-}
+
 .table-body{
   border-collapse:collapse;
   -ms-flex-item-align: start;

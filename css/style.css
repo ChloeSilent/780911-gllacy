@@ -986,7 +986,9 @@ h2.visually-hidden-slider{
 .slider-controls label:hover{
   background-color:rgba(255, 255, 255, 0.502);
 }
-
+.slider-controls label:active{
+  background-color:rgb(255,255,255);
+}
 #product-1:checked ~ .site-wrapper {
   background-color: #849d8f;
   background-image: url("../img/action-content-1.png");

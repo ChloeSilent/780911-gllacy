@@ -444,6 +444,10 @@ background-image: url("../img/magnifier-hover.svg");
   padding-top: 3px;
   margin-right: -2px;
 }
+
+.tooltip-login-button:hover .tooltip-container-login {
+  display: block;
+}
 .tooltip-login-field {
 
   background-color: rgb(248, 247, 244);

@@ -55,7 +55,8 @@
               <div class="tooltip-container">
                 <div class="tooltip-inner tooltip-search-field">
                   <form class="search-window" action="https://echo.htmlacademy.ru" method="post">
-                    <label for="search" class="visually-hidden"> Поиск</label>
+                    <h2 class="visually-hidden">Поиск</h2>
+                    <label for="search" class="visually-hidden">  </label>
                     <input type="search" name="search" id="search" placeholder="Что ищем?" class="search">
                   </form>
                 </div>
@@ -69,9 +70,9 @@
                   <form class="login-form" action="https://echo.htmlacademy.ru" method="post">
                     <fieldset class="tooltip tooltip-login">
                       <legend class="visually-hidden">Войти на сайт</legend>
-                      <label for="email" class="visually-hidden">Введите вашу электронную почту</label>
+                      <label for="email" class="visually-hidden"></label>
                       <input type="email" name="email" id="email" placeholder="Электронная почта" required>
-                      <label for="password-field" class="visually-hidden">Введите ваш пароль</label>
+                      <label for="password-field" class="visually-hidden"></label>
                       <input type="password" name="password" id="password-field" placeholder="Пароль" required>
                       <div class="button-links">
                         <button class="small-button enter" type="submit">Войти</button>
@@ -147,42 +148,54 @@
           <h2 class="visually-hidden">Хиты продаж</h2>
           <ul class="catalog-list-hit">
             <li class="catalog-item hit">
+              <div class="image-price-wrapper">
               <img src="img/ice-cream-1.png" width="267" height="271" alt="Сливочное с апельсиновым джемом и цитрусовой стружкой">
-              <a class="catalog-item-title" href="#">Сливочное с апельсиновым джемом и цитрусовой стружкой</a>
               <div class="catalog-item-price">310
                 <span class="weight">/кг</span>
               </div>
+            </div>
+            <a class="catalog-item-title" href="#">Сливочное с апельсиновым джемом и цитрусовой стружкой</a>
               <div class="item-button-wrapper">
+                <div class="space-eater"></div>
                 <button class="catalog-button small-button">Быстрый просмотр</button>
               </div>
             </li>
             <li class="catalog-item hit">
+                <div class="image-price-wrapper">
               <img src="img/ice-cream-2.png" width="267" height="271" alt="Сливочно-кофейное с кусочками шоколада">
-              <a class="catalog-item-title" href="#">Сливочно-кофейное с кусочками шоколада</a>
               <div class="catalog-item-price">380
                 <span class="weight">/кг</span>
               </div>
+            </div>
+              <a class="catalog-item-title" href="#">Сливочно-кофейное с кусочками шоколада</a>
               <div class="item-button-wrapper">
+                  <div class="space-eater"></div>
                 <button class="catalog-button small-button">Быстрый просмотр</button>
               </div>
             </li>
             <li class="catalog-item hit">
+                <div class="image-price-wrapper">
               <img src="img/ice-cream-3.png" width="267" height="271" alt="Сливочно-клубничное с присыпкой из белого шоколада">
-              <a class="catalog-item-title" href="#">Сливочно-клубничное с присыпкой из белого шоколада</a>
               <div class="catalog-item-price">355
                 <span class="weight">/кг</span>
               </div>
+            </div>
+            <a class="catalog-item-title" href="#">Сливочно-клубничное с присыпкой из белого шоколада</a>
               <div class="item-button-wrapper">
+              <div class="space-eater"></div>
                 <button class="catalog-button small-button">Быстрый просмотр</button>
               </div>
             </li>
             <li class="catalog-item hit">
+                <div class="image-price-wrapper">
               <img src="img/ice-cream-4.png" width="267" height="271" alt="Сливочное крем-брюле с карамельной подливкой">
-              <a class="catalog-item-title" href="#">Сливочное крем-брюле с карамельной подливкой</a>
               <div class="catalog-item-price">415
                 <span class="weight">/кг</span>
               </div>
+            </div>
+              <a class="catalog-item-title" href="#">Сливочное крем-брюле с карамельной подливкой</a>
               <div class="item-button-wrapper">
+                  <div class="space-eater"></div>
                 <button class="catalog-button small-button">Быстрый просмотр</button>
               </div>
             </li>
@@ -281,15 +294,16 @@
   </div>
   <div class="modal-overlay">
     <section class="modal-feedback">
+        <h2 class="visually-hidden">Обратная связь</h2>
       <button class="modal-close" type="button">Закрыть</button>
       <p>Мы обязательно вам ответим!</p>
       <form class="modal-form" action="https://echo.htmlacademy.ru" method="post">
         <div class="form-modal">
-          <label for="callback-name" class="visually-hidden">Введите ваше имя</label>
+          <label for="callback-name" class="visually-hidden"></label>
           <input type="text" name="callback-name" id="callback-name" placeholder="Как вас зовут?">
-          <label for="callback-mail" class="visually-hidden">Введите вашу электронную почту</label>
+          <label for="callback-mail" class="visually-hidden"></label>
           <input type="email" name="callback-mail" id="callback-mail" placeholder="Ваша почта для ответа?">
-          <label for="comment-field" class="visually-hidden">Напишите нам что-нибудь</label>
+          <label for="comment-field" class="visually-hidden"></label>
           <textarea name="comment" id="comment-field" rows="5" placeholder="Напишите что-нибудь..."></textarea>
           <button class="small-button modal-form-button" type="submit" value="Отправить">Отправить</button>
         </div>

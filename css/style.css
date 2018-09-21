@@ -1031,7 +1031,7 @@ h2.visually-hidden-slider {
   /*это толкает надпись слайдера вниз(отсчет примерно от телефона*/
   text-align: center;
   color: #ffffff;
-  margin-bottom: 5px;
+  margin-bottom: 3px;
 }
 
 .slider-list {
@@ -1933,7 +1933,7 @@ iframe {
   margin: 0 auto;
   position: absolute;
   top: 64px;
-  right: 0px;
+  right: 36px;
 }
 
 .adress-part {
@@ -3082,7 +3082,7 @@ fieldset.sorting-fill {
   stroke: rgb(50, 50, 50);
 }
 
-.pagination-item:active,
+.pagination-item:not(.pagination-item-disabled):active,
 .pagination-item-current {
   background-color: rgb(255, 255, 255);
 }

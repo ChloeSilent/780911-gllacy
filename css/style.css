@@ -3078,9 +3078,6 @@ fieldset.sorting-fill {
   border-radius: 50%;
 }
 
-.pagination-item-next:active svg .line-fill {
-  stroke: rgb(50, 50, 50);
-}
 
 .pagination-item:not(.pagination-item-disabled):active,
 .pagination-item-current {
